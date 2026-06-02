@@ -40,13 +40,13 @@ window.RESOURCES = [
     tag: "의학과 4",
     title: "Omics data analysis practice (bulk RNA-seq)",
     desc: "분자의학 선택연구: 오믹스 데이터 분석 실습",
-    url: "https://kkonoo.github.io/BI_for_Biomed_KNUmed/"
+    url: "https://kkonoo.github.io/Omics_for_Molecular_Med_KNUmed/"
   },
   {
     tag: "의학연구 OT",
-    title: "분자의학 선택연구",
-    desc: "오믹스 데이터 분석 기술 (bulk RNA-seq)",
-    url: "https://kkonoo.github.io/Omics_for_Molecular_Med_KNUmed/"
+    title: "R script 활용하기",
+    desc: "효율적인 연구를 위한 R script 활용하기",
+    url: "https://kkonoo.github.io/edu_KNUmed/"
   }
 ];
 
