@@ -332,3 +332,22 @@ section { padding: 76px 0; }
 }
 .post-gallery a:hover img { opacity: .85; }
 @media (max-width: 760px) { .post-gallery { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---------- Link cards (Note / Resources) ---------- */
+.link-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.link-card {
+  display: flex; flex-direction: column;
+  background: var(--white); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 26px; color: inherit;
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+}
+.link-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: transparent; }
+.link-card .tag {
+  font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase;
+  color: var(--accent); font-weight: 600;
+}
+.link-card h3 { font-family: var(--serif); font-weight: 600; font-size: 21px; margin: 10px 0 8px; }
+.link-card p { color: var(--ink-soft); font-size: 15px; line-height: 1.6; flex: 1; }
+.link-card .go { margin-top: 18px; font-weight: 600; color: var(--primary); font-size: 14.5px; }
+.link-card:hover .go { color: var(--accent); }
+@media (max-width: 760px) { .link-grid { grid-template-columns: 1fr; } }
