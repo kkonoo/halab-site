@@ -21,13 +21,13 @@ window.RESOURCES = [
   {
     tag: "융합형 의사과학자 양성 사업",
     title: "Introduction to Bioinformatics: bulk RNA-seq Analysis",
-    desc: "MD-PhD 과정을 위한 bulk RNA-seq 분석 실습 자료.",
+    desc: "MD-PhD 과정을 위한 bulk RNA-seq 분석 실습 자료",
     url: "https://kkonoo.github.io/BI_for_MD_PhD_KNUmed/"
   },
  {
     tag: "융합형 의사과학자 양성 사업 II",
     title: "Advanced Bioinformatics",
-    desc: "MD-PhD 과정을 위한 고급 생물정보학 분석 실습 자료.",
+    desc: "MD-PhD 과정을 위한 고급 생물정보학 분석 실습 자료",
     url: "https://kkonoo.github.io/advanced_BI_for_MD_PhD_KNUmed/"
   },
   {
