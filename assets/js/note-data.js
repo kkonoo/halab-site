@@ -61,55 +61,55 @@ window.STUDIES = [
   {
     tag: "HaLab 1",
     title: "Human Genetics (from KASRA)",
-    desc: "질병 유전체 연구를 위한 기반: 유전학",
+    desc: "유전학",
     url: "https://chaek.org/books/human-genetics"
   },
   {
     tag: "HaLab 1",
-    title: "Basic statistics (from KASRA,  but will be updated by new one)",
-    desc: "질병 유전체 연구를 위한 기반: 기초통계",
+    title: "Basic statistics (from KASRA)",
+    desc: "기초통계",
     url: "https://chaek.org/books/basic-stats-omics-labs/README"
   },
   {
     tag: "HaLab 1",
     title: "Basic machine learning",
-    desc: "질병 유전체 연구를 위한 기반: 머신러닝",
+    desc: "머신러닝",
     url: "https://kkonoo.github.io/1_Basic_Machine_Learning/"
   },
   {
     tag: "HaLab 2",
     title: "Immunology",
-    desc: "질병 유전체 연구를 위한 기반: 면역학",
+    desc: "면역학",
     url: "https://kkonoo.github.io/1_Immunology/"
   },
   {
     tag: "HaLab 2",
     title: "Linear algebra",
-    desc: "질병 유전체 연구를 위한 기반: 선형대수",
+    desc: "선형대수",
     url: "https://kkonoo.github.io/2_linear_algebra/"
   },
   {
     tag: "HaLab 3",
-    title: "Neural network",
-    desc: "질병 유전체 연구를 위한 기반: 신경망",
-    url: "https://kkonoo.github.io/3_neural_network/"
-  },
-  {
-    tag: "HaLab 3",
     title: "Linear regression",
-    desc: "질병 유전체 연구를 위한 기반: 선형회귀",
+    desc: "선형회귀",
     url: "https://kkonoo.github.io/3_linear_regression/"
   },
   {
-    tag: "HaLab 4",
-    title: "Graph theory",
-    desc: "질병 유전체 연구를 위한 기반: 그래프 이론",
-    url: "https://kkonoo.github.io/4_graphs/"
+    tag: "HaLab 3",
+    title: "Neural network",
+    desc: "신경망",
+    url: "https://kkonoo.github.io/3_neural_network/"
   },
   {
     tag: "HaLab 4",
     title: "Bayesian statistics",
-    desc: "질병 유전체 연구를 위한 기반: 베이지안 통계",
+    desc: "베이지안 통계",
     url: "https://kkonoo.github.io/4_Bayes/"
+  },
+  {
+    tag: "HaLab 4",
+    title: "Graph theory",
+    desc: "그래프 이론",
+    url: "https://kkonoo.github.io/4_graphs/"
   }
 ];
