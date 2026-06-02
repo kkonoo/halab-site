@@ -78,15 +78,15 @@ window.STUDIES = [
   },
   {
     tag: "HaLab 2",
-    title: "Immunology",
-    desc: "면역학",
-    url: "https://kkonoo.github.io/1_Immunology/"
-  },
-  {
-    tag: "HaLab 2",
     title: "Linear algebra",
     desc: "선형대수",
     url: "https://kkonoo.github.io/2_linear_algebra/"
+  },
+  {
+    tag: "HaLab 2",
+    title: "Immunology",
+    desc: "면역학",
+    url: "https://kkonoo.github.io/1_Immunology/"
   },
   {
     tag: "HaLab 3",
