@@ -86,3 +86,31 @@ git push -u origin main
 - 멤버 추가: `members.html` 의 `member-grid` 에 `.member` 블록을 복사해 수정
 - 뉴스/논문 추가: `assets/js/*data.js` 수정
 - 색상/폰트: `assets/css/styles.css` 상단 `:root` 변수에서 조정
+
+## 카드뉴스 (Note 페이지 · Field updates)
+Note 페이지 상단 **Field updates** 섹션은 `lab-wiki` 가 매주 만드는 카드뉴스
+(`~/lab-wiki/wiki/cards/YYYY-MM-DD.md`)를 보여줍니다. 데이터 파일
+`assets/js/cards-data.js` 는 **자동 생성**되므로 직접 고치지 마세요.
+
+매주 새 카드가 나오면 (이 사이트 폴더와 무관하게) 아래 한 줄만 실행 →
+검토 → 커밋/푸시 하면 사이트에 반영됩니다.
+
+```bash
+# 1) 최신 카드뉴스(.md)를 사이트 데이터로 변환
+python ~/lab-wiki/lab-monitor/publish_to_site.py        # --dry-run 으로 미리보기 가능
+
+# 2) 변경 확인 후 커밋·푸시
+cd ~/halab-site
+git add assets/js/cards-data.js
+git commit -m "cardnews update"
+git push
+```
+
+- 처음에는 **관련도 높은 상위 10편만** 보이고, "더 보기"로 전체를 펼칩니다.
+  몇 편 보일지는 `assets/js/render-cards.js` 의 `INITIAL_LIMIT` 숫자로 조정.
+- 과거 주차는 `wiki/cards/` 에 파일이 남아 있는 한 사이트의 **주차 선택**
+  드롭다운에서 계속 볼 수 있습니다. 화면에서는 분야 필터·키워드 검색·펼치기 지원.
+- 데이터는 `monitor.py` 가 만드는 **`YYYY-MM-DD.json`** 사이드카에서 읽습니다
+  (마크다운 서식이 바뀌어도 사이트는 안 깨짐). json 이 없는 옛 주차는 `.md` 를
+  자동 파싱합니다. 카드 형식을 크게 바꾸면 `publish_to_site.py` 와
+  `render-cards.js` 만 손보면 됩니다.
