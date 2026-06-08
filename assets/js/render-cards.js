@@ -53,7 +53,7 @@
 
     var rows = '';
     if (p.what_they_did && p.what_they_did.length) {
-      rows += '<dt>🧪 무엇을 했나</dt><dd><ul class="cn-did">' +
+      rows += '<dt>🧪 what they did</dt><dd><ul class="cn-did">' +
         p.what_they_did.map(function (b) { return '<li>' + esc(b) + '</li>'; }).join('') +
         '</ul></dd>';
     }
