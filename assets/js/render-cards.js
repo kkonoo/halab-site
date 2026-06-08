@@ -51,15 +51,20 @@
     var badge = (p.emoji ? p.emoji + ' ' : '') + esc(p.domain || '');
     var metaBits = [p.journal, p.year, p.author].filter(Boolean).map(esc).join(' · ');
 
+    // 'what they did'(목록) HTML — 빈 값이면 빈 문자열
+    var didHTML = (p.what_they_did && p.what_they_did.length)
+      ? '<dt>🧪 what they did</dt><dd><ul class="cn-did">' +
+          p.what_they_did.map(function (b) { return '<li>' + esc(b) + '</li>'; }).join('') +
+          '</ul></dd>'
+      : '';
+
     var rows = '';
-    if (p.what_they_did && p.what_they_did.length) {
-      rows += '<dt>🧪 what they did</dt><dd><ul class="cn-did">' +
-        p.what_they_did.map(function (b) { return '<li>' + esc(b) + '</li>'; }).join('') +
-        '</ul></dd>';
-    }
     FIELDS.forEach(function (f) {
       var v = p[f[0]];
       if (v) rows += '<dt>' + f[1] + '</dt><dd>' + esc(v) + '</dd>';
+      // question 바로 뒤에 'what they did' 끼워넣기.
+      // 다른 필드 뒤에 두고 싶으면 'question' 을 그 필드 이름으로 바꾸세요 (예: 'key_result').
+      if (f[0] === 'question') rows += didHTML;
     });
 
     var concepts = (p.concepts && p.concepts.length)
@@ -73,8 +78,6 @@
     if (p.doi) links.push('<a href="' + esc(p.doi) + '" target="_blank" rel="noopener">원문·그림 ↗</a>');
     var linksHTML = links.length ? '<div class="cn-links">' + links.join('') + '</div>' : '';
 
-    // 질문 순서를 위해 question 은 위 FIELDS 에서 먼저 나오도록 배치했지만,
-    // 무엇을 했나(목록) 뒤에 오도록 question 을 맨 앞에서 빼고 싶으면 순서만 조정하세요.
     return '<article class="cn-card reveal" data-domain="' + esc(p.domain || '') + '">' +
       '<button class="cn-head" type="button" aria-expanded="false">' +
         '<div class="cn-top">' +
