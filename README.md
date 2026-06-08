@@ -44,11 +44,7 @@ git push -u origin main
    (저장소에 포함된 `CNAME` 파일이 이미 있음)
 2. **학교 전산원에 DNS 설정을 요청**합니다. halab.knu.ac.kr 은 knu.ac.kr 의 하위 도메인이라 보통 전산원이 관리합니다. 다음 중 하나를 요청
    - **CNAME 레코드**: `halab.knu.ac.kr` → `kkonoo.github.io`
-   - (또는 A 레코드로 GitHub Pages IP 4개 지정:
-     185.199.108.153 / 185.199.109.153 / 185.199.110.153 / 185.199.111.153)
 3. DNS가 적용되면 GitHub Pages에서 **Enforce HTTPS** 를 체크
-
-> 참고: 현재 그 IP 서버에 직접 접속 권한이 없어도, 위 방식대로 GitHub Pages에 올리고 도메인만 GitHub 쪽으로 연결
 
 ## 사진 넣기
 1. 사진 파일을 `assets/img/` 에 추가. (예: `eunji-ha.jpg`)
