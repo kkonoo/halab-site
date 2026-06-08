@@ -25,12 +25,12 @@
 
   // 펼쳤을 때 보여줄 상세 필드 (빈 값은 자동으로 숨김)
   var FIELDS = [
-    ['question', '❓ 질문'],
-    ['key_result', '📊 핵심 결과'],
-    ['why_for_us', '🎯 우리 랩엔'],
-    ['limitations', '⚠️ 한계'],
-    ['reuse', '📦 재사용'],
-    ['next_step', '💡 다음 스텝']
+    ['question', '❓ question'],
+    ['key_result', '📊 key result'],
+    ['why_for_us', '🎯 why for us'],
+    ['limitations', '⚠️ limitations'],
+    ['reuse', '📦 reuse'],
+    ['next_step', '💡 next_step']
   ];
 
   var activeDomain = 'ALL';
