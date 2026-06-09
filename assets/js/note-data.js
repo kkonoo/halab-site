@@ -84,6 +84,12 @@ window.STUDIES = [
   },
   {
     tag: "HaLab 2",
+    title: "Writing My First Paper (from KASRA)",
+    desc: "첫 논문 쓰기",
+    url: "https://chaek.org/books/how-to-write-paper/README"
+  },
+  {
+    tag: "HaLab 2",
     title: "Linear algebra",
     desc: "선형대수",
     url: "https://kkonoo.github.io/2_linear_algebra/"
