@@ -2,6 +2,9 @@
 
 GitHub Pages용 정적 사이트. 빌드 과정 없이 HTML/CSS/JS 파일만으로 동작
 
+https://kkonoo.github.io/halab-site/
+https://halab.knu.ac.kr
+
 ## 파일 구조
 ```
 halab-site/
