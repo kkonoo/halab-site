@@ -43,6 +43,12 @@ window.RESOURCES = [
     url: "https://kkonoo.github.io/Omics_for_Molecular_Med_KNUmed/"
   },
   {
+    tag: "의예과 2",
+    title: "Introduction to Bioinformatics",
+    desc: "의학연구를 위한 생물정보학",
+    url: "https://kkonoo.github.io/BI_for_MD_KNUmed/"
+  },
+  {
     tag: "의학연구 OT",
     title: "R script 활용하기",
     desc: "효율적인 연구를 위한 R script 활용하기",
