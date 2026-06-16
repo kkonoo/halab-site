@@ -4,6 +4,90 @@
    ============================================================ */
 window.CARDNEWS = [
   {
+    "date": "2026-06-16",
+    "count": 3,
+    "papers": [
+      {
+        "title": "Decoding common and rare noncoding variant effects across cellular and developmental contexts.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42298188/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42298188/",
+        "doi": "https://doi.org/10.1038/s41588-026-02619-6",
+        "journal": "Nature genetics",
+        "year": "2026",
+        "author": "Marderstein AR",
+        "rating": 4,
+        "emoji": "🧬",
+        "domain": "유전학·GWAS",
+        "what_they_did": [
+          "다양한 태아 및 성인 세포 맥락에서 chromatin accessibility를 예측하는 딥러닝 시퀀스 모델로 30억 건의 예측 생성",
+          "일반 변이 vs. 초희귀 변이의 조절 효과 패턴 비교 분석(세포 특이성 vs. 광범위 효과)",
+          "진화적 제약을 통합한 FLARE(Functional Lasso Analysis of Regulatory Evolution) 프레임워크 개발",
+          "소아 질환 de novo 변이, 성인 뇌 발현 이상치 희귀 변이, 정신분열증 heritability 풍부화 일반 변이에 FLARE 적용"
+        ],
+        "concepts": [],
+        "tldr": "딥러닝 염색질 접근성 모델로 30억 개의 예측을 생성해 일반 변이와 희귀 변이의 조절 효과 이분성을 밝히고, 진화적 제약을 통합한 FLARE 프레임워크로 비코딩 변이의 규제 효과를 우선순위화했다.",
+        "question": "비코딩 변이가 세포 유형별·발달 맥락별로 어떻게 다르게 작동하며, 이를 체계적으로 우선순위화할 수 있는가?",
+        "key_result": "일반 변이는 세포 유형 특이적 효과를 보이는 반면, 초희귀 변이는 더 크고 광범위한 효과를 가지며 태아 신경세포에서 정제 선택(purifying selection)의 증거가 가장 강했다. FLARE는 소아 장애·뇌 발현 이상치·정신분열증 heritability 등 다양한 표현형에서 조절 변이 우선순위화에 효과적이었다.",
+        "why_for_us": "비코딩 변이 해석, fine-mapping, heritability 분석, caQTL/eQTL 우선순위화에 직접 활용 가능한 방법론. single-cell ATAC-seq 기반 조절 변이 분석 파이프라인으로 랩의 GWAS/QTL·fine-mapping·single-cell 연구에 관련성이 높다.",
+        "limitations": "태아 및 성인 맥락 데이터의 세포 유형 범위가 얼마나 포괄적인지 초록에서 명확히 제시되지 않음. 딥러닝 모델의 훈련 데이터 편향 가능성 언급 없음.",
+        "reuse": "FLARE 프레임워크 및 딥러닝 모델 예측값 공개 여부는 초록에 명시 없음",
+        "next_step": ""
+      },
+      {
+        "title": "Single-cell RNA sequencing of terminal ileal biopsies identifies signatures of Crohn's disease pathogenesis.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42298187/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42298187/",
+        "doi": "https://doi.org/10.1038/s41588-026-02634-7",
+        "journal": "Nature genetics",
+        "year": "2026",
+        "author": "Krzak M",
+        "rating": 3,
+        "emoji": "🔬",
+        "domain": "단일세포",
+        "what_they_did": [
+          "말단 회장 생검 단일세포 RNA-seq 데이터셋 IBDverse 구축(CD 111명, 건강 대조군 232명, 총 110만 개 이상 세포)",
+          "발견 코호트와 복제 코호트를 통합하여 CD 연관 세포 유형·유전자·경로 강건하게 동정",
+          "인터페론 구동 MHC class I 상향조절 상피 변화가 거시적 염증 해소 후에도 전구세포에 지속되는지 분석",
+          "ITGA4 발현 세포 집단 등 특이 세포 서명 규명"
+        ],
+        "concepts": [],
+        "tldr": "CD 환자 111명과 정상 대조군 232명의 말단 회장 생검에서 110만 개 이상의 세포를 단일세포 RNA 시퀀싱으로 프로파일링하여 크론병 병인 관련 세포·유전자·경로를 체계적으로 규명했다.",
+        "question": "크론병의 분자적 병인을 단일세포 수준에서 어떻게 이해하고, 치료 반응 이질성을 설명하는 세포 서명을 도출할 수 있는가?",
+        "key_result": "인터페론 구동 MHC class I 상향조절이 상피 전구세포에서 염증 해소 후에도 지속되는 크론병 특이적 분자 서명으로 확인됨. 111명 CD 환자와 232명 건강 대조군을 아우르는 대규모 단일세포 자원 IBDverse 구축.",
+        "why_for_us": "대규모 scRNA-seq 코호트 설계·통합 방법론, 질환 연관 세포 유형 동정 파이프라인이 랩의 단일세포 멀티오믹스 및 자가면역 질환 연구에 참고 가능.",
+        "limitations": "말단 회장 부위에 국한되어 다른 소화관 부위의 병변은 반영 안 됨. 치료 반응 예측을 위한 전향적 검증 데이터는 초록에 명시 없음.",
+        "reuse": "IBDverse 데이터셋 공개 여부는 초록에 명시 없음",
+        "next_step": ""
+      },
+      {
+        "title": "A myeloid immunosuppressive phenotype defines primary refractoriness to atezolizumab Plus bevacizumab in hepatocellular caarcinoma.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42297215/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42297215/",
+        "doi": "https://doi.org/10.1016/j.jhep.2026.05.018",
+        "journal": "Journal of hepatology",
+        "year": "2026",
+        "author": "Lombardi P",
+        "rating": 3,
+        "emoji": "🎗️",
+        "domain": "암",
+        "what_they_did": [
+          "AB-real 코호트(n=1,296)와 IMbrave150·GO30140 임상시험(n=645)에서 SITC 기준 PRef 정의 및 검증",
+          "전처치 종양 조직에서 기계학습 기반 TIL 정량화, imaging mass cytometry(IMC), RNAseq 수행",
+          "scRNA-seq(n=20)과 IMC(n=16) 독립 코호트로 TME 세밀 특성화",
+          "조건부 추론 트리 분석으로 PRef 결정 인자의 위계적 구조 제시"
+        ],
+        "concepts": [],
+        "tldr": "HCC 환자 1,941명을 대상으로 아테졸리주맙+베바시주맙(A+B) 1차 치료 후 일차 내성(PRef) 표현형을 정의하고, IMC·scRNA-seq·RNAseq으로 골수성 면역억제 TME가 PRef의 핵심 생물학적 기반임을 밝혔다.",
+        "question": "아테졸리주맙+베바시주맙에 대한 일차 내성 HCC 환자는 어떤 종양미세환경 특성을 가지며, 이를 극복할 생물학적 표적은 무엇인가?",
+        "key_result": "PRef 환자는 중앙 OS 7.3개월(vs. 반응군 31.5개월, p<0.001). PRef는 높은 기저 전신 염증(NLR≥3), CD163+ 골수성 세포 풍부, T세포 고갈, IFN-γ 경로 억제, 비우호적 공간 면역 구조가 특징. 약 40%의 환자가 PRef에 해당.",
+        "why_for_us": "TME scRNA-seq 분석, T세포 고갈, 면역치료 반응 예측 바이오마커 연구와 직결. 랩의 cancer immunology(T cell exhaustion·TME) 관심 분야에 부합.",
+        "limitations": "후향적 다기관 연구로 처치 이질성 가능성. PRef 정의의 SITC 기준이 HCC에 처음 적용되어 표준화 필요.",
+        "reuse": "",
+        "next_step": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-14",
     "count": 20,
     "papers": [
