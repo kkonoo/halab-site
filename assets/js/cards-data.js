@@ -4,7 +4,185 @@
    ============================================================ */
 window.CARDNEWS = [
   {
-   "date": "2026-06-14",
+    "date": "2026-06-21",
+    "count": 6,
+    "papers": [
+      {
+        "title": "Macrophage-mediated brain-bone marrow crosstalk promotes chronic stress-induced glioma growth.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42314665/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42314665/",
+        "doi": "https://doi.org/10.1016/j.ccell.2026.05.018",
+        "journal": "Cancer cell",
+        "year": "2026",
+        "author": "Yang Z",
+        "rating": 3,
+        "emoji": "🎗️",
+        "domain": "암",
+        "what_they_did": [
+          "동계 교모세포종 마우스 모델에서 만성 스트레스 조건 부여 후 생존율 및 종양 성장 평가",
+          "종양 샘플에 대해 통합 멀티오믹스 분석 수행하여 스트레스 유발 CD45+ 면역세포 변화 규명",
+          "뇌-골수 간 대식세포 크로스토크 메커니즘 탐색"
+        ],
+        "concepts": [
+          "brain-body-immune-circuits"
+        ],
+        "tldr": "만성 스트레스가 뇌-골수 축을 통해 대식세포를 재프로그래밍하여 교모세포종 성장을 가속화함을 멀티오믹스 분석으로 규명.",
+        "question": "만성 스트레스가 종양 미세환경(TME) 내 면역세포 구성을 어떻게 변화시켜 교모세포종 성장을 촉진하는가?",
+        "key_result": "만성 스트레스는 교모세포종 성장을 가속하고 생존을 단축시키며, 멀티오믹스 분석에서 스트레스 유발 CD45+ 세포 재프로그래밍이 확인됨(초록 일부 잘림).",
+        "why_for_us": "암 면역(TME) 및 멀티오믹스 통합 분석이 랩의 cancer immunology 관심사와 연결됨.",
+        "limitations": "초록이 잘려 있어 세부 오믹스 데이터 및 인간 검증 여부 불명확.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Cellular architecture and neighborhood-informed virtual spatial tumor profiling from histopathology.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42302781/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42302781/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.05.031",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Li Y",
+        "rating": 3,
+        "emoji": "🎗️",
+        "domain": "암",
+        "what_they_did": [
+          "457명 비소세포폐암 환자에서 41-plex 공간 단백질체(약 1,800만 세포)로 10개의 재현 가능한 세포 이웃(CN) 아틀라스 구축",
+          "멀티모달 정렬 및 foundation model 기반 형태 인코딩으로 H&E 슬라이드에서 CN 기반 habitat 구조를 예측하는 CANVAS 플랫폼 개발",
+          "9개 암종, 5,000명 이상 환자 코호트에서 예후 모델링·공간 ecotype 층화·면역치료 반응 예측 검증"
+        ],
+        "concepts": [
+          "spatial-transcriptomics",
+          "cell-type-deconvolution"
+        ],
+        "tldr": "H&E 병리 이미지만으로 종양 미세환경(TME)의 공간적 생태 구조를 AI로 예측하는 플랫폼 CANVAS를 개발, 5,000명 이상 환자에서 예후·면역치료 반응 예측에 활용",
+        "question": "H&E 슬라이드만으로 고비용 공간 단백질체 데이터 없이 TME의 세포 이웃 구조와 임상 결과를 예측할 수 있는가?",
+        "key_result": "CANVAS는 H&E 이미지만으로 TME 공간 구조를 재현하고, 9개 암종 5,000명+ 환자에서 예후 및 면역치료 결과 예측력을 보임",
+        "why_for_us": "TME 공간 구조와 면역치료 반응 예측은 암 면역학(T cell exhaustion·TME) 관심 분야와 직결되며, 단일세포-공간전사체 연계 및 멀티오믹스 통합 방법론 측면에서 참고 가치 있음",
+        "limitations": "H&E 예측이 실제 단백질체 수준 정보를 완전히 대체할 수 있는지 검증 깊이가 초록에서 불명확; 폐암 중심 아틀라스를 타 암종에 적용 시 일반화 한계 가능성",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Developmentally dynamic, non-convergent transcriptomic profiles in CNV models for schizophrenia risk.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42315919/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42315919/",
+        "doi": "https://doi.org/10.1038/s41380-026-03679-0",
+        "journal": "Molecular psychiatry",
+        "year": "2026",
+        "author": "French H",
+        "rating": 4,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "15q13.3del, 3q29del, 1q21.1del, 22q11.2del, 16p11.2dup 5종 CNV 마우스 모델을 청소년기·성인기 두 시점에 걸쳐 전전두엽 단일세포 RNA-seq 수행",
+          "총 292,943개 고품질 단일세포 전사체를 분석하여 세포 유형별·연령별 차등발현 유전자 및 경로 교란 패턴 규명",
+          "GWAS SNP 유래 조현병 heritability 농축 분석을 세포 유형별로 수행"
+        ],
+        "concepts": [
+          "de-novo-variants",
+          "neurodevelopmental-trajectory",
+          "brain-eqtl-grn",
+          "sex-differences-psychiatric"
+        ],
+        "tldr": "조현병 관련 5가지 CNV 마우스 모델의 전전두엽을 단일세포 RNA-seq으로 분석한 결과, CNV들이 공통 분자 경로로 수렴하지 않고 발달 단계·세포 유형별로 고유한 경로를 교란한다는 것을 보여줌.",
+        "question": "조현병 위험 CNV들이 공통 분자 메커니즘으로 수렴하는가, 아니면 각각 독립적 경로를 교란하는가?",
+        "key_result": "5가지 CNV는 수렴 경로 없이 발달 동적·고유 경로를 교란함. 15q13.3del·16p11.2dup의 deep-layer 피질시상 투사 뉴런과 성인 22q11.2del의 intratelencephalic 뉴런에서 조현병 SNP heritability 농축이 관찰됨.",
+        "why_for_us": "단일세포 RNA-seq, SNP heritability 농축 분석(GWAS/QTL 기반), CNV와 표현형 연결이 모두 랩의 핵심 관심 영역(계산유전체학·통계유전학·single-cell)에 해당함.",
+        "limitations": "마우스 모델이므로 인간 뇌 발달과의 직접 대응에 한계; 전전두엽만 분석하여 다른 뇌 영역 교란 미포함.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Early oligodendrocyte dysfunction signature in Alzheimer's disease: Insights from DNA methylomics and transcriptomics.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42315917/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42315917/",
+        "doi": "https://doi.org/10.1038/s41380-026-03686-1",
+        "journal": "Molecular psychiatry",
+        "year": "2026",
+        "author": "Fodder K",
+        "rating": 4,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "4개 뇌 영역의 인간 DNA 메틸화 데이터, 인간 단일핵 RNA-seq 데이터, 마우스 뇌 RNA-seq 데이터를 대상으로 WGCNA 수행",
+          "AD 관련 네트워크 모듈 중 희돌기교세포 유전자 농축 모듈을 다른 신경퇴행성 질환 메틸화 데이터와 비교",
+          "트랜스제닉 마우스(초기 Aβ 병리)에서 동일 서명의 보존 여부 검증"
+        ],
+        "concepts": [
+          "cell-type-deconvolution",
+          "brain-eqtl-grn",
+          "microglia-neuroimmune"
+        ],
+        "tldr": "알츠하이머병(AD) 뇌의 DNA 메틸화 및 전사체 멀티오믹스 분석을 통해 희돌기교세포(oligodendrocyte) 특이적 후성유전학 서명이 AD 초기부터 존재하며 질환 진행 전반에 걸쳐 보존됨을 발견.",
+        "question": "AD 뇌에서 DNA 메틸화 변화가 희돌기교세포 기능 이상과 어떻게 연결되며, 이것이 질환 초기부터 존재하는가?",
+        "key_result": "OLG 특이적 DNA 메틸화 서명이 초기·후기 AD 병리 뇌 영역 모두에서 보존되며, 해당 유전자들의 발현이 AD OLG에서 실제로 변화함. Aβ 병리가 없는 다른 신경퇴행성 질환에서도 보존됨.",
+        "why_for_us": "DNA 메틸화(mQTL)·단일세포·멀티오믹스 통합이 랩의 핵심 관심사이며, 세포 유형 특이적 후성유전학 분석 방법론이 신장·자가면역 연구에도 직접 적용 가능.",
+        "limitations": "인과 관계 규명보다 관찰적 연관성에 의존; 세포 유형 분해가 계산적으로 수행되어 실험적 검증 제한적.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Lamprey 3D single-cell transcriptomics reveals ancestral and specialized features of the vertebrate brain.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42313957/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42313957/",
+        "doi": "https://doi.org/10.1126/science.aea2535",
+        "journal": "Science (New York, N.Y.)",
+        "year": "2026",
+        "author": "Wu H",
+        "rating": 3,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "칠성장어 뇌에 공간 전사체학 및 단일핵 RNA-seq 적용, 14개 영역에서 209개 세포 클러스터 동정",
+          "교차 종 비교를 통해 지역적 공간 구조의 보존성과 계통 특이적 분화 패턴 분석",
+          "소뇌 유사 구조가 턱있는 척추동물 소뇌 이전에 존재했음을 제안"
+        ],
+        "concepts": [
+          "spatial-transcriptomics",
+          "cross-species-cell-type-evolution",
+          "brain-cell-atlas"
+        ],
+        "tldr": "칠성장어 뇌에 공간 전사체학과 단일핵 RNA-seq을 적용하여 209개 세포 클러스터를 포함하는 3D 분자 지도를 작성하고, 척추동물 뇌 진화의 조상적 청사진과 계통 특이적 분화를 규명.",
+        "question": "척추동물 뇌의 진화적 보존 구조와 계통 특이적 신경 다양화는 어떻게 구분되는가?",
+        "key_result": "지역 공간 구조는 광범위하게 보존되나, 뉴런 특이화는 계통마다 크게 분기됨. 소뇌 유사 구조가 악구류 이전부터 존재했을 가능성 제시.",
+        "why_for_us": "공간 전사체학 및 단일세포 전사체학 방법론이 랩의 single-cell·spatial 관심사와 연결되며, 교차 종 세포 유형 비교 방법론이 참고할 만함.",
+        "limitations": "단일 종(칠성장어)에 한정되어 다른 무악류와의 비교 없음; 기능적 검증 부재.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "CXCL16-mediated recruitment of γδ T cells to the brain reduces sociability in mice.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42319913/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42319913/",
+        "doi": "https://doi.org/10.1126/sciimmunol.adz8466",
+        "journal": "Science immunology",
+        "year": "2026",
+        "author": "Takayama N",
+        "rating": 3,
+        "emoji": "⚔️",
+        "domain": "면역",
+        "what_they_did": [
+          "15q11-13 중복 ASD 마우스 뇌에서 γδ T세포 증가를 확인",
+          "CXCL16 케모카인이 γδ T세포의 뇌 모집을 매개함을 규명",
+          "γδ T세포 제거 시 사회성 결핍이 회복되는지 실험"
+        ],
+        "concepts": [
+          "maternal-immune-activation",
+          "microglia-neuroimmune",
+          "de-novo-variants"
+        ],
+        "tldr": "15q11-13 중복 ASD 마우스 모델에서 CXCL16에 의해 γδ T세포가 뇌로 모집되어 사회성을 저하시킨다는 것을 규명한 연구.",
+        "question": "유전적 ASD(15q11-13 dup) 모델에서 면역계, 특히 γδ T세포가 사회성 결핍에 어떻게 기여하는가?",
+        "key_result": "CXCL16-γδ T세포 축이 ASD 마우스의 뇌로 면역세포를 유입시켜 사회성 저하를 유발함; γδ T세포 차단 시 표현형 개선.",
+        "why_for_us": "maternal immune activation 및 신경면역(microglia-neuroimmune) 연구와 접점이 있으며, 유전적 CNV와 면역 상호작용을 다루는 점이 랩의 유전체-면역 통합 관심사와 연결됨.",
+        "limitations": "초록이 잘려 있어 세부 메커니즘 및 인간 데이터 유무 불명확.",
+        "reuse": "",
+        "next_step": ""
+      }
+    ]
+  },
+  {
+    "date": "2026-06-14",
     "count": 20,
     "papers": [
       {
