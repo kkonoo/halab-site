@@ -7,15 +7,17 @@
    ============================================================ */
 
 /* ── 위쪽 섹션: 아이디어 / LLM-Wiki ── */
-window.NOTES = [
-  {
-    tag: "LLM-Wiki",
-    title: "Lab Wiki",
-    desc: "온보딩 학생들을 위한 연구실 위키입니다 (업데이트 예정)",
-    url: "https://kkonoo.github.io/lab-wiki/"
-  }
-];
-
+/* ============================================================
+   window.NOTES = [
+     {
+       tag: "LLM-Wiki",
+       title: "Lab Notes and Ideas",
+       desc: "LLM-wiki를 이용하여 정리한 연구실 노트와 아이디어",
+       url: "#"
+     }
+   ];
+============================================================ */
+      
 /* ── 아래쪽 섹션: 수업 자료 / Resources ── */
 window.RESOURCES = [
   {
@@ -59,6 +61,12 @@ window.RESOURCES = [
 /* ── 아래쪽 섹션: 공부 자료 / Study ── */
 window.STUDIES = [
   {
+    tag: "Lab-Wiki",
+    title: "Lab Wiki",
+    desc: "온보딩 학생들을 위한 연구실 위키입니다",
+    url: "https://kkonoo.github.io/lab-wiki/"
+  },
+  { 
     tag: "pre-HaLab",
     title: "Linux / R / Python",
     desc: "연구 환경 익히기",
