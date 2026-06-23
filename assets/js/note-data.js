@@ -10,9 +10,9 @@
 window.NOTES = [
   {
     tag: "LLM-Wiki",
-    title: "Lab Idea Wiki",
-    desc: "연구실의 아이디어와 노트를 LLM-Wiki 형식으로 정리한 공간입니다. (업데이트 예정)",
-    url: "#"   /* TODO: 실제 LLM-Wiki 주소로 바꾸세요 (예: https://kkonoo.github.io/...) */
+    title: "Lab Wiki",
+    desc: "온보딩 학생들을 위한 연구실 위키입니다 (업데이트 예정)",
+    url: "https://kkonoo.github.io/lab-wiki/"
   }
 ];
 
