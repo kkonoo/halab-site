@@ -23,27 +23,15 @@ halab-site/
     └── img/            # 사진을 여기에 넣으세요
 ```
 
-## 1) GitHub에 올리기
-연구실 GitHub 계정(kkonoo)에 새 저장소를 만들거나 기존 `HaLab` 저장소를 사용
 
-```bash
-cd halab-site
-git init
-git add .
-git commit -m "Lab website"
-git branch -M main
-git remote add origin https://github.com/kkonoo/<저장소이름>.git
-git push -u origin main
-```
-
-## 2) GitHub Pages 켜기
+## GitHub Pages 켜기
 저장소 → **Settings → Pages** →
 - Source: **Deploy from a branch**
 - Branch: **main** / **/ (root)** → Save
 
 잠시 뒤 `https://kkonoo.github.io/<저장소이름>/` 에서 사이트 열림
 
-## 3) 커스텀 도메인(halab.knu.ac.kr) 연결
+## 커스텀 도메인(halab.knu.ac.kr) 연결
 1. Settings → Pages → **Custom domain** 에 `halab.knu.ac.kr` 입력 → Save
    (저장소에 포함된 `CNAME` 파일이 이미 있음)
 2. **학교 전산원에 DNS 설정을 요청**합니다. halab.knu.ac.kr 은 knu.ac.kr 의 하위 도메인이라 보통 전산원이 관리합니다. 다음 중 하나를 요청
