@@ -61,8 +61,8 @@ window.RESOURCES = [
 /* ── 아래쪽 섹션: 공부 자료 / Study ── */
 window.STUDIES = [
   {
-    tag: "Lab-Wiki",
-    title: "Lab Wiki",
+    tag: "LLM-Wiki",
+    title: "HaLab Wiki",
     desc: "온보딩 학생들을 위한 연구실 위키입니다",
     url: "https://kkonoo.github.io/lab-wiki/"
   },
