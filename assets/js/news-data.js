@@ -14,7 +14,7 @@ window.NEWS = [
     title: "Welcome to our summer interns 🌞",
     image: "assets/img/news_260710.jpg",
     body: [
-      "We had a warm welcome lunch to kick off the summer with our <b>four summer interns (윤서, 재훈, 호준, 소윤)</b> joining us this July 🍽️",
+      "We had a warm welcome lunch to kick off the summer with our <b>four summer interns (윤서, 재훈, 호준, and 소윤)</b> joining us this July 🍽️",
       "It's just for the month of July, but we're so glad to have you — dive in, ask lots of questions, and make the most of it. Have a great time with us! 🤗"
     ]
   },
