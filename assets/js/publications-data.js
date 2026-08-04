@@ -6,10 +6,28 @@
    ============================================================ */
 window.PUBLICATIONS = [
   {
+    title: "Single-cell spatial mapping of human kidney development implicates the microenvironment in guiding cell fate decisions",
+    url: "https://www.nature.com/articles/s41588-026-02665-0",
+    authors: "Jonathan Levinsohn<sup>^</sup>, S. Grindel, Bernhard Dumoulin, Amin Abedini, … <b>Eunji Ha</b>, Konstantin A. Klötzer, Nancy R. Zhang, … Alex J. Hughes, Katalin Susztak<sup>*</sup>",
+    venue: "Nature Genetics", year: "2026"
+  },
+  {
+    title: "ELF3 links kidney function GWAS loci to maladaptive epithelial inflammation",
+    url: "https://www.science.org/doi/10.1126/sciadv.aec6741",
+    authors: "Yanjuan Hou<sup>^</sup>, Konstantin Klötzer, Bernhard Dumoulin, <b>Eunji Ha</b>, Hongbo Liu, Dhanunjay Mukhi, Magaiver Andrade-Silva, Xuemei Hu, Siyu Pan, Katalin Susztak<sup>*</sup>",
+    venue: "Science Advances", year: "2026"
+  },
+  {
     title: "Spatial atlas of diabetic kidney disease reveals a B cell-rich subgroup",
     url: "https://www.nature.com/articles/s41586-026-10363-4",
     authors: "Bernhard Dumoulin<sup>^</sup>, Jonathan Levinsohn, Konstantin A. Kl\u00F6tzer, Chenyu Li, Liran Mao, <b>Eunji Ha</b>, Samer Mohandes, \u2026 TRIDENT consortium &amp; Katalin Susztak<sup>*</sup>",
     venue: "Nature", year: "2026"
+  },
+  {
+    title: "ACLY-Driven Metabolic Reprogramming Promotes Histone Acetylation and Inflammation-Associated Fibrosis in Chronic Kidney Disease",
+    url: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.75247",
+    authors: "Chunxiu Du<sup>^</sup>, Dhanunjay Mukhi, Lingzhi Li, Chenyu Li, Siyu Pan, Bernhard Dumoulin, <b>Eunji Ha</b>, … Kathryn E. Wellen, Katalin Susztak<sup>*</sup>",
+    venue: "Advanced Science", year: "2026"
   },
   {
     title: "The proteogenomic landscape of the human kidney and implications for cardio-kidney-metabolic health",
