@@ -8,7 +8,7 @@ window.PUBLICATIONS = [
   {
     title: "Single-cell spatial mapping of human kidney development implicates the microenvironment in guiding cell fate decisions",
     url: "https://www.nature.com/articles/s41588-026-02665-0",
-    authors: "Jonathan Levinsohn<sup>^</sup>, … <b>Eunji Ha</b>, ..., Katalin Susztak<sup>*</sup>",
+    authors: "Jonathan Levinsohn<sup>^</sup>, Samuel Grindel, Bernhard Dumoulin, … <b>Eunji Ha</b>, ..., Katalin Susztak<sup>*</sup>",
     venue: "Nature Genetics", year: "2026"
   },
   {
@@ -20,13 +20,13 @@ window.PUBLICATIONS = [
   {
     title: "Spatial atlas of diabetic kidney disease reveals a B cell-rich subgroup",
     url: "https://www.nature.com/articles/s41586-026-10363-4",
-    authors: "Bernhard Dumoulin<sup>^</sup>, Jonathan Levinsohn, ..., <b>Eunji Ha</b>, ..., Katalin Susztak<sup>*</sup>",
+    authors: "Bernhard Dumoulin<sup>^</sup>, Jonathan Levinsohn, Konstantin Klötzer, ..., <b>Eunji Ha</b>, ..., Katalin Susztak<sup>*</sup>",
     venue: "Nature", year: "2026"
   },
   {
     title: "ACLY-Driven Metabolic Reprogramming Promotes Histone Acetylation and Inflammation-Associated Fibrosis in Chronic Kidney Disease",
     url: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.75247",
-    authors: "Chunxiu Du<sup>^</sup>, ..., <b>Eunji Ha</b>, …, Katalin Susztak<sup>*</sup>",
+    authors: "Chunxiu Du<sup>^</sup>, Dhanunjay Mukhi, Lingzhi Li, ..., <b>Eunji Ha</b>, …, Katalin Susztak<sup>*</sup>",
     venue: "Advanced Science", year: "2026"
   },
   {
@@ -38,7 +38,7 @@ window.PUBLICATIONS = [
   {
     title: "Analysis of individual patient pathway coordination in a cross-species single-cell kidney atlas",
     url: "https://www.nature.com/articles/s41588-025-02285-0",
-    authors: "Konstantin A. Kl\u00F6tzer<sup>^</sup>, ..., <b>Eunji Ha</b>, ..., Nancy R. Zhang<sup>*</sup>, Katalin Susztak<sup>*</sup>",
+    authors: "Konstantin Klötzer<sup>^</sup>, Amin Abedini, Shen Li, ..., <b>Eunji Ha</b>, ..., Nancy R. Zhang<sup>*</sup>, Katalin Susztak<sup>*</sup>",
     venue: "Nature Genetics", year: "2025"
   },
   {
