@@ -10,6 +10,15 @@
    ============================================================ */
 window.NEWS = [
   {
+    date: "Aug 2026",
+    title: "Farewell to 2026 summer interns 🫡",
+    image: "assets/img/news_260807.jpg",
+    body: [
+      "One month went by way too fast! It was a short summer with our <b>four interns (윤서, 재훈, 호준, and 소윤)</b>, but we hope you had a fun and meaningful experience with us ☀️",
+      "Thanks for spending your summer with us — and don't be strangers! Come visit us anytime:)"
+    ]
+  },
+  {
     date: "Jul 2026",
     title: "Welcome to our summer interns 🌞",
     image: "assets/img/news_260710.jpg",
