@@ -341,6 +341,14 @@ section { padding: 76px 0; }
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(12,58,56,.05) 0%, rgba(12,58,56,.25) 45%, rgba(12,58,56,.82) 100%);
 }
+/* image-less cards: soft vertical sweep instead of flat green */
+.news-card .thumb.no-img {
+  background: linear-gradient(168deg, #12544f 0%, #0e4644 55%, #0a312f 100%);
+}
+.news-card .thumb.no-img::after {
+  background: linear-gradient(180deg, rgba(11,51,49,0) 0%, rgba(11,51,49,.08) 50%, rgba(11,51,49,.55) 100%);
+}
+
 .news-card .thumb .ov { position: relative; z-index: 2; padding: 22px; color: #fff; width: 100%; }
 .news-card .thumb .ov .d {
   font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase;

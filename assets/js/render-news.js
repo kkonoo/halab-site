@@ -25,6 +25,7 @@
     var imgs = n.images || (n.image ? [n.image] : []);
 
     var bg = imgs.length ? ' style="background-image:url(\'' + imgs[0] + '\')"' : '';
+    var thumbCls = imgs.length ? 'thumb' : 'thumb no-img';
     var body = (n.body || []).map(function (p) { return '<p>' + p + '</p>'; }).join('');
 
     // extra images (everything after the cover) shown as a small gallery
@@ -38,7 +39,7 @@
     }
 
     return '<article class="news-card reveal">' +
-      '<div class="thumb"' + bg + '><div class="ov">' +
+      '<div class="' + thumbCls + '"' + bg + '><div class="ov">' +
       '<div class="d">' + n.date + '</div><h2>' + n.title + '</h2></div></div>' +
       '<div class="body">' + body + gallery + '</div></article>';
   }).join('');

@@ -37,6 +37,15 @@ window.NEWS = [
     ]
   },
   {
+    date: "May 2026",
+    title: "Another new research grant 🥳",
+    image: "",
+    body: [
+      "Our lab has been awarded a new grant under the <b>Bio & Medical Technology Development Program (National Research Foundation of Korea)</b>, with Eunji participating as a <b>Co-Investigator</b>.",
+      "The project, <b>\"Efficacy of microglia-targeted anti-aging gene delivery for improving sarcopenia\"</b>, investigates SIRT3-based gene therapy candidates along the brain–peripheral motor circuit. Our lab takes charge of the multi-omics analyses."
+    ]
+  },
+  {
     date: "Apr 2026",
     title: "Farewell to our undergraduate researchers 🫡",
     images: [
@@ -77,7 +86,7 @@ window.NEWS = [
     image: "assets/img/news_2509.jpg",
     body: [
       "We are excited to announce the launch of the <b>Genomic Medicine Lab</b> at the Department of Molecular Medicine, School of Medicine, <b>Kyungpook National University</b>.",
-      "Led by Dr. Eunji Ha, our lab will focus on understanding the genetic and epigenetic mechanisms of complex diseases through integrative multi-omics and computational approaches.",
+      "Led by Eunji, our lab will focus on understanding the genetic and epigenetic mechanisms of complex diseases through integrative multi-omics and computational approaches.",
       "This marks the beginning of our journey at KNU, and we look forward to building a vibrant and collaborative research environment with graduate students, colleagues, and international collaborators.",
       "Stay tuned for updates on our research projects, publications, and opportunities to join the team✨"
     ]
