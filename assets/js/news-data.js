@@ -13,6 +13,7 @@ window.NEWS = [
     date: "Sep 2026",
     title: "New international collaborative grant🥳",
     image: "",
+    logo: "assets/img/NSFC.png",
     body: [
       "An international collaborative research grant has been awarded, with Eunji joining as a <b>Senior Researcher</b>🎉",
       "The project is titled <b>\"Mechanisms underlying fibrotic spatial microenvironment formation in the injured podocyte subpopulation and FSGS progression\"</b>, and our lab will contribute the integrative genomic analyses.🧬"
@@ -40,6 +41,7 @@ window.NEWS = [
     date: "May 2026",
     title: "Another new research grant 🥳",
     image: "",
+    logo: "assets/img/NRF.svg",
     body: [
       "Our lab has been awarded a new grant under the <b>Bio & Medical Technology Development Program (NRF)</b>, with Eunji participating as a <b>Co-Investigator</b>.",
       "The project, <b>\"Efficacy of microglia-targeted anti-aging gene delivery for improving sarcopenia\"</b>, investigates SIRT3-based gene therapy candidates along the brain–peripheral motor circuit. Our lab takes charge of the multi-omics analyses."
@@ -60,6 +62,7 @@ window.NEWS = [
     date: "Mar 2026",
     title: "New research grant 🥳",
     image: "",
+    logo: "assets/img/NRF.svg",
     body: [
       "We are pleased to announce that our lab has been selected for the <b>Young Investigator Research Program funded by the National Research Foundation of Korea (NRF)</b>🥳.",
       "This grant will support our research on <b>\"AI-Driven Multi-Omics Analysis of Striatal Input Circuits\"</b> over the next five years.",
