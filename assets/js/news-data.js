@@ -41,7 +41,7 @@ window.NEWS = [
     title: "Another new research grant 🥳",
     image: "",
     body: [
-      "Our lab has been awarded a new grant under the <b>Bio & Medical Technology Development Program (National Research Foundation of Korea)</b>, with Eunji participating as a <b>Co-Investigator</b>.",
+      "Our lab has been awarded a new grant under the <b>Bio & Medical Technology Development Program (NRF)</b>, with Eunji participating as a <b>Co-Investigator</b>.",
       "The project, <b>\"Efficacy of microglia-targeted anti-aging gene delivery for improving sarcopenia\"</b>, investigates SIRT3-based gene therapy candidates along the brain–peripheral motor circuit. Our lab takes charge of the multi-omics analyses."
     ]
   },
