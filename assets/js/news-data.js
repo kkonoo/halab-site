@@ -10,6 +10,15 @@
    ============================================================ */
 window.NEWS = [
   {
+    date: "Sep 2026",
+    title: "New international collaborative grant🥳",
+    image: "",
+    body: [
+      "An international collaborative research grant has been awarded, with Eunji joining as a <b>Senior Researcher</b>🎉",
+      "The project is titled <b>\"Mechanisms underlying fibrotic spatial microenvironment formation in the injured podocyte subpopulation and FSGS progression\"</b>, and our lab will contribute the integrative genomic analyses.🧬"
+    ]
+  },
+  {
     date: "Aug 2026",
     title: "Farewell to 2026 summer interns 🫡",
     image: "assets/img/news_260807.jpg",
