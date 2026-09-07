@@ -1,11 +1,15 @@
 (function () {
   var DATA = window.NEWS || [];
+  function ko() { return document.documentElement.lang === 'ko'; }
+  function title(n) { return ko() && n.titleKo ? n.titleKo : n.title; }
+  function paragraphs(n) { return ko() && n.bodyKo ? n.bodyKo : (n.body || []); }
+  document.addEventListener('site:languagechange', function () { location.reload(); });
 
   // --- Home: latest 4 as a simple list ---
   var home = document.getElementById('home-news');
   if (home) {
     home.innerHTML = DATA.slice(0, 4).map(function (n) {
-      return '<li><span class="date">' + n.date + '</span><span class="txt">' + n.title + '</span></li>';
+      return '<li><span class="date">' + n.date + '</span><span class="txt">' + title(n) + '</span></li>';
     }).join('');
     return;
   }
@@ -28,7 +32,7 @@
     var thumbCls = imgs.length ? 'thumb' : (n.logo ? 'thumb logo-thumb' : 'thumb no-img');
     if (!imgs.length && n.logo) { bg = ' style="background-image:url(\'' + n.logo + '\')"'; }
     var logo = '';
-    var body = (n.body || []).map(function (p) { return '<p>' + p + '</p>'; }).join('');
+    var body = paragraphs(n).map(function (p) { return '<p>' + p + '</p>'; }).join('');
 
     // extra images (everything after the cover) shown as a small gallery
     var gallery = '';
@@ -42,10 +46,11 @@
 
     return '<article class="news-card reveal">' +
       '<div class="' + thumbCls + '"' + bg + '>' + logo + '<div class="ov">' +
-      '<div class="d">' + n.date + '</div><h2>' + n.title + '</h2></div></div>' +
+      '<div class="d">' + n.date + '</div><h2>' + title(n) + '</h2></div></div>' +
       '<div class="body">' + body + gallery + '</div></article>';
   }).join('');
 
   window.renderPager('news-pager', page, total);
   if (window.observeReveal) window.observeReveal();
+
 })();

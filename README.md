@@ -79,6 +79,14 @@ halab-site/
 - 뉴스/논문 추가: `assets/js/*data.js` 수정
 - 색상/폰트: `assets/css/styles.css` 상단 `:root` 변수에서 조정
 
+## 다크 모드 · EN/KO 전환
+
+- 모든 페이지 헤더에 `EN / KO` 언어 선택과 달/해 테마 버튼이 자동으로 표시됩니다.
+- 처음 방문하면 운영체제의 라이트/다크 설정을 따르고, 사용자가 고른 값은 브라우저에 저장됩니다.
+- 공통 번역과 페이지 문구는 `assets/js/main.js`의 `TRANSLATIONS`에서 수정합니다.
+- 뉴스는 `assets/js/news-data.js`의 `titleKo`, `bodyKo`가 한국어 버전입니다. 새 뉴스에 이 필드를 생략하면 두 언어 모두 `title`, `body` 원문을 표시합니다.
+- 논문 제목·저자와 자동 생성되는 카드뉴스 본문은 학술적 정확성을 위해 원문을 유지합니다. 메뉴, 검색, 필터, 버튼 등 카드뉴스 UI는 선택 언어에 맞춰 바뀝니다.
+
 ## 카드뉴스 (Note 페이지 · Field updates)
 Note 페이지 상단 **Field updates** 섹션은 `lab-wiki` 가 매주 만드는 카드뉴스
 (`~/lab-wiki/wiki/cards/YYYY-MM-DD.md`)를 보여줍니다. 데이터 파일

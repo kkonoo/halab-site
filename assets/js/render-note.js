@@ -7,7 +7,7 @@
         (it.tag ? '<span class="tag">' + it.tag + '</span>' : '') +
         '<h3>' + it.title + '</h3>' +
         (it.desc ? '<p>' + it.desc + '</p>' : '') +
-        '<span class="go">Open \u2192</span>' +
+        '<span class="go">' + (window.siteT ? window.siteT('open') : 'Open \u2192') + '</span>' +
       '</a>';
     }).join('');
   }
@@ -22,4 +22,11 @@
   if (studyGrid) studyGrid.innerHTML = cards(window.STUDIES);
 
   if (window.observeReveal) window.observeReveal();
+
+  document.addEventListener('site:languagechange', function () {
+    if (noteGrid) noteGrid.innerHTML = cards(window.NOTES);
+    if (resGrid) resGrid.innerHTML = cards(window.RESOURCES);
+    if (studyGrid) studyGrid.innerHTML = cards(window.STUDIES);
+    if (window.observeReveal) window.observeReveal();
+  });
 })();

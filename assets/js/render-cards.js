@@ -14,8 +14,11 @@
   var grid = document.getElementById('cardnews-grid');
   if (!grid || !weekSel) return;
 
+  function lang() { return document.documentElement.lang === 'ko' ? 'ko' : 'en'; }
+  function tr(en, ko) { return lang() === 'ko' ? ko : en; }
+
   if (!DATA.length) {
-    grid.innerHTML = '<p class="cn-empty">아직 카드뉴스가 없습니다.</p>';
+    grid.innerHTML = '<p class="cn-empty">' + tr('No field updates yet.', '아직 카드뉴스가 없습니다.') + '</p>';
     return;
   }
 
@@ -25,12 +28,12 @@
 
   // 펼쳤을 때 보여줄 상세 필드 (빈 값은 자동으로 숨김)
   var FIELDS = [
-    ['question', '❓ question'],
-    ['key_result', '📊 key result'],
-    ['why_for_us', '🎯 why for us'],
-    ['limitations', '⚠️ limitations'],
-    ['reuse', '📦 reuse'],
-    ['next_step', '💡 next_step']
+    ['question', '❓ question', '❓ 연구 질문'],
+    ['key_result', '📊 key result', '📊 핵심 결과'],
+    ['why_for_us', '🎯 why for us', '🎯 연구실 관련성'],
+    ['limitations', '⚠️ limitations', '⚠️ 한계'],
+    ['reuse', '📦 reuse', '📦 활용'],
+    ['next_step', '💡 next step', '💡 다음 단계']
   ];
 
   var activeDomain = 'ALL';
@@ -53,7 +56,7 @@
 
     // 'what they did'(목록) HTML — 빈 값이면 빈 문자열
     var didHTML = (p.what_they_did && p.what_they_did.length)
-      ? '<dt>🧪 what they did</dt><dd><ul class="cn-did">' +
+      ? '<dt>' + tr('🧪 what they did', '🧪 연구 방법') + '</dt><dd><ul class="cn-did">' +
           p.what_they_did.map(function (b) { return '<li>' + esc(b) + '</li>'; }).join('') +
           '</ul></dd>'
       : '';
@@ -61,7 +64,7 @@
     var rows = '';
     FIELDS.forEach(function (f) {
       var v = p[f[0]];
-      if (v) rows += '<dt>' + f[1] + '</dt><dd>' + esc(v) + '</dd>';
+      if (v) rows += '<dt>' + (lang() === 'ko' ? f[2] : f[1]) + '</dt><dd>' + esc(v) + '</dd>';
       // question 바로 뒤에 'what they did' 끼워넣기.
       // 다른 필드 뒤에 두고 싶으면 'question' 을 그 필드 이름으로 바꾸세요 (예: 'key_result').
       if (f[0] === 'question') rows += didHTML;
@@ -75,19 +78,19 @@
 
     var links = [];
     if (p.pubmed) links.push('<a href="' + esc(p.pubmed) + '" target="_blank" rel="noopener">PubMed ↗</a>');
-    if (p.doi) links.push('<a href="' + esc(p.doi) + '" target="_blank" rel="noopener">원문·그림 ↗</a>');
+    if (p.doi) links.push('<a href="' + esc(p.doi) + '" target="_blank" rel="noopener">' + tr('Article & figures ↗', '원문·그림 ↗') + '</a>');
     var linksHTML = links.length ? '<div class="cn-links">' + links.join('') + '</div>' : '';
 
     return '<article class="cn-card reveal" data-domain="' + esc(p.domain || '') + '">' +
       '<button class="cn-head" type="button" aria-expanded="false">' +
         '<div class="cn-top">' +
           (badge ? '<span class="cn-badge">' + badge + '</span>' : '') +
-          '<span class="cn-stars" title="관련도 ' + (p.rating | 0) + '/5">' + stars(p.rating) + '</span>' +
+          '<span class="cn-stars" title="' + tr('Relevance ', '관련도 ') + (p.rating | 0) + '/5">' + stars(p.rating) + '</span>' +
         '</div>' +
         '<h3 class="cn-title">' + esc(p.title) + '</h3>' +
         (metaBits ? '<div class="cn-metaline">' + metaBits + '</div>' : '') +
         (p.tldr ? '<p class="cn-oneliner">' + esc(p.tldr) + '</p>' : '') +
-        '<span class="cn-toggle">자세히 ▾</span>' +
+        '<span class="cn-toggle">' + tr('Details ▾', '자세히 ▾') + '</span>' +
       '</button>' +
       '<div class="cn-detail" hidden>' +
         (rows ? '<dl>' + rows + '</dl>' : '') +
@@ -117,21 +120,22 @@
     var hidden = list.length - shown.length;
 
     if (metaEl) {
+      var unit = tr(' papers', '편');
       metaEl.textContent = week.date + ' · ' +
-        (list.length === week.papers.length ? list.length + '편'
-                                            : list.length + '/' + week.papers.length + '편');
+        (list.length === week.papers.length ? list.length + unit
+                                            : list.length + '/' + week.papers.length + unit);
     }
 
     var html = shown.length
       ? shown.map(cardHTML).join('')
-      : '<p class="cn-empty">조건에 맞는 논문이 없습니다.</p>';
+      : '<p class="cn-empty">' + tr('No papers match these filters.', '조건에 맞는 논문이 없습니다.') + '</p>';
 
     if (hidden > 0) {
       html += '<button id="cardnews-more" class="cn-more" type="button">' +
-        '나머지 ' + hidden + '편 더 보기 ▾</button>';
+        tr('Show ' + hidden + ' more ▾', '나머지 ' + hidden + '편 더 보기 ▾') + '</button>';
     } else if (showAll && list.length > INITIAL_LIMIT) {
       html += '<button id="cardnews-more" class="cn-more" type="button" data-collapse="1">' +
-        '상위 ' + INITIAL_LIMIT + '편만 보기 ▴</button>';
+        tr('Show top ' + INITIAL_LIMIT + ' only ▴', '상위 ' + INITIAL_LIMIT + '편만 보기 ▴') + '</button>';
     }
     grid.innerHTML = html;
     if (window.observeReveal) window.observeReveal();
@@ -146,7 +150,7 @@
       seen[d] = 1; order.push({ d: d, e: p.emoji || '' });
     });
     var chips = ['<button class="cn-chip' + (activeDomain === 'ALL' ? ' on' : '') +
-                 '" data-d="ALL">전체</button>'];
+                 '" data-d="ALL">' + tr('All', '전체') + '</button>'];
     order.forEach(function (o) {
       chips.push('<button class="cn-chip' + (activeDomain === o.d ? ' on' : '') +
         '" data-d="' + esc(o.d) + '">' + (o.e ? o.e + ' ' : '') + esc(o.d) + '</button>');
@@ -156,10 +160,14 @@
 
   function reset() { activeDomain = 'ALL'; showAll = false; }
 
-  // 주차 셀렉트 채우기
-  weekSel.innerHTML = DATA.map(function (w, i) {
-    return '<option value="' + i + '">' + w.date + ' (' + w.papers.length + '편)</option>';
-  }).join('');
+  function renderWeekOptions() {
+    var selected = weekSel.selectedIndex < 0 ? 0 : weekSel.selectedIndex;
+    weekSel.innerHTML = DATA.map(function (w, i) {
+      return '<option value="' + i + '">' + w.date + ' (' + w.papers.length + tr(' papers', '편') + ')</option>';
+    }).join('');
+    weekSel.selectedIndex = Math.min(selected, DATA.length - 1);
+  }
+  renderWeekOptions();
 
   weekSel.addEventListener('change', function () { reset(); renderChips(); render(); });
 
@@ -186,7 +194,11 @@
     head.setAttribute('aria-expanded', open ? 'true' : 'false');
     if (detail) detail.hidden = !open;
     var tog = head.querySelector('.cn-toggle');
-    if (tog) tog.textContent = open ? '접기 ▴' : '자세히 ▾';
+    if (tog) tog.textContent = open ? tr('Close ▴', '접기 ▴') : tr('Details ▾', '자세히 ▾');
+  });
+
+  document.addEventListener('site:languagechange', function () {
+    renderWeekOptions(); renderChips(); render();
   });
 
   renderChips();
