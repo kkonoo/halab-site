@@ -14,6 +14,7 @@ window.NEWS = [
     title: "New international collaborative grant🥳",
     titleKo: "새로운 국제 공동연구 과제 선정 🥳",
     image: "",
+    logo: "assets/img/NSFC.png",
     body: [
       "Our international collaborative research project has been selected for the <b>Shanghai Pujiang Talent Program</b>, with Eunji participating as a <b>Senior Researcher</b> 🎉",
       "The collaboration brings together researchers from the <b>Department of Nephrology at Zhongshan Hospital, Fudan University</b>, <b>Shanghai Medical College of Fudan University</b>, and our lab.",
