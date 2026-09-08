@@ -14,13 +14,14 @@ window.NEWS = [
     title: "New international collaborative grant🥳",
     titleKo: "새로운 국제 공동연구 과제 선정 🥳",
     image: "",
-    logo: "assets/img/NSFC.png",
     body: [
-      "An international collaborative research grant has been awarded, with Eunji joining as a <b>Senior Researcher</b>🎉",
+      "Our international collaborative research project has been selected for the <b>Shanghai Pujiang Talent Program</b>, with Eunji participating as a <b>Senior Researcher</b> 🎉",
+      "The collaboration brings together researchers from the <b>Department of Nephrology at Zhongshan Hospital, Fudan University</b>, <b>Shanghai Medical College of Fudan University</b>, and our lab.",
       "The project is titled <b>\"Mechanisms underlying fibrotic spatial microenvironment formation in the injured podocyte subpopulation and FSGS progression\"</b>, and our lab will contribute the integrative genomic analyses.🧬"
     ],
     bodyKo: [
-      "국제 공동연구 과제가 선정되었으며, 은지 교수가 <b>선임연구원</b>으로 참여합니다 🎉",
+      "국제 공동연구 과제가 <b>Shanghai Pujiang Talent Program(상하이 푸장 인재 프로그램)</b>에 선정되었으며, 은지 교수가 <b>선임연구원(Senior Researcher)</b>으로 참여합니다 🎉",
+      "<b>푸단대학교 중산병원 신장내과</b> 및 <b>푸단대학교 상하이의과대학</b> 연구진과 우리 연구실이 함께하는 국제 공동연구입니다.",
       "과제명은 <b>\"손상 족세포 아형에서 섬유화 공간 미세환경 형성과 FSGS 진행 기전\"</b>이며, 우리 연구실은 통합 유전체 분석을 담당합니다. 🧬"
     ]
   },
