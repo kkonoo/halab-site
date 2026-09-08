@@ -163,7 +163,7 @@
   function renderWeekOptions() {
     var selected = weekSel.selectedIndex < 0 ? 0 : weekSel.selectedIndex;
     weekSel.innerHTML = DATA.map(function (w, i) {
-      return '<option value="' + i + '">' + w.date + ' (' + w.papers.length + tr(' papers', '편') + ')</option>';
+      return '<option value="' + i + '">' + w.date + ' (n=' + w.papers.length + ')</option>';
     }).join('');
     weekSel.selectedIndex = Math.min(selected, DATA.length - 1);
   }
