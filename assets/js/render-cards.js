@@ -25,6 +25,21 @@
   var metaEl = document.getElementById('cardnews-meta');
   var chipsEl = document.getElementById('cardnews-chips');
   var searchEl = document.getElementById('cardnews-search');
+  var periodEl = document.getElementById('cardnews-period');
+  var archiveControls = document.getElementById('cardnews-archive-controls');
+  var yearSel = document.getElementById('cardnews-year');
+  var quarterSel = document.getElementById('cardnews-quarter');
+  var archiveYear = '';
+  var archiveQuarter = '';
+  var activePeriod = 'recent';
+  // Calendar-month cutoff, clamped for month ends (e.g. May 31 → Feb 28).
+  var today = new Date();
+  var cutoff = new Date(today.getFullYear(), today.getMonth() - 3, 1);
+  cutoff.setDate(Math.min(today.getDate(),
+    new Date(cutoff.getFullYear(), cutoff.getMonth() + 1, 0).getDate()));
+  var cutoffDate = cutoff.getFullYear() + '-' + String(cutoff.getMonth() + 1).padStart(2, '0') +
+    '-' + String(cutoff.getDate()).padStart(2, '0');
+  var visibleWeeks = [];
 
   // 펼쳤을 때 보여줄 상세 필드 (빈 값은 자동으로 숨김)
   var FIELDS = [
@@ -48,7 +63,7 @@
     n = Math.max(0, Math.min(5, n | 0));
     return '★'.repeat(n) + '☆'.repeat(5 - n);
   }
-  function currentWeek() { return DATA[weekSel.selectedIndex] || DATA[0]; }
+  function currentWeek() { return visibleWeeks[weekSel.selectedIndex] || null; }
 
   function cardHTML(p) {
     var badge = (p.emoji ? p.emoji + ' ' : '') + esc(p.domain || '');
@@ -115,6 +130,13 @@
 
   function render() {
     var week = currentWeek();
+    if (!week) {
+      if (metaEl) metaEl.textContent = '';
+      grid.innerHTML = '<p class="cn-empty">' + (activePeriod === 'archive'
+        ? tr('No archived updates yet. Weeks older than 3 months will appear here.', '아직 보관된 자료가 없습니다. 3개월이 지난 주차는 여기에 표시됩니다.')
+        : tr('No updates in the last 3 months. Browse Archive for earlier weeks.', '최근 3개월 자료가 없습니다. 이전 주차는 보관함에서 확인하세요.')) + '</p>';
+      return;
+    }
     var list = filtered();
     var shown = showAll ? list : list.slice(0, INITIAL_LIMIT);
     var hidden = list.length - shown.length;
@@ -143,6 +165,7 @@
 
   function renderChips() {
     if (!chipsEl) return;
+    if (!currentWeek()) { chipsEl.innerHTML = ''; return; }
     var seen = {}, order = [];
     currentWeek().papers.forEach(function (p) {
       var d = p.domain || '';
@@ -160,14 +183,91 @@
 
   function reset() { activeDomain = 'ALL'; showAll = false; }
 
+  function quarter(w) { return String(Math.ceil(Number(w.date.slice(5, 7)) / 3)); }
+
+  function renderArchiveOptions(weeks) {
+    if (!archiveControls || !yearSel || !quarterSel) return weeks;
+    archiveControls.hidden = activePeriod !== 'archive';
+    if (activePeriod !== 'archive') return weeks;
+    document.getElementById('cardnews-year-label').textContent = tr('Year', '연도');
+    document.getElementById('cardnews-quarter-label').textContent = tr('Quarter', '분기');
+    yearSel.disabled = quarterSel.disabled = !weeks.length;
+    if (!weeks.length) {
+      yearSel.innerHTML = '<option value="">' + tr('No years', '연도 없음') + '</option>';
+      quarterSel.innerHTML = '<option value="">' + tr('No quarters', '분기 없음') + '</option>';
+      return weeks;
+    }
+    var years = Array.from(new Set(weeks.map(function (w) { return w.date.slice(0, 4); }))).sort().reverse();
+    if (years.indexOf(archiveYear) === -1) archiveYear = years[0];
+    yearSel.innerHTML = years.map(function (y) {
+      return '<option value="' + y + '">' + y + '</option>';
+    }).join('');
+    yearSel.value = archiveYear;
+    weeks = weeks.filter(function (w) { return w.date.slice(0, 4) === archiveYear; });
+    var quarters = Array.from(new Set(weeks.map(quarter))).sort().reverse();
+    if (quarters.indexOf(archiveQuarter) === -1) archiveQuarter = quarters[0];
+    quarterSel.innerHTML = quarters.map(function (q) {
+      var start = (Number(q) - 1) * 3 + 1;
+      return '<option value="' + q + '">' + tr('Q' + q, q + '분기') +
+        ' (' + tr(['Jan–Mar', 'Apr–Jun', 'Jul–Sep', 'Oct–Dec'][Number(q) - 1],
+          start + '–' + (start + 2) + '월') + ')</option>';
+    }).join('');
+    quarterSel.value = archiveQuarter;
+    return weeks.filter(function (w) { return quarter(w) === archiveQuarter; });
+  }
+
   function renderWeekOptions() {
-    var selected = weekSel.selectedIndex < 0 ? 0 : weekSel.selectedIndex;
-    weekSel.innerHTML = DATA.map(function (w, i) {
+    var selected = currentWeek();
+    visibleWeeks = DATA.filter(function (w) {
+      return activePeriod === 'recent' ? w.date >= cutoffDate : w.date < cutoffDate;
+    });
+    visibleWeeks = renderArchiveOptions(visibleWeeks).slice().sort(function (a, b) {
+      return b.date.localeCompare(a.date);
+    });
+    weekSel.innerHTML = visibleWeeks.map(function (w, i) {
       return '<option value="' + i + '">' + w.date + ' (n=' + w.papers.length + ')</option>';
     }).join('');
-    weekSel.selectedIndex = Math.min(selected, DATA.length - 1);
+    weekSel.disabled = !visibleWeeks.length;
+    if (!visibleWeeks.length) {
+      weekSel.innerHTML = '<option value="">' + tr('No weeks', '주차 없음') + '</option>';
+    }
+    weekSel.selectedIndex = Math.max(0, visibleWeeks.indexOf(selected));
+    if (searchEl) searchEl.disabled = !visibleWeeks.length;
+    if (periodEl) {
+      periodEl.setAttribute('aria-label', tr('Period', '기간'));
+      periodEl.querySelectorAll('[data-period]').forEach(function (btn) {
+        var period = btn.getAttribute('data-period');
+        btn.textContent = period === 'recent' ? tr('Recent 3 months', '최근 3개월') : tr('Archive', '보관함');
+        btn.classList.toggle('on', period === activePeriod);
+        btn.setAttribute('aria-pressed', period === activePeriod ? 'true' : 'false');
+      });
+    }
   }
   renderWeekOptions();
+
+  function archiveSelectionChanged() {
+    reset();
+    if (searchEl) searchEl.value = '';
+    renderWeekOptions(); renderChips(); render();
+  }
+  if (yearSel) yearSel.addEventListener('change', function () {
+    archiveYear = yearSel.value;
+    archiveQuarter = '';
+    archiveSelectionChanged();
+  });
+  if (quarterSel) quarterSel.addEventListener('change', function () {
+    archiveQuarter = quarterSel.value;
+    archiveSelectionChanged();
+  });
+
+  if (periodEl) periodEl.addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-period]');
+    if (!btn || btn.getAttribute('data-period') === activePeriod) return;
+    activePeriod = btn.getAttribute('data-period');
+    reset();
+    if (searchEl) searchEl.value = '';
+    renderWeekOptions(); renderChips(); render();
+  });
 
   weekSel.addEventListener('change', function () { reset(); renderChips(); render(); });
 

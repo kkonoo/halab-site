@@ -541,6 +541,8 @@ section { padding: 76px 0; }
   border-radius: 10px; padding: 9px 12px;
 }
 .cardnews-bar select { cursor: pointer; }
+.cn-archive-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.cn-archive-controls[hidden] { display: none; }
 .cardnews-bar input[type="search"] { flex: 1; min-width: 200px; }
 .cardnews-bar select:focus,
 .cardnews-bar input:focus { outline: none; border-color: var(--primary-lt); }
