@@ -317,6 +317,7 @@ section { padding: 76px 0; }
 .pub h3 a:hover { color: var(--primary); text-decoration: underline; }
 .pub .authors { font-size: 14px; color: var(--ink-soft); }
 .pub .authors b { color: var(--ink); }
+.pub .authors sup, .pub-note sup { color: var(--accent); font-weight: 700; }
 .pub .venue { display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 600; color: var(--primary); background: var(--paper-2); padding: 3px 12px; border-radius: 999px; }
 .pub-note { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
 
