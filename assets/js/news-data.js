@@ -15,10 +15,12 @@ window.NEWS = [
     titleKo: "새로운 인턴들을 환영합니다 👋",
     image: "assets/img/news_260911.jpg",
     body: [
-      "A warm welcome to our two new interns, <b>이철 and 현우</b>! We look forward to learning and exploring together. 🤗"
+      "A warm welcome to our new interns, <b>이철, 현우, 윤서, and 채은</b>! We look forward to learning and exploring together. 🤗",
+      "We missed <b>윤서 and 채은</b> today — hopefully we can all get together soon!"
     ],
     bodyKo: [
-      "새로 합류한 두 인턴, <b>이철, 현우</b>를 환영합니다! 함께 배우고 연구하며 즐거운 시간 보내요. 🤗"
+      "새로 합류한 인턴 <b>이철, 현우, 윤서, 채은</b>을 환영합니다! 함께 배우고 연구하며 즐거운 시간 보내요. 🤗",
+      "오늘은 <b>윤서, 채은</b>이 함께하지 못해 아쉬웠어요. 다음에는 모두 함께해요!"
     ]
   },
   {
