@@ -11,6 +11,18 @@
 window.NEWS = [
   {
     date: "Sep 2026",
+    title: "Welcome to our new interns 👋",
+    titleKo: "새로운 인턴들을 환영합니다 👋",
+    image: "assets/img/news_260911.jpg",
+    body: [
+      "A warm welcome to our two new interns, <b>이철 and 현우</b>! We look forward to learning and exploring together. 🤗"
+    ],
+    bodyKo: [
+      "새로 합류한 두 인턴, <b>이철, 현우</b>를 환영합니다! 함께 배우고 연구하며 즐거운 시간 보내요. 🤗"
+    ]
+  },
+  {
+    date: "Sep 2026",
     title: "New international collaborative grant🥳",
     titleKo: "새로운 국제 공동연구 과제 선정 🥳",
     image: "",
