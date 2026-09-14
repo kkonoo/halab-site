@@ -1,9 +1,5 @@
 # KNU Genomic Medicine Lab 
 
-GitHub Pages용 정적 사이트. 빌드 과정 없이 HTML/CSS/JS 파일만으로 동작
-
-https://kkonoo.github.io/halab-site/
-
 https://halab.knu.ac.kr
 
 ## 파일 구조
@@ -99,8 +95,7 @@ Note 페이지 상단 **Field updates** 섹션은 `lab-wiki` 가 매주 만드�
 (`~/lab-wiki/wiki/cards/YYYY-MM-DD.md`)를 보여줍니다. 데이터 파일
 `assets/js/cards-data.js` 는 **자동 생성**되므로 직접 고치지 마세요.
 
-매주 새 카드가 나오면 (이 사이트 폴더와 무관하게) 아래 한 줄만 실행 →
-검토 → 커밋/푸시 하면 사이트에 반영됩니다.
+매주 새 카드가 나오면 (이 사이트 폴더와 무관하게) 아래 한 줄만 실행 → 검토 → 커밋/푸시 하면 사이트에 반영됩니다.
 
 ```bash
 # 1) 최신 카드뉴스(.md)를 사이트 데이터로 변환
