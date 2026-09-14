@@ -135,7 +135,7 @@ window.MEMBERS = [
     "name": "Always welcome",
     "nameKo": "언제나 환영합니다",
     "role": "Undergraduate Interns",
-    "roleKo": "학부 인턴",
+    "roleKo": "학부연구생",
     "description": "Curious about research? Undergraduate interns are always welcome to explore hands-on experience in disease genomics.",
     "descriptionKo": "연구가 궁금한 학부생이라면 누구나 환영합니다. 질병 유전체학 연구를 직접 경험해 보세요."
   }
@@ -181,6 +181,6 @@ window.MEMBER_LABELS = [
   {
     "id": "label-7",
     "en": "Undergraduate Interns",
-    "ko": "학부 인턴"
+    "ko": "학부연구생"
   }
 ];
