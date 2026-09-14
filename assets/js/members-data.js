@@ -10,7 +10,7 @@ window.MEMBERS = [
     "image": "assets/img/members/eha.jpeg",
     "imageAlt": "Eunji Ha",
     "name": "Eunji Ha, Ph.D.",
-    "nameKo": "Eunji Ha, Ph.D.",
+    "nameKo": "하은지, Ph.D.",
     "role": "Assistant Professor",
     "roleKo": "조교수",
     "education": [
@@ -34,7 +34,7 @@ window.MEMBERS = [
     "image": "assets/img/members/ekkim.jpg",
     "imageAlt": "Eunkyung Kim",
     "name": "Eunkyung Kim, B.S.",
-    "nameKo": "Eunkyung Kim, B.S.",
+    "nameKo": "김은경, B.S.",
     "role": "Integrated Ph.D. student",
     "roleKo": "석·박사통합과정",
     "education": [
@@ -67,7 +67,7 @@ window.MEMBERS = [
     "image": "assets/img/members/ycw.jpg",
     "imageAlt": "undergrad",
     "name": "YI-Chul Won",
-    "nameKo": "YI-Chul Won",
+    "nameKo": "원이철",
     "role": "Undergraduate Interns",
     "roleKo": "학부연구생",
     "education": [
