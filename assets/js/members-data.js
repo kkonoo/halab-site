@@ -69,7 +69,7 @@ window.MEMBERS = [
     "name": "YI-Chul Won",
     "nameKo": "YI-Chul Won",
     "role": "Undergraduate Interns",
-    "roleKo": "학부 인턴",
+    "roleKo": "학부연구생",
     "education": [
       "2021– | Department of Biomedical Covergence Science & Technology, KNU"
     ],
