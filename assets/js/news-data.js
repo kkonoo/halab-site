@@ -5,7 +5,7 @@
    - image  : 사진 1장만. 없으면 "" (빈 따옴표) 로 두면 초록 배경으로 표시됩니다.
    - images : 사진 여러 장. ["표지.jpg", "둘째.jpg", "셋째.jpg"] 형식.
               첫 번째 사진이 카드 표지가 되고, 나머지는 본문 아래 갤러리로 나옵니다.
-              (image 와 images 중 하나만 쓰면 됩니다. 사진은 assets/img/ 에 넣으세요.)
+              (image 와 images 중 하나만 쓰면 됩니다. 사진은 assets/img/news/ 에 넣으세요.)
    - body   : 문단 배열. 문단마다 따옴표로 감싸고 쉼표로 구분합니다. <b>...</b> 로 굵게, <sup>^</sup> / <sup>*</sup>
    ============================================================ */
 window.NEWS = [
@@ -13,7 +13,7 @@ window.NEWS = [
     date: "Sep 2026",
     title: "Welcome to our new interns 👋",
     titleKo: "새로운 인턴들을 환영합니다 👋",
-    image: "assets/img/news_260911.jpg",
+    image: "assets/img/news/news_260911.jpg",
     body: [
       "A warm welcome to our new interns, <b>이철, 현우, 윤서, and 채은</b>! We look forward to learning and exploring together. 🤗",
       "We missed <b>윤서 and 채은</b> today — hopefully we can all get together soon!"
@@ -28,7 +28,7 @@ window.NEWS = [
     title: "New international collaborative grant🥳",
     titleKo: "새로운 국제 공동연구 과제 선정 🥳",
     image: "",
-    logo: "assets/img/NSFC.png",
+    logo: "assets/img/news/NSFC.png",
     body: [
       "Our international collaborative research project has been selected for the <b>Shanghai Pujiang Talent Program</b>, with Eunji participating as a <b>Senior Researcher</b> 🎉",
       "The collaboration brings together researchers from the <b>Department of Nephrology at Zhongshan Hospital, Fudan University</b>, <b>Shanghai Medical College of Fudan University</b>, and our lab.",
@@ -44,7 +44,7 @@ window.NEWS = [
     date: "Aug 2026",
     title: "Farewell to 2026 summer interns 🫡",
     titleKo: "2026 여름 인턴들과의 작별 🫡",
-    image: "assets/img/news_260807.jpg",
+    image: "assets/img/news/news_260807.jpg",
     body: [
       "One month went by way too fast! It was a short summer with our <b>four interns (윤서, 재훈, 호준, and 소윤)</b>, but we hope you had a fun and meaningful experience with us ☀️",
       "Thanks for spending your summer with us — and don't be strangers! Come visit us anytime:)"
@@ -58,7 +58,7 @@ window.NEWS = [
     date: "Jul 2026",
     title: "Welcome to our summer interns 🌞",
     titleKo: "여름 인턴들을 환영합니다 🌞",
-    image: "assets/img/news_260710.jpg",
+    image: "assets/img/news/news_260710.jpg",
     body: [
       "We had a warm welcome lunch to kick off the summer with our <b>four summer interns (윤서, 재훈, 호준, and 소윤)</b> joining us this July 🍽️",
       "It's just for the month of July, but we're so glad to have you — dive in, ask lots of questions, and make the most of it. Have a great time with us! 🤗"
@@ -73,7 +73,7 @@ window.NEWS = [
     title: "Another new research grant 🥳",
     titleKo: "또 하나의 신규 연구과제 선정 🥳",
     image: "",
-    logo: "assets/img/NRF.svg",
+    logo: "assets/img/news/NRF.svg",
     body: [
       "Our lab has been awarded a new grant under the <b>Bio & Medical Technology Development Program (NRF)</b>, with Eunji participating as a <b>Co-Investigator</b>.",
       "The project, <b>\"Efficacy of microglia-targeted anti-aging gene delivery for improving sarcopenia\"</b>, investigates SIRT3-based gene therapy candidates along the brain–peripheral motor circuit. Our lab takes charge of the multi-omics analyses."
@@ -88,7 +88,7 @@ window.NEWS = [
     title: "Farewell to our undergraduate researchers 🫡",
     titleKo: "학부 연구생들과의 작별 🫡",
     images: [
-      "assets/img/news_2604_2.jpg"
+      "assets/img/news/news_2604_2.jpg"
     ],
     body: [
       "Two months flew by! To <b>기윤, 서회, and 승재</b> — thank you for your hard work and curiosity. It was short, but we had a great time together 🤗",
@@ -104,7 +104,7 @@ window.NEWS = [
     title: "New research grant 🥳",
     titleKo: "신규 연구과제 선정 🥳",
     image: "",
-    logo: "assets/img/NRF.svg",
+    logo: "assets/img/news/NRF.svg",
     body: [
       "We are pleased to announce that our lab has been selected for the <b>Young Investigator Research Program funded by the National Research Foundation of Korea (NRF)</b>🥳.",
       "This grant will support our research on <b>\"AI-Driven Multi-Omics Analysis of Striatal Input Circuits\"</b> over the next five years.",
@@ -121,9 +121,9 @@ window.NEWS = [
     title: "2026 New Year's Party! 🎉",
     titleKo: "2026 새해 파티! 🎉",
     images: [
-      "assets/img/news_2601_2.png",
-      "assets/img/news_2601_3.png",
-      "assets/img/news_2601_1.png",
+      "assets/img/news/news_2601_2.png",
+      "assets/img/news/news_2601_3.png",
+      "assets/img/news/news_2601_1.png",
     ],
     body: [
       "Great food and even better company!",
@@ -140,7 +140,7 @@ window.NEWS = [
     date: "Sep 2025",
     title: "Our lab has officially started at KNU 🚀",
     titleKo: "경북대학교에서 연구실을 시작했습니다 🚀",
-    image: "assets/img/news_2509.jpg",
+    image: "assets/img/news/news_2509.jpg",
     body: [
       "We are excited to announce the launch of the <b>Genomic Medicine Lab</b> at the Department of Molecular Medicine, School of Medicine, <b>Kyungpook National University</b>.",
       "Led by Eunji, our lab will focus on understanding the genetic and epigenetic mechanisms of complex diseases through integrative multi-omics and computational approaches.",

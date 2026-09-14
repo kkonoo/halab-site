@@ -20,7 +20,7 @@ halab-site/
 └── assets/
     ├── css/styles.css  # 전체 디자인
     ├── js/main.js      # 모바일 메뉴 + 스크롤 애니메이션
-    └── img/            # 사진을 여기에 넣으세요
+    └── img/            # 공통 로고·아이콘 (뉴스: news/, 구성원: members/)
 ```
 
 
@@ -39,12 +39,19 @@ halab-site/
 3. DNS가 적용되면 GitHub Pages에서 **Enforce HTTPS** 를 체크
 
 ## 사진 넣기
-1. 사진 파일을 `assets/img/` 에 추가. (예: `eunji-ha.jpg`)
-2. `members.html` 에서 해당 멤버의
-   `<div class="photo">EH</div>` 부분을
-   `<div class="photo"><img src="assets/img/eunji-ha.jpg" alt="Eunji Ha"></div>` 로 변경
+1. 구성원 사진은 `assets/img/members/`, 뉴스 사진은 `assets/img/news/`에 추가합니다.
+2. `assets/js/members-data.js`에서 해당 구성원의 `image`를 `assets/img/members/eunji-ha.jpg`처럼 변경합니다.
 
 ## 내용 수정 (중요)
+Home·About·Contact·Members의 영어/한글 문구는 아래 데이터 파일에서 함께 수정합니다.
+
+- Home: `assets/js/home-data.js` — 각 항목의 `en` / `ko`
+- About: `assets/js/about-data.js` — 각 항목의 `en` / `ko`
+- Contact: `assets/js/contact-data.js` — 각 항목의 `en` / `ko`
+- Members: `assets/js/members-data.js` — 구성원별 `name` / `nameKo`, `role` / `roleKo`, `education` / `educationKo`, `interests` / `interestsKo`, 사진 `image`, 이메일 `email`
+
+페이지 문구의 키와 구성원의 `id`는 HTML 연결에 쓰이므로 그대로 유지합니다. 구성원 페이지의 제목·탭 문구도 `members-data.js`의 `MEMBER_LABELS`에 있습니다. 공통 메뉴·버튼 번역과 언어 전환 기능은 `main.js`에서 관리합니다.
+
 글/논문은 **HTML이 아니라 데이터 파일만** 수정. 
 페이지 나눔(10개씩)과 홈 화면의 최신 뉴스 4개는 자동으로 처리
 
@@ -54,7 +61,7 @@ halab-site/
   {
     date: "Jun 2026",
     title: "제목 \uD83C\uDF89",
-    image: "assets/img/사진이름.jpg",   // 사진 없으면 ""  (빈 따옴표)
+    image: "assets/img/news/사진이름.jpg",   // 사진 없으면 ""  (빈 따옴표)
     body: ["첫 문단.", "둘째 문단."]
   },
   ```
