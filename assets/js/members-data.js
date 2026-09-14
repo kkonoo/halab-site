@@ -94,6 +94,8 @@ window.MEMBERS = [
     "educationKo": [
       "2021– | 경북대학교 농업생명과학대학 원예과학과 & 생물정보학 융합전공"
     ],
+    "interests": "Research interests: kidney aging",
+    "interestsKo": "연구 관심 분야: 신장 노화",
     "email": "lywoo0912@gmail.com"
   },
   {
@@ -110,6 +112,8 @@ window.MEMBERS = [
     "educationKo": [
       "2024– | 경북대학교 혁신신약학과"
     ],
+    "interests": "Research interests: durg target discovery",
+    "interestsKo": "연구 관심 분야: 약물 타겟 발굴",
     "email": "jce050115@naver.com"
   },
   {
@@ -123,6 +127,8 @@ window.MEMBERS = [
     "education": [
       "2024– | Department of Pharmaceutical Sciences, KNU"
     ],
+    "interests": "Research interests: durg target discovery",
+    "interestsKo": "연구 관심 분야: 약물 타겟 발굴",
     "educationKo": [
       "2024– | 경북대학교 혁신신약학과"
     ],
