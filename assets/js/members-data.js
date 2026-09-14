@@ -135,6 +135,22 @@ window.MEMBERS = [
     "email": "ys050730@naver.com"
   },
   {
+    "id": "soohyeok-choi",
+    "image": "assets/img/members/sc.jpg",
+    "imageAlt": "Soohyeok Choi",
+    "name": "Soohyeok Choi",
+    "nameKo": "최수혁",
+    "role": "Undergraduate Intern",
+    "roleKo": "학부연구생",
+    "education": [
+      "2019– | Division of Bio-technology and Convergence, Daegu Haany University"
+    ],
+    "educationKo": [
+      "2019– | 대구한의대학교 바이오산업융합학부"
+    ],
+    "email": "chltngur647@gmail.com"
+  },
+  {
     "id": "intern-opening",
     "image": "assets/img/members/unkown.jpg",
     "imageAlt": "undergrad",
