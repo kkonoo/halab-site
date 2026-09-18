@@ -11,6 +11,21 @@
 window.NEWS = [
   {
     date: "Sep 2026",
+    title: "Selected for the Glocal Lab program 🎉",
+    titleKo: "글로컬랩 과제 선정 🎉",
+    image: "",
+    logo: "assets/img/news/NRF.svg",
+    body: [
+      "Our consortium has been selected for the <b>Glocal Lab program</b>, funded for <b>9 years with a total budget of KRW 13.5 billion</b>.",
+      "Our lab will take charge of the <b>AI-driven discovery of PDNV cancer immunotherapy targets</b>. 🧬"
+    ],
+    bodyKo: [
+      "우리가 참여한 컨소시엄이 <b>글로컬랩</b> 과제에 선정되었습니다. <b>9년간 총 135억 원</b> 규모로 지원됩니다.",
+      "우리 연구실은 <b>AI 기반 PDNV 항암면역 타겟 발굴</b>을 맡게 됩니다. 🧬"
+    ]
+  },
+  {
+    date: "Sep 2026",
     title: "Welcome to our new interns 👋",
     titleKo: "새로운 인턴들을 환영합니다 👋",
     image: "assets/img/news/news_260911.jpg",
