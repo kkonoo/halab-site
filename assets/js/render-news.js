@@ -53,4 +53,21 @@
   window.renderPager('news-pager', page, total);
   if (window.observeReveal) window.observeReveal();
 
+  // mark cards whose text overflows, so a fade hint shows until scrolled to the end
+  function markOverflow() {
+    Array.prototype.forEach.call(grid.querySelectorAll('.news-card'), function (card) {
+      var b = card.querySelector('.body');
+      if (!b) return;
+      var over = b.scrollHeight - b.clientHeight > 2;
+      card.classList.toggle('is-scrollable', over);
+      card.classList.toggle('at-end', over && b.scrollTop >= b.scrollHeight - b.clientHeight - 2);
+    });
+  }
+  Array.prototype.forEach.call(grid.querySelectorAll('.news-card .body'), function (b) {
+    b.addEventListener('scroll', markOverflow, { passive: true });
+  });
+  window.addEventListener('resize', markOverflow);
+  window.addEventListener('load', markOverflow);
+  markOverflow();
+
 })();
