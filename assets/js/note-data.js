@@ -106,7 +106,7 @@ window.STUDIES = [
     tag: "HaLab 2",
     title: "Immunology",
     desc: "면역학",
-    url: "https://kkonoo.github.io/1_Immunology/"
+    url: "https://halab-wiki.knu.ac.kr/disease/immunology/index.html"
   },
   {
     tag: "HaLab 3",
