@@ -128,8 +128,8 @@ window.STUDIES = [
   },
   {
     tag: "HaLab 4",
-    title: "Graph theory",
-    desc: "그래프 이론",
+    title: "Graph theory and Neural Network",
+    desc: "네트워크와 딥러닝",
     url: "https://kkonoo.github.io/4_graphs/"
   }
 ];
