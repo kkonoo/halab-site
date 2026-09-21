@@ -115,12 +115,6 @@ window.STUDIES = [
     url: "https://kkonoo.github.io/3_linear_regression/"
   },
   {
-    tag: "HaLab 3",
-    title: "Neural network",
-    desc: "신경망",
-    url: "https://kkonoo.github.io/3_neural_network/"
-  },
-  {
     tag: "HaLab 4",
     title: "Bayesian statistics",
     desc: "베이지안 통계",
