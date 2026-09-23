@@ -4,6 +4,755 @@
    ============================================================ */
 window.CARDNEWS = [
   {
+    "date": "2026-09-20",
+    "count": 25,
+    "papers": [
+      {
+        "title": "All of Us diversity and scale yield context-dependent improvements in polygenic prediction.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42736379/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42736379/",
+        "doi": "https://doi.org/10.1038/s41588-026-02734-4",
+        "journal": "Nature genetics",
+        "year": "2026",
+        "author": "Tsuo K",
+        "rating": 5,
+        "emoji": "🧬",
+        "domain": "유전학·GWAS",
+        "what_they_did": [
+          "All of Us WGS 245,388명과 UK Biobank 데이터를 통합해 32개 형질·질환에 대한 다조상 PRS 훈련",
+          "조상별(African, European 등) PRS 성능 지표 비교",
+          "meta-analysis(AoU+UKB) vs. AoU 단독 훈련 전략 비교",
+          "조상 분기(ancestry divergence)에 따른 PRS 정확도 감쇠 패턴 분석"
+        ],
+        "concepts": [
+          "polygenic-risk-score",
+          "cross-ancestry-transferability",
+          "genetic-architecture",
+          "gwas-association-testing",
+          "summary-statistics-methods",
+          "statistical-power-gwas",
+          "missing-heritability"
+        ],
+        "tldr": "All of Us 245,388명 전장유전체서열과 UK Biobank를 결합해 32개 형질에 대한 다조상 PRS를 개발하고, 조상·방법론·유전구조가 PRS 성능에 미치는 영향을 체계적으로 평가.",
+        "question": "다양한 조상 배경의 대규모 바이오뱅크 데이터가 다조상 PRS 정확도를 향상시키는가? 특히 과소대표 집단에서 어떤 조건(샘플크기 vs. 조상 다양성)이 더 중요한가?",
+        "key_result": "다조상 훈련 데이터가 과소대표 집단의 PRS 정확도를 향상; 다각형성(polygenic) 형질에서는 메타분석이 유리하지만, 덜 다각형성인 형질에서는 AoU 단독이 African 조상 참여자에게 더 우수(조상-특이 효과 반영). 개인 PRS 정확도는 발견 GWAS와의 조상 분기에 선형으로 감소하나, 다조상 훈련으로 이 감쇠가 완화됨.",
+        "why_for_us": "PRS 방법론·교차조상 이전가능성 연구의 핵심 참고문헌; 다조상 PRS 훈련 전략 선택 시 직접 인용 가능. cross-ancestry-transferability, polygenic-risk-score, genetic-architecture 개념과 직결.",
+        "limitations": "AoU 내에서도 일부 조상 집단의 샘플 크기가 제한적; 32개 형질에 한정된 분석으로 모든 형질에 일반화 불확실.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "3D chromatin remodeling during domestication defines novel targets for crop improvement.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42748920/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42748920/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.08.038",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Huang X",
+        "rating": 3,
+        "emoji": "🧬",
+        "domain": "유전학·GWAS",
+        "what_they_did": [
+          "반야생 34개·재배 267개 면화의 집단 규모 Hi-C 프로파일링으로 pan-3D 게놈 아틀라스 구축",
+          "Chromatin interactome-wide association study(CIWAS)로 TAD 재구성 105개·루프 재배선 58개 발굴",
+          "서열 기반 모델링 및 돌연변이 분석으로 YY1 단백질의 3D 구조 조절 역할 검증"
+        ],
+        "concepts": [
+          "noncoding-regulatory-variants",
+          "partitioned-heritability",
+          "gwas-association-testing",
+          "credible-set"
+        ],
+        "tldr": "집단 규모 Hi-C 데이터를 활용해 면화 작물화 과정의 3D 게놈 재구성을 GWAS 방식(chromatin interactome-wide association study)으로 표현형과 연결하고, YY1이 3D 구조의 보존적 조절자임을 규명.",
+        "question": "작물화 과정에서 3D 크로마틴 재구성이 어떻게 표현형 혁신에 기여하며, 이를 유전자형과 연결할 수 있는가?",
+        "key_result": "CIWAS가 섬유 강도 유전력 추정치를 16%, 섬유 길이를 20% 향상; 작물화 선택 내 57%의 3D 형태 서명이 서열 수준 선택과 분리; YY1이 보존적 3D 게놈 조절자로 확인.",
+        "why_for_us": "Hi-C 기반 chromatin interactome GWAS 방법론이 랩의 caQTL·noncoding regulatory variants·partitioned heritability 연구에 방법론적 참고가 됨.",
+        "limitations": "식물(면화) 연구로 인간 질환 직접 적용에 한계; Hi-C 집단 분석의 실험 비용과 기술적 복잡성 높음.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Type 1 interferon perturbates clonal competition by reshaping human blood development.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42745000/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42745000/",
+        "doi": "https://doi.org/10.1038/s41588-026-02751-3",
+        "journal": "Nature genetics",
+        "year": "2026",
+        "author": "Lama C",
+        "rating": 4,
+        "emoji": "🔬",
+        "domain": "단일세포",
+        "what_they_did": [
+          "MPN 환자의 HSC·전구세포·면역세포를 IFNα 치료 전후에 단세포 멀티오믹스(전사체 + 크로마틴 접근성)로 프로파일링",
+          "정상 HSC와 돌연변이 HSC를 동시에 구분하여 각각의 분화 궤적, 면역표현형, 크로마틴 변화를 비교",
+          "CALR- 및 JAK2-돌연변이별 IFNα 반응 차이를 세포주기 진입률과 분화 방향 측면에서 분석"
+        ],
+        "concepts": [
+          "mosaic-chromosomal-alteration",
+          "single-cell-eqtl",
+          "caQTL",
+          "noncoding-regulatory-variants"
+        ],
+        "tldr": "myeloproliferative neoplasm(MPN) 환자에서 IFNα 치료 전후 HSC를 단세포 멀티오믹스로 분석해, IFNα가 돌연변이 HSC의 클론 경쟁력을 어떻게 바꾸는지 밝힌 연구.",
+        "question": "IFNα는 정상·돌연변이 조혈모세포(HSC) 각각의 분화 방향과 세포주기 진입에 어떤 차별적 영향을 미쳐 클론 경쟁을 변화시키는가?",
+        "key_result": "IFNα는 HSC를 ① 항염증성 림프구 전구세포 확장 상태와 ② 염증성 골수 전구세포 상태 두 방향으로 동시에 활성화한다. 림프구 분화 증가가 MPN 특유의 골수 편향을 상쇄해 혈구 수를 정상화한다. CALR·JAK2 돌연변이 HSC는 염증성 골수 전구세포로의 분화에 저항성을 보여 IFNα 노출 시 클론 우위를 유지한다.",
+        "why_for_us": "단세포 멀티오믹스(snRNA+ATAC)로 돌연변이·야생형 HSC를 동시 분석하는 방법론, 클론 동태(clonal fitness) 추적, 크로마틴 접근성 변화 해석이 우리 랩의 single-cell epigenomics·multiome 분석 역량과 직결된다. mosaic chromosomal alteration·caQTL·single-cell eQTL 연구에도 참조 가능.",
+        "limitations": "단일 치료제(IFNα)에 국한되어 있고, 환자 코호트 규모 및 시계열 시점 수가 초록에 명시되지 않음. 기능적 검증(in vitro/in vivo)의 범위도 불명확.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "scBaseCount: An AI agent-curated, standardized, auto-updated single-cell data repository.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42753696/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42753696/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.08.025",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Youngblut ND",
+        "rating": 3,
+        "emoji": "🔬",
+        "domain": "단일세포",
+        "what_they_did": [
+          "SRA 전체를 마이닝하여 10x Genomics scRNA-seq 데이터셋을 AI 에이전트로 자동 발견·메타데이터 추출",
+          "27개 생물체, 75개 조직에 걸쳐 5억 200만 개 세포를 균일한 파이프라인으로 처리",
+          "인트론·엑손 reads 및 비코딩 유전자 발현을 모두 측정하도록 정렬 파이프라인 통일",
+          "scBaseCount 공개 데이터베이스 및 AI 큐레이션 청사진 공개"
+        ],
+        "concepts": [
+          "brain-cell-atlas",
+          "cell-type-deconvolution"
+        ],
+        "tldr": "SRA 내 10x Genomics 단일세포 RNA-seq 데이터 전체를 AI 에이전트로 자동 탐색·메타데이터 추출·표준화 처리하여 5억 200만 개 세포로 구성된 scBaseCount 데이터베이스를 구축했다.",
+        "question": "공개 시퀀싱 리포지터리(SRA)에서 단일세포 데이터를 자동으로 표준화하고 통합하려면 어떤 AI 기반 파이프라인이 필요한가?",
+        "key_result": "현존 최대 공개 단일세포 유전자 발현 리포지터리 구축(502M+ 세포). 균일 처리로 실험 간 측정 일관성 향상 및 광범위한 표현형 다양성 확보.",
+        "why_for_us": "랩의 단일세포 분석 파이프라인 구축 및 대규모 레퍼런스 데이터 활용 시 직접 참고 가능. 세포 유형 어노테이션, 배치 통합, 멀티오믹스 통합 연구에 유용한 자원.",
+        "limitations": "10x Genomics 플랫폼에만 국한되어 있어 다른 단일세포 기술(Smart-seq 등)은 포함되지 않음. 메타데이터 자동 추출 오류 가능성 존재.",
+        "reuse": "scBaseCount 데이터베이스 공개. 대규모 단일세포 모델 훈련 및 세포 유형 레퍼런스 구축에 재활용 가능.",
+        "next_step": ""
+      },
+      {
+        "title": "A world model of the virtual cell.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42753692/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42753692/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.08.042",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Xing EP",
+        "rating": 3,
+        "emoji": "🔬",
+        "domain": "단일세포",
+        "what_they_did": [
+          "Virtual Cell World Model(VCWM)의 개념, 아키텍처, 데이터 프레임워크, 학습 전략, 평가 원칙을 제안",
+          "기존 생물학 foundation model들을 VCWM의 구성 요소로 활용하는 방안 논의",
+          "행동 조건부 시뮬레이션·반사실적 추론·장기 계획을 지원하는 AI 패러다임을 세포 생물학에 적용"
+        ],
+        "concepts": [
+          "perturb-seq",
+          "spatial-transcriptomics"
+        ],
+        "tldr": "가상 세포(Virtual Cell)를 구현하기 위한 world model 아키텍처—세포 상태를 표현하고 유전·화학·환경 개입 하에서 분자·구조·형태적 결과를 시뮬레이션—를 제안한 비전 논문.",
+        "question": "세포 생물학 실험의 조합 폭발 문제를 극복하기 위해 AI world model로 세포의 동적 상태와 개입 효과를 디지털로 시뮬레이션할 수 있는가?",
+        "key_result": "실험적 결과 없음; VCWM이 특정 엔드포인트 예측 모델과 달리 세포 시스템 자체를 모델링하여 개입이 진화하는 상태를 통해 전파되도록 설계됨을 개념적으로 제시.",
+        "why_for_us": "단일세포 RNA/ATAC 및 perturb-seq 데이터를 활용하는 랩에서 세포 상태 예측·개입 설계 연구의 장기 방향으로 참고 가치가 있음.",
+        "limitations": "비전 논문으로 실증적 구현·벤치마크 부재; 실제 생물학적 복잡성에서의 한계 미검증.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Gene regulatory mechanisms downstream of DNA methylation.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42754729/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42754729/",
+        "doi": "https://doi.org/10.1038/s41576-026-01008-3",
+        "journal": "Nature reviews. Genetics",
+        "year": "2026",
+        "author": "Buckley TJ",
+        "rating": 4,
+        "emoji": "🧫",
+        "domain": "후성유전·크로마틴",
+        "what_they_did": [
+          "메틸화 리더(reader) 단백질의 종류와 기능을 체계적으로 정리",
+          "전사인자가 메틸화를 해석해 크로마틴 접근성을 조절하는 기전 검토",
+          "포유류와 식물에서 메틸화-의존적 전사 억제·활성화 비교",
+          "메틸화와 히스톤 변형 등 병렬 후성유전 시스템 간 상호작용 고찰"
+        ],
+        "concepts": [
+          "molecular-qtl",
+          "noncoding-regulatory-variants",
+          "allele-specific-expression"
+        ],
+        "tldr": "DNA 메틸화가 전사 조절에 영향을 미치는 하위(downstream) 기전—리더 단백질, 전사인자, 크로마틴 구조 재편—을 포유류·식물을 아울러 종합 리뷰함.",
+        "question": "DNA 메틸화 표지는 어떤 단백질/복합체를 통해 크로마틴 구조와 전사 프로그램을 변화시키는가?",
+        "key_result": "전사적·후성유전적 상태는 중첩·계층화된 메틸화 의존 기전들의 부분적 중복으로부터 견고성을 얻음. 리더 단백질이 효과기 복합체를 유도해 메틸화 패턴을 유지하거나 크로마틴 접근성을 조절함.",
+        "why_for_us": "mQTL/caQTL 분석 및 메틸화 기반 멀티오믹스 통합 연구의 생물학적 배경 이해에 직접 기여. 자가면역·신경계 질환에서 후성유전 조절 연구와도 연결됨.",
+        "limitations": "리뷰 논문으로 원천 실험 데이터 없음. 포유류-식물 간 직접 비교의 해석적 한계.",
+        "reuse": "초록에 명시 없음.",
+        "next_step": "초록에 명시 없음."
+      },
+      {
+        "title": "Encoded and non-genetic protein variants expand human functional proteome.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42742175/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42742175/",
+        "doi": "https://doi.org/10.1038/s41586-026-11124-z",
+        "journal": "Nature",
+        "year": "2026",
+        "author": "Tretyachenko V",
+        "rating": 4,
+        "emoji": "🧪",
+        "domain": "단백체",
+        "what_they_did": [
+          "29개 건강한 인간 조직 유래 대규모 프로테오게노믹스 데이터셋을 구축·분석",
+          "이형접합성, 체세포 돌연변이, 전사 오류, 번역 오류 등 각 단계별 변이 기원을 구분하는 분석 파이프라인 적용",
+          "7,215개 고유 단일 아미노산 치환을 포함한 13,910개 변이체를 신뢰도 높게 국소화 및 정량화",
+          "변이체의 기능적 결과를 평가하는 방법론 개발"
+        ],
+        "concepts": [
+          "proteomics-quantification",
+          "pqtl-proteomics",
+          "mass-spectrometry-proteomics",
+          "allele-specific-expression",
+          "dda-vs-dia"
+        ],
+        "tldr": "29개 건강한 인간 조직의 대규모 프로테오게노믹스 데이터셋에서 이형접합성·체세포 돌연변이·전사/번역 오류 유래 단일 아미노산 치환 변이체 13,910개를 발굴하여, 인간 기능적 프로테옴이 유전체 서열 이상으로 훨씬 다양함을 보임.",
+        "question": "센트럴 도그마의 각 단계(DNA→RNA→단백질)에서 발생하는 변이가 단일 인간 프로테옴 내에 어느 정도의 다양성을 만들어내는가?",
+        "key_result": "단일 인간 프로테옴 내에 13,910개의 신뢰도 높은 변이 위치(7,215개 고유 단일 아미노산 치환)가 공존하며, 이는 기존 유전체 서열만으로 예측되던 프로테옴 다양성을 대폭 상회함.",
+        "why_for_us": "pQTL 및 프로테오믹스 통합 분석에서 단백질 변이체의 출처(유전적 vs 비유전적)를 구분하는 것이 중요한 랩 연구와 직접 관련; 프로테오게노믹스 방법론 및 proteomics-quantification 개념 확장에 활용 가능.",
+        "limitations": "건강한 조직만 분석하여 질환 상태에서의 변이체 다양성 추론이 제한적; 비유전적 변이체(전사/번역 오류)의 기능적 의의 검증이 초록 수준에서 명확히 기술되지 않음.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Faecalibacterium prausnitzii EXL01 Strain for the prevention of multiple-recurrent Clostridioides difficile Infection.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42753987/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42753987/",
+        "doi": "https://doi.org/10.1053/j.gastro.2026.09.002",
+        "journal": "Gastroenterology",
+        "year": "2026",
+        "author": "Benech N",
+        "rating": 3,
+        "emoji": "🦠",
+        "domain": "마이크로바이옴",
+        "what_they_did": [
+          "마우스 CDI 모델에서 EXL01의 C. difficile 부하 및 장 염증 감소 효과 검증",
+          "다기관 오픈라벨 단일군 1상 임상시험(n=6, ≥3회 CDI 삽화 성인)에서 8주 EXL01 경구 투여",
+          "종단 분변 샘플에 쇼트건 메타게노믹스 + 대사체학 적용",
+          "in vitro에서 EXL01의 담즙산 탈포합(deconjugation) 능력 확인",
+          "결과를 매칭된 FMT 코호트와 비교"
+        ],
+        "concepts": [
+          "functional-profiling",
+          "strain-level-profiling",
+          "amplicon-vs-shotgun"
+        ],
+        "tldr": "단일 공생균 주(Faecalibacterium prausnitzii EXL01)를 이용해 재발성 C. difficile 감염(rCDI) 6명에서 안전성과 재발 억제(83.3%)를 확인하고, 쇼트건 메타게노믹스+대사체학으로 담즙산·단쇄지방산 복원 기전을 규명.",
+        "question": "분류학적 복잡성 없이 단일 균주로 rCDI 생태계 기능을 회복하고 재발을 막을 수 있는가?",
+        "key_result": "6명 중 5명(83.3%)이 8주 시점 무재발. 처리 관련 중대 이상반응 없음(grade 1-2만). EXL01 정착은 1차 담즙산 감소·2차 담즙산 증가·부티레이트 생산 증가와 상관. 분류학적 회복이 제한적임에도 기능적 복원 달성.",
+        "why_for_us": "쇼트건 메타게노믹스 + 대사체학 통합 분석 방법론이 랩 관심 영역(metagenomics, metabolomics)과 일치. 마이크로바이옴 기능 복원 vs. 분류학적 복원의 해리는 기능적 프로파일링 관련 개념에 유용한 사례.",
+        "limitations": "임상 n=6으로 통계적 결론 제한. 오픈라벨 단일군 설계로 위약 효과 배제 불가. 대조 임상시험은 진행 중.",
+        "reuse": "초록에 명시 없음.",
+        "next_step": "대조 임상시험(NCT06306014) 진행 중."
+      },
+      {
+        "title": "Gut single-microbe landscape in patients with major depressive disorder and bipolar disorder.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42736349/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42736349/",
+        "doi": "https://doi.org/10.1038/s41380-026-03882-z",
+        "journal": "Molecular psychiatry",
+        "year": "2026",
+        "author": "Chen Y",
+        "rating": 3,
+        "emoji": "🦠",
+        "domain": "마이크로바이옴",
+        "what_they_did": [
+          "MDD 5명, BD 5명, 건강대조군 5명 장내 미생물 샘플에 droplet 기반 smRNA-seq2 적용",
+          "33,174개 단일 미생물 세포를 37개 클러스터로 비지도 군집화",
+          "산화 스트레스·대사 유전자(sodB, mdh2, eno2) 및 스트레스 반응 유전자(htpG_1, groL, dnaK, clpB) 발현 차이 분석",
+          "ko03110(샤페론·단백질 접힘) 경로의 종 특이적 패턴 분석"
+        ],
+        "concepts": [
+          "functional-profiling",
+          "alpha-diversity",
+          "compositional-data-analysis",
+          "strain-level-profiling"
+        ],
+        "tldr": "단일 미생물 RNA 시퀀싱(smRNA-seq2)을 MDD·BD·건강대조군 장내 미생물에 적용하여 33,174개 단일 미생물 세포의 전사 아틀라스를 구축한 탐색적 연구.",
+        "question": "단일 미생물 수준의 RNA-seq으로 MDD·BD 환자 장내 미생물의 기능적·표현형적 이질성을 포착할 수 있는가?",
+        "key_result": "질환군 간 종 조성 및 전사 패턴 차이 확인; Clostridium_Q sp.는 건강군에서 증가, Enterocloster sp.·Fusicatenibacter saccharivorans는 BD에서 상승, Phocaeicola dorei는 MDD에서 감소.",
+        "why_for_us": "단일 미생물 RNA-seq이라는 신규 방법론이 메타지노믹스 툴킷 확장에 참고가 되며, MDD 관련 미생물 기능 이질성은 우리 랩 neuro-microbiome 연구와 연계 가능.",
+        "limitations": "샘플 수 극소(각 군 5명), 탐색적 연구로 인과 관계 불명, 더 큰 코호트 검증 필요.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Epidemiology, mechanisms and clinical implications of heat-related kidney disease.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42749859/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42749859/",
+        "doi": "https://doi.org/10.1038/s41581-026-01126-5",
+        "journal": "Nature reviews. Nephrology",
+        "year": "2026",
+        "author": "McMullen L",
+        "rating": 3,
+        "emoji": "🫘",
+        "domain": "신장",
+        "what_they_did": [
+          "고온과 신장 이환율 간의 역학 데이터를 종합 검토",
+          "직업적·농업적 코호트에서 열 스트레스 신장 손상과 CKD 연관성 분석 문헌 고찰",
+          "열 취약성의 구조적 결정요인(주거 환경, 직업 노출, 냉방 접근성) 및 생리적 취약성(연령, 동반 질환) 정리",
+          "CKD 환자 대상 개별화된 열 위험 완화 근거 및 정책 대응 방향 제시"
+        ],
+        "concepts": [],
+        "tldr": "열 노출이 신장 건강에 미치는 역학·기전·임상적 함의를 체계적으로 리뷰하고, 기후변화 맥락에서 CKD 환자군의 이중 위협과 불평등 문제를 조명함.",
+        "question": "기후변화로 인한 열 노출이 CKD 발생·진행에 얼마나 기여하며, 고위험군을 어떻게 보호할 수 있는가?",
+        "key_result": "고온은 급성 신장 손상 및 CKD 이환율 증가와 일관되게 연관됨. CKD 환자는 열 사건 시 급성 이환과 신기능 가속 감소의 이중 위협에 노출되며, 현재의 임상 근거는 주로 건강한 자원자 연구에서 외삽된 것임.",
+        "why_for_us": "신장 도메인(nephro) 연구 맥락에서 CKD의 환경적 위험 인자를 이해하는 배경 리뷰로 활용 가능. 유전-환경 상호작용 연구 및 CKD GWAS 해석 시 환경 공변량 고려에 참고.",
+        "limitations": "광범위 인구에서의 CKD 발생·진행에 대한 열 기여도는 아직 불충분하게 규명됨. 임상 근거가 건강한 지원자 데이터에서 외삽된 것으로 CKD 환자 특이적 지침 부재.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Tahoe-100M: Mapping drug-induced molecular phenotypes at single-cell resolution.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42753697/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42753697/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.08.035",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Zhang J",
+        "rating": 3,
+        "emoji": "🎗️",
+        "domain": "암",
+        "what_they_did": [
+          "Mosaic 플랫폼으로 유전적으로 다양한 세포주를 '세포 빌리지'로 다중화하여 배치 효과를 최소화",
+          "50개 암 세포주 × 1,100 약물-용량 조건에서 1억 개 단일세포 전사체 생성",
+          "증식·세포독성·세포주기·계통 취약성 등 세포 표현형을 정량화",
+          "경로 기반 시그니처로 약물 유도 발현 프로그램, 작용 기전 분류, 오프-타겟 활동 및 내성 관련 적응 스트레스 반응 규명"
+        ],
+        "concepts": [
+          "perturb-seq",
+          "drug-target-genetics"
+        ],
+        "tldr": "50개 암 세포주에 1,100가지 약물·용량 조건을 처리한 1억 개 단일세포 전사체 퍼터베이션 아틀라스(Tahoe-100M)를 구축, 약물 작용 기전·내성 기전·세포 운명 이질성을 체계적으로 분석했다.",
+        "question": "대규모 단일세포 약물 퍼터베이션 데이터를 통해 약물 반응의 분자적 표현형과 세포 이질성을 어떻게 포괄적으로 특성화할 수 있는가?",
+        "key_result": "약물이 세포를 분기된 운명 또는 수렴된 상태로 유도하는지 집단 수준에서 특성화 가능함을 보였으며, 경로 시그니처로 작용 기전 분류 및 내성 관련 스트레스 반응을 노출했다.",
+        "why_for_us": "단일세포 퍼터베이션 아틀라스는 랩의 single-cell 멀티오믹스, 암 면역학, 약물 표적 유전학 연구와 직결되며, 대규모 공개 데이터를 재분석하거나 AI 모델 훈련에 활용 가능하다.",
+        "limitations": "세포주 기반 데이터라 in vivo 종양 미세환경과의 괴리가 있음. 단일 오믹스(전사체)만 측정하여 단백체·후성유전체 변화는 반영 안 됨.",
+        "reuse": "Tahoe-100M 데이터셋 공개. AI 프레임워크 훈련 및 유전자 조절 네트워크 모델링에 재활용 가능.",
+        "next_step": ""
+      },
+      {
+        "title": "Viral mimicry escape as a necessary feature of malignant transformation.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42744865/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42744865/",
+        "doi": "https://doi.org/10.1038/s41568-026-00977-1",
+        "journal": "Nature reviews. Cancer",
+        "year": "2026",
+        "author": "Chen R",
+        "rating": 3,
+        "emoji": "🎗️",
+        "domain": "암",
+        "what_they_did": [
+          "암 관련 DNA 메틸화·히스톤 변형·스플라이싱·RNA 가공 변화가 TE 재활성화와 면역원성 핵산 축적을 야기하는 기전 정리",
+          "암세포의 바이러스 모방 억제 전략(후성유전적 재억제, RNA 편집, 핵산 분해, 인터페론 신호 감쇠) 체계적 리뷰",
+          "바이러스 모방 탈출을 암 개시·진행의 보편적 필수 과정으로 개념화하고 면역치료와의 병용 가능성 제시"
+        ],
+        "concepts": [
+          "noncoding-regulatory-variants",
+          "allele-specific-expression"
+        ],
+        "tldr": "암세포가 정상적으로 침묵된 전이인자(TE)·내인성 레트로바이러스 등을 재활성화해 항바이러스 반응(바이러스 모방)을 유발하고, 이를 억제(탈출)하는 것이 악성 형질전환의 필수 과정임을 주장하는 리뷰.",
+        "question": "암세포는 어떻게 transposable element(TE) 유래 면역원성 핵산이 촉발하는 '바이러스 모방(viral mimicry)' 억제 면역 감시를 회피하는가?",
+        "key_result": "바이러스 모방 탈출은 암 형질전환의 필수 단계로, DNMT·HDAC 등의 후성유전 경로와 인터페론 신호 억제가 핵심 메커니즘이다. 이를 치료 표적으로 활용하면 면역치료 병용 시 시너지가 기대된다.",
+        "why_for_us": "HERV·TE 재활성화와 자가면역(autoimmune) 및 암 면역의 교차점이 우리 랩 HERV 관심사와 일치. 특히 epigenetic dysregulation → HERV reactivation → 면역 활성화 경로가 직접 관련.",
+        "limitations": "리뷰 논문으로 독자적 실험 데이터 없음. 특정 암종·TE 서브패밀리에 대한 일반화 가능성 검토 필요.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Targeting BLVRB Overcomes Immunosuppression and Potentiates Immunotherapy in Monocytic Acute Myeloid Leukemia.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42742315/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42742315/",
+        "doi": "https://doi.org/10.1158/2159-8290.CD-26-0447",
+        "journal": "Cancer discovery",
+        "year": "2026",
+        "author": "Mo Z",
+        "rating": 3,
+        "emoji": "🎗️",
+        "domain": "암",
+        "what_they_did": [
+          "원발성 AML 샘플에 대해 단세포 멀티오믹스(scRNA + 추가 오믹스) 분석을 수행하여 면역억제 지형을 규명",
+          "BLVRB를 면역억제성 단핵구성 AML 세포의 마커로 동정",
+          "BLVRB 결핍 시 면역조절 유전자 발현 감소 및 T세포 세포독성 감수성 증가를 세포주·PDX 모델에서 검증",
+          "BLVRB-MAFB 전사인자 축에 의한 면역억제 유전자 발현 조절 기전을 규명",
+          "소분자 Tamibarotene이 BLVRB를 표적으로 CAR-T 및 항-PD-1 효능을 향상시킴을 확인"
+        ],
+        "concepts": [
+          "single-cell-eqtl",
+          "variant-to-cell-type"
+        ],
+        "tldr": "단세포 멀티오믹스로 단핵구성 AML의 면역억제 지형을 해독하고, BLVRB를 핵심 면역억제 마커로 동정하여 CAR-T·항-PD-1 병용 효능을 높이는 치료 타깃으로 제시함.",
+        "question": "단핵구성 AML에서 면역억제를 주도하는 분자 드라이버는 무엇이며, 이를 표적화하면 면역치료 효과를 개선할 수 있는가?",
+        "key_result": "BLVRB 고발현이 단핵구성 AML의 면역억제 표현형을 규정하며, Tamibarotene 처리 시 CAR-T·항-PD-1 병용 효능이 세포주 및 PDX 모델에서 유의하게 향상됨.",
+        "why_for_us": "단세포 멀티오믹스 분석 방법론과 암 면역(T세포 탈진·TME) 관심에 직결되는 논문; 종양 미세환경 내 면역억제 세포 동정에 단세포 오믹스를 활용한 사례로 참고 가능.",
+        "limitations": "단핵구성 AML에 국한된 연구로 다른 AML 아형 또는 고형암으로의 일반화 여부 불명확; in vivo 효능 데이터가 PDX 모델에 한정.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Spatial analysis reveals the evolving organization of IDH-mutant glioma.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42735681/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42735681/",
+        "doi": "https://doi.org/10.1016/j.ccell.2026.08.005",
+        "journal": "Cancer cell",
+        "year": "2026",
+        "author": "Hoefflin R",
+        "rating": 3,
+        "emoji": "🎗️",
+        "domain": "암",
+        "what_they_did": [
+          "IDH 돌연변이 신경교종 88개 조직 절편에 공간 전사체(ST) 및 공간 단백체 적용, 3개 시점에 걸쳐 분석",
+          "저등급 종양에서 피질-백질 경계부의 기능적 장벽 역할 확인",
+          "OPC 유사 악성 세포의 경계 침범 패턴 분석",
+          "고등급 종양에서 저산소증 주도 공간 구조 확인(IDH-wild-type 교모세포종과 유사)"
+        ],
+        "concepts": [
+          "spatial-transcriptomics",
+          "cell-type-deconvolution"
+        ],
+        "tldr": "IDH 돌연변이 신경교종에서 공간 전사체·단백체를 결합하여 조직학적 등급별 종양 공간 조직화 원리를 규명한 연구.",
+        "question": "IDH 돌연변이 신경교종에서 종양 등급에 따른 공간적 세포 구성과 미세환경 상호작용은 어떻게 달라지는가?",
+        "key_result": "저등급 종양: 뇌 해부학 주도 공간 구조 및 피질-백질 기능 경계 존재; 중간 등급: 비조직화; 고등급: 저산소증 주도 구조로 등급-공간 조직화 2축 프레임워크 제시.",
+        "why_for_us": "공간 전사체+단백체 통합 방법론 및 종양 미세환경 분석 전략이 우리 랩 멀티오믹스 통합·cancer immunology 연구에 참고가 됨.",
+        "limitations": "단일 종양 유형(IDH-mut 신경교종)에 국한, 인과적 기전 미확정.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "APOE-stratified genome-wide association analyses provide insights into the genetic etiology of Alzheimers's disease.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42736378/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42736378/",
+        "doi": "https://doi.org/10.1038/s41588-026-02713-9",
+        "journal": "Nature genetics",
+        "year": "2026",
+        "author": "Thomassen JQ",
+        "rating": 5,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "90개 이상의 기존 AD GWAS 위험 유전자좌를 배경으로 APOE ε2/ε3/ε4 유전형별 층화 분석 수행",
+          "APOE 유전형에 따른 유전-환경 상호작용(이형성) 검정",
+          "층화 분석으로 새로운 유전자좌 및 APOE 유전형 특이적 효과 확인"
+        ],
+        "concepts": [
+          "gwas-association-testing",
+          "fine-mapping",
+          "genetic-architecture",
+          "credible-set",
+          "partitioned-heritability"
+        ],
+        "tldr": "APOE ε2/ε3/ε4 유전형으로 층화한 GWAS를 수행하여 알츠하이머병의 유전적 이질성과 새로운 위험 유전자좌를 규명한 대규모 연구.",
+        "question": "APOE 유전형별로 AD GWAS를 층화하면 전체 분석에서 놓쳤던 유전적 위험 요인을 발굴할 수 있는가?",
+        "key_result": "APOE 유전형 층화 GWAS를 통해 APOE-의존적 유전 구조를 해명하였으며, 기존 전체 분석 대비 추가적인 위험 유전자좌 발굴(구체적 수치는 초록에 미기재).",
+        "why_for_us": "AD GWAS 층화 전략, fine-mapping, 유전적 이질성 분석은 우리 랩의 GWAS/QTL/fine-mapping 파이프라인과 직접 연결되며, 신경 질환 도메인에서의 방법론적 참고 사례.",
+        "limitations": "초록에 구체적인 샘플 수, p값, 새 유전자좌 수 등 수치가 명시되지 않음.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Transcriptome-based classification in mice with ASD-risk mutations.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42752124/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42752124/",
+        "doi": "https://doi.org/10.1126/science.adz6688",
+        "journal": "Science (New York, N.Y.)",
+        "year": "2026",
+        "author": "Roh JD",
+        "rating": 4,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "17개 ASD 위험 돌연변이 마우스 계통에 대해 성별 균형을 맞춘 1008개 전전두피질 bulk RNA-seq 프로파일을 생성",
+          "두 개의 상반된 전사체 상태(그룹1, 그룹2) 분류 체계 수립",
+          "그룹 간 성별 편향, 지역 특이성, 발달 안정성, 세포 유형 리모델링, 플루옥세틴/리튬 반응 차이 분석",
+          "단핵 RNA-seq(snRNA-seq)으로 세포 유형별 모듈 분석 및 bulk 전사체 패턴과의 대응 확인"
+        ],
+        "concepts": [
+          "de-novo-variants",
+          "single-cell-eqtl",
+          "neurodevelopmental-trajectory",
+          "sex-differences-psychiatric",
+          "brain-cell-atlas"
+        ],
+        "tldr": "ASD 위험 돌연변이를 가진 17개 마우스 계통에서 1008개 전전두엽 RNA-seq 프로파일을 수집해 두 가지 대립적 전사체 상태(그룹1/2)를 발견하고, 단핵 RNA-seq으로 세포 유형 수준의 재편성을 분석함.",
+        "question": "1200개 이상의 ASD 위험 유전자가 전사체 수준에서 공통된 분자적 패턴을 가지는가?",
+        "key_result": "그룹1은 그룹2보다 더 광범위한 세포 유형 리모델링을 보였으며, 시냅스 방향성이 보존된 하위그룹을 식별함. 독립적인 마우스 계통도 이 분류 체계로 분류 가능.",
+        "why_for_us": "ASD 유전 구조와 분자적 계층화(molecular stratification)에 관한 연구로, 단일세포 전사체·유전자 발현 모듈·신경발달 표현형 연계 분석에 직접적으로 연관됨. de novo 변이·세포 유형 특이적 eQTL 해석에도 활용 가능.",
+        "limitations": "마우스 모델 기반으로 인간 ASD에 대한 직접 일반화에는 한계가 있음. 분류 기반의 계층화가 임상적 표현형과 어떻게 연결되는지 불명확.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "The genetic overlap between schizophrenia and major depression with cognitive function.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42749774/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42749774/",
+        "doi": "https://doi.org/10.1038/s41380-026-03887-8",
+        "journal": "Molecular psychiatry",
+        "year": "2026",
+        "author": "Su Q",
+        "rating": 4,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "SCZ(N=175,799), MDD(N=2,622,273), 인지 4종 형질 GWAS 요약 통계량 통합",
+          "LD score regression으로 유전 상관 추정",
+          "Bayesian colocalization으로 공유 유전 영역 탐색",
+          "유전자 매핑 및 과대표현 분석(ORA)으로 경로 분석"
+        ],
+        "concepts": [
+          "genetic-correlation",
+          "colocalization",
+          "gwas-association-testing",
+          "summary-statistics-methods",
+          "fine-mapping"
+        ],
+        "tldr": "SCZ·MDD와 인지 기능 간의 공유 유전 구조를 대규모 GWAS 통계량 통합(LD score regression + Bayesian colocalization)으로 체계적으로 해부.",
+        "question": "SCZ·MDD와 인지 기능(반응 시간, 기억력 등) 사이의 공유 유전 변이는 무엇인가?",
+        "key_result": "SCZ-반응시간·기억·언어수리추론 간 유의한 음의 유전 상관; SCZ-인지 7개 유전체 영역 colocalization 강한/지지 증거, MD-인지 2개 영역 지지 증거; SCZ 연관 유전자는 수송 경로, MDD 연관 유전자는 신경 발달 경로에 집중.",
+        "why_for_us": "GWAS summary statistics 통합, 유전 상관(genetic-correlation), colocalization 방법론이 랩 핵심 방법과 정확히 일치; SCZ·MDD 질환 도메인 해당.",
+        "limitations": "GWAS 요약 통계량만 사용해 인과 방향 불분명; 인지 형질 측정 이질성; 동양인 집단 포함 여부 불확실.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Atypical Alzheimer disease: a multi-axis framework toward defining heterogeneity.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42760345/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42760345/",
+        "doi": "https://doi.org/10.1038/s41582-026-01267-y",
+        "journal": "Nature reviews. Neurology",
+        "year": "2026",
+        "author": "Grinberg LT",
+        "rating": 3,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "후방 피질 위축, 언어변이형 원발성 진행성 실어증, 행동·실행기능 AD, 피질기저 증후군 등 비전형 AD 변이형의 임상·신경병리·영상·유전·분자 근거를 종합 리뷰함",
+          "임상 표현형 / AD 생물학적 맥락(Aβ·타우·동반 병리) / 네트워크 위상(영역별 패턴) / 진행 속도(tempo) 4축으로 구성된 실용적 분류 체계 제안",
+          "선택적 신경회로 취약성에 관여하는 면역-신경교, 혈관, 단백질 처리, 시냅스, 유전 요인들을 검토"
+        ],
+        "concepts": [
+          "genetic-architecture",
+          "fine-mapping",
+          "partitioned-heritability"
+        ],
+        "tldr": "비전형(atypical) AD의 임상 변이형들을 통합하는 다축(multi-axis) 분류 체계를 제안하여, 이질적인 AD 스펙트럼을 임상표현형·생물학적 맥락·네트워크 위상·진행 속도 네 축으로 구조화함.",
+        "question": "전형적 기억 장애 외 다양한 증상을 보이는 비전형 AD를 어떻게 일관된 틀로 분류하고 병태생리적 이질성을 설명할 수 있는가?",
+        "key_result": "비전형 AD는 총 Aβ·타우 부담보다 국소 타우 분포·네트워크 위상이 증상을 더 잘 예측하며, 다축 체계는 진단 불일치 감소·코호트 비교 가능성 향상·맞춤형 임상시험 아웃컴 설계를 지원한다.",
+        "why_for_us": "AD 유전체·멀티오믹스 연구 시 비전형 AD 이질성을 고려한 층화(stratification) 전략 설계에 참고할 수 있으며, 신경회로 취약성 관련 유전 인자 발굴(GWAS/QTL) 방향을 제시함.",
+        "limitations": "리뷰 논문으로 자체 데이터 없음; 제안된 다축 체계의 임상적 타당성은 전향적 검증 필요.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "De novo variants in the poly(rC)-binding protein gene PCBP1 cause a neurodevelopmental disorder.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42749777/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42749777/",
+        "doi": "https://doi.org/10.1038/s41380-026-03877-w",
+        "journal": "Molecular psychiatry",
+        "year": "2026",
+        "author": "Deb W",
+        "rating": 3,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "국제 다기관 공동연구로 16개 가계 17명에서 PCBP1 de novo 병원성 변이 16종 발굴",
+          "생쥐 해마 신경세포 배양에서 수지상 분지 형성에 미치는 기능 분석 수행",
+          "환자 유래 T세포의 RNA-seq으로 엑손 스킵 증가 등 전사체 서명 분석"
+        ],
+        "concepts": [
+          "de-novo-variants",
+          "neurodevelopmental-trajectory",
+          "brain-isoform-diversity"
+        ],
+        "tldr": "PCBP1 유전자의 de novo 변이가 지적장애·ASD를 유발하며, 스플라이싱 결함과 수지상 형성 장애가 핵심 기전임을 다국가 코호트에서 규명.",
+        "question": "PCBP1 de novo 변이가 어떻게 신경발달장애를 유발하는가?",
+        "key_result": "전체 대상자가 지적장애를 보이고 ASD가 두드러지는 표현형을 가짐; PCBP1 변이는 수지상 분지 형성 감소, 환자 T세포에서 엑손 스킵 유의미하게 증가.",
+        "why_for_us": "ASD·신경발달 유전학(de novo 변이, 스플라이싱 QTL) 관심 영역과 직결; de-novo-variants 및 neurodevelopmental-trajectory 위키 개념과 연결됨.",
+        "limitations": "소규모 환자 코호트(N=17), T세포 기반 전사체 데이터가 뇌 신경세포를 대리하는지 불확실.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Inflection points and transitions in Alzheimer's disease.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42749285/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42749285/",
+        "doi": "https://doi.org/10.1038/s41586-026-11110-5",
+        "journal": "Nature",
+        "year": "2026",
+        "author": "De Strooper B",
+        "rating": 3,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "아밀로이드 축적→Tau 인산화→신경 퇴행의 기존 선형 모델을 비판적으로 검토",
+          "분자·세포·네트워크 수준의 이산 위상과 생물학적 변곡점 개념 제안",
+          "아밀로이드 연관 Tau 인산화를 핵심 변곡점으로 제시하는 2단계 모자이크 진행 모델 구성"
+        ],
+        "concepts": [
+          "microglia-neuroimmune",
+          "brain-cell-atlas"
+        ],
+        "tldr": "알츠하이머병을 선형 아밀로이드 캐스케이드가 아닌, 생물학적 변곡점(inflection point)에서 질적 전환이 일어나는 비선형 위상 모델로 재개념화한 리뷰·관점 논문.",
+        "question": "알츠하이머병의 병리-증상 해리와 가족성/산발성 공통 구조를 어떻게 통일된 프레임으로 설명할 수 있는가?",
+        "key_result": "병리와 증상의 해리, 뇌 내 모자이크 분포, 가족성·산발성 공유 구조를 변곡점 모델로 설명; 항상성 회복력 점진적 소실이 진행 속도를 결정한다고 제안.",
+        "why_for_us": "AD 신경유전학·멀티오믹스 연구의 개념적 배경 자료로 활용 가능; 질환 단계 구분이 GWAS/QTL 층화 분석 설계에 참고가 됨.",
+        "limitations": "실험 데이터가 없는 관점(Perspective) 논문; 변곡점의 정량적 정의 및 측정 방법 미제시.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Somatic mosaicism in the brain: linking development, ageing and neurodegeneration.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42736451/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42736451/",
+        "doi": "https://doi.org/10.1038/s41582-026-01268-x",
+        "journal": "Nature reviews. Neurology",
+        "year": "2026",
+        "author": "Zhou Z",
+        "rating": 3,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "체세포 모자이시즘 관련 현재까지의 증거를 체계적으로 종합(리뷰)",
+          "벌크·오류보정·단일세포 시퀀싱 등 검출 방법론의 장단점 비교",
+          "발생 초기 vs. 노화 관련 변이의 클론 구조 차이 분석",
+          "신경발달(ASD 등)과 신경퇴행(AD, PD 등) 표현형과의 연관 데이터 요약"
+        ],
+        "concepts": [
+          "mosaic-chromosomal-alteration",
+          "de-novo-variants",
+          "variant-calling",
+          "single-cell-eqtl"
+        ],
+        "tldr": "뇌 체세포 모자이시즘의 발생·노화·신경퇴행 전반을 포괄하는 리뷰. 발생 타이밍, 클론 구조, 세포유형별 선택압이 신경질환에 미치는 영향을 정리하고, 단일세포 시퀀싱 기반 검출 기법과 임상 번역 가능성을 논한다.",
+        "question": "발생 이후 후접합체적으로 획득된 체세포 변이가 뇌의 구조·기능에 어떤 메커니즘으로 기여하며, 신경발달장애와 신경퇴행 사이를 어떻게 연결하는가?",
+        "key_result": "초기 배아 변이는 광역 클론·심각한 표현형을 만들고, 후기 변이는 제한적; 노화 시 DNA 손상 축적으로 세포 회복력 저하. 뇌 체세포 변이가 국소 병변에서 네트워크 수준 기능장애까지 연결되는 통합 프레임워크 제시.",
+        "why_for_us": "mosaic-chromosomal-alteration, de-novo-variants 개념과 직접 연결되며, 신경(ASD, AD, PD) 도메인 분석 시 체세포 변이 영향을 이해하는 배경 지식으로 활용 가능.",
+        "limitations": "인과성 확립을 위한 종단 코호트 데이터 부족; 단일세포 시퀀싱의 검출 민감도·임상 번역 한계 언급.",
+        "reuse": "",
+        "next_step": "게놈·세포·생리 분석을 종단 인체 연구에 통합하여 인과관계 정의, 바이오마커 발굴, 표적 치료 개발 방향 제시."
+      },
+      {
+        "title": "Spatiotemporal single-cell profiling reveals T cell clonal dynamics and phenotypic plasticity in human graft-versus-host disease.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42754741/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42754741/",
+        "doi": "https://doi.org/10.1038/s41590-026-02631-2",
+        "journal": "Nature immunology",
+        "year": "2026",
+        "author": "Shi L",
+        "rating": 4,
+        "emoji": "⚔️",
+        "domain": "면역",
+        "what_they_did": [
+          "이식 수혜자 31명에서 종단 TCR 시퀀싱 + scRNA-seq/TCR-seq + 공간전사체 데이터를 통합 수집",
+          "DecompTCR 계산 도구를 개발해 클론별 시간적 동태를 분해",
+          "공간전사체 기반 클론 표현형·니치 매핑 파이프라인 구축",
+          "사이클로포스파마이드 처리 전후 동종반응성 클론 변화 분석"
+        ],
+        "concepts": [
+          "spatial-transcriptomics",
+          "single-cell-eqtl",
+          "variant-to-cell-type"
+        ],
+        "tldr": "이식편대숙주병(GvHD) 환자 31명을 대상으로 TCR 프로파일링·단일세포 RNA-seq·공간전사체를 통합해 T세포 클론의 시간적 동태와 조직 내 위치를 동시에 추적함.",
+        "question": "인간 GvHD에서 동종반응성 T세포 클론은 어떻게 확장·유지되며, 중증도와 어떤 연관이 있는가?",
+        "key_result": "사이클로포스파마이드는 동종반응성 클론을 선택적으로 제거하지만, 초기 확장이 불충분하면 불완전 제거로 중증 GvHD가 유발됨. 중증 GvHD는 동종반응성 클론의 지속 확장, 항상성 세포유형의 재배선, 공여자 유래 CD8 T세포의 다양화로 특징지어짐.",
+        "why_for_us": "단일세포 eQTL/QTL 연구에서 활용되는 scRNA-seq+TCR 통합 분석 및 공간전사체 방법론이 직접 사용됨. T세포 탈진·상태·클론 동태는 암 면역학 및 자가면역 관심 분야와 일치. DecompTCR 등 새 계산 도구는 재활용 가능.",
+        "limitations": "단일군 관찰 연구(n=31)로 인과 추론 제한. 인간 GvHD 특이적 결과의 일반화 한계.",
+        "reuse": "DecompTCR 도구 및 scRNA-seq+TCR+공간전사체 통합 파이프라인 재활용 가능성 있음.",
+        "next_step": "초록에 명시 없음."
+      },
+      {
+        "title": "An open benchmark and language models for AI in aging biology.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42753698/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42753698/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.08.026",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Zhavoronkov A",
+        "rating": 3,
+        "emoji": "📄",
+        "domain": "기타",
+        "what_they_did": [
+          "메틸화, 전사체, 단백체, 임상 등 5개 바이오데이터 도메인에서 17개 태스크로 구성된 LongevityBench 오픈 벤치마크를 설계",
+          "18개 프론티어 AI 모델(6개 팀)을 LongevityBench로 평가",
+          "노화 도메인 특화 데이터로 5종의 Longevity-LLM(멀티태스크, 0.6B~9B) 파인튜닝",
+          "노화 연구자용 에이전틱 인터페이스 Longevity Claw 공개"
+        ],
+        "concepts": [
+          "aging-genetics"
+        ],
+        "tldr": "노화 생물학 AI 평가용 벤치마크 LongevityBench(17개 태스크, DNA 메틸화·전사체·단백체·임상 데이터)를 제시하고, 파인튜닝된 소형 Longevity-LLM(0.6B~9B)이 대형 프론티어 모델을 능가함을 보였다.",
+        "question": "현재 AI 시스템이 이종 노화 오믹스 데이터를 얼마나 잘 해석할 수 있는가?",
+        "key_result": "단일 프론티어 모델이 모든 태스크를 지배하지 못했으며, 오믹스 기반 연령 예측이 모델 규모와 무관하게 가장 어려운 태스크였음. 소형 Longevity-LLM이 다수 태스크에서 훨씬 큰 범용 모델과 동등하거나 초과하는 성능을 보였다.",
+        "why_for_us": "랩에서 멀티오믹스(메틸화, 전사체, 단백체) 데이터를 다루고 aging 관련 연구도 진행하므로, 이 벤치마크는 자체 AI 파이프라인 성능 평가 및 도메인 특화 모델 활용 시 참고 가능하다.",
+        "limitations": "벤치마크가 주로 기존 오믹스 모달리티에 국한되어 있으며, LLM의 hallucination 문제나 인과 추론 능력은 충분히 평가되지 않았을 가능성이 있다.",
+        "reuse": "LongevityBench, Longevity-LLM, Longevity Claw 모두 공개 배포됨. 노화 오믹스 AI 평가 시 재활용 가능.",
+        "next_step": ""
+      },
+      {
+        "title": "World models for biomedicine.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42753693/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42753693/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.08.032",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Noori A",
+        "rating": 3,
+        "emoji": "📄",
+        "domain": "기타",
+        "what_they_did": [
+          "AI의 world model(행동-조건부 시뮬레이션) 패러다임을 생물의학에 도입하는 개념적 프레임워크를 제안",
+          "관찰 데이터와 개입·종단 데이터를 다중 모달리티로 결합하는 방법론적 방향 제시",
+          "분자→세포→조직→임상 스케일을 아우르는 멀티스케일 시뮬레이션의 필요성과 구성 원리를 논의"
+        ],
+        "concepts": [
+          "perturb-seq",
+          "molecular-qtl"
+        ],
+        "tldr": "생물의학 분야에 'world model' AI 패러다임을 확장하여 분자·세포·조직·임상 스케일에서 개입(intervention) 후 생물학적 궤적을 시뮬레이션하자는 비전 논문.",
+        "question": "AI의 world model 개념을 생물의학에 적용해 복잡한 개입 전에 시스템 반응을 예측할 수 있는가?",
+        "key_result": "구체적인 실험 결과 없음; 생물의학 world model의 개념·요구사항·잠재적 활용(새 perturbation 반응 예측, 원하는 상태로 유도하는 개입 탐색, 장기 실험 계획)을 체계화한 전망 논문.",
+        "why_for_us": "멀티오믹스 통합 및 perturb-seq 등 개입 데이터를 다루는 랩 입장에서, world model 프레임이 QTL·단일세포·다중오믹스 데이터를 인과적으로 연결하는 미래 방향을 제시함.",
+        "limitations": "구체적 구현 방법·벤치마크 없음; 순수 비전/리뷰 논문으로 실증적 검증 부재.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "The Virtual Biotech: A multi-agent AI framework for therapeutic discovery and development.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42752167/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42752167/",
+        "doi": "https://doi.org/10.1126/science.aeg6779",
+        "journal": "Science (New York, N.Y.)",
+        "year": "2026",
+        "author": "Zhang HG",
+        "rating": 3,
+        "emoji": "📄",
+        "domain": "기타",
+        "what_they_did": [
+          "표적 발굴·안전성 평가·치료 모달리티 선택·임상 개발 부서로 구성된 다중 에이전트 AI 프레임워크 구축",
+          "37,000개 에이전트가 55,984건 임상시험 결과를 어노테이션하여 세포 유형 특이적 유전자 표적의 임상 성공률 분석",
+          "폐암 치료 전략 제안 및 종료된 궤양성 대장염 임상시험 실패 기전 추론에 적용"
+        ],
+        "concepts": [
+          "drug-target-genetics",
+          "cell-type-deconvolution"
+        ],
+        "tldr": "약물 개발 회사 구조를 모방한 다중 에이전트 AI 시스템(Virtual Biotech)을 구축해, 37,000개 에이전트가 55,984건 임상시험을 분석하고 세포 유형 특이적 표적이 성공률 48% 향상·부작용 32% 감소를 보임을 보인 연구.",
+        "question": "약물 개발의 전 단계(표적 발굴→안전성→모달리티→임상)를 AI 에이전트 조직으로 통합해 의사결정을 지원할 수 있는가?",
+        "key_result": "세포 유형 특이적 유전자를 표적으로 한 약물은 시장 진입 가능성이 48% 높고 부작용이 32% 적음; 멀티모달 증거 통합으로 새로운 치료 전략 제안 가능.",
+        "why_for_us": "drug-target genetics와 cell-type-specific 분석을 결합하는 랩 방향성과 연관; 특히 QTL→약물 표적 연결 연구에 영감 제공.",
+        "limitations": "에이전트 기반 시스템의 재현성·환각 문제 미검증; 특정 질환 사례에 국한된 시연.",
+        "reuse": "",
+        "next_step": ""
+      }
+    ]
+  },
+  {
     "date": "2026-09-13",
     "count": 25,
     "papers": [
@@ -11001,184 +11750,6 @@ window.CARDNEWS = [
         "limitations": "대부분의 기전 증거가 단일 질환 연구 유래이고, 인과 경로·집단 이질성·시간적 위계는 미해결.",
         "reuse": "",
         "next_step": "생애 주기 연구, 통합 시스템 접근법, 기전 발견과 정밀 예방을 연결하는 중개 연구 필요."
-      }
-    ]
-  },
-  {
-    "date": "2026-06-21",
-    "count": 6,
-    "papers": [
-      {
-        "title": "Macrophage-mediated brain-bone marrow crosstalk promotes chronic stress-induced glioma growth.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42314665/",
-        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42314665/",
-        "doi": "https://doi.org/10.1016/j.ccell.2026.05.018",
-        "journal": "Cancer cell",
-        "year": "2026",
-        "author": "Yang Z",
-        "rating": 3,
-        "emoji": "🎗️",
-        "domain": "암",
-        "what_they_did": [
-          "동계 교모세포종 마우스 모델에서 만성 스트레스 조건 부여 후 생존율 및 종양 성장 평가",
-          "종양 샘플에 대해 통합 멀티오믹스 분석 수행하여 스트레스 유발 CD45+ 면역세포 변화 규명",
-          "뇌-골수 간 대식세포 크로스토크 메커니즘 탐색"
-        ],
-        "concepts": [
-          "brain-body-immune-circuits"
-        ],
-        "tldr": "만성 스트레스가 뇌-골수 축을 통해 대식세포를 재프로그래밍하여 교모세포종 성장을 가속화함을 멀티오믹스 분석으로 규명.",
-        "question": "만성 스트레스가 종양 미세환경(TME) 내 면역세포 구성을 어떻게 변화시켜 교모세포종 성장을 촉진하는가?",
-        "key_result": "만성 스트레스는 교모세포종 성장을 가속하고 생존을 단축시키며, 멀티오믹스 분석에서 스트레스 유발 CD45+ 세포 재프로그래밍이 확인됨(초록 일부 잘림).",
-        "why_for_us": "암 면역(TME) 및 멀티오믹스 통합 분석이 랩의 cancer immunology 관심사와 연결됨.",
-        "limitations": "초록이 잘려 있어 세부 오믹스 데이터 및 인간 검증 여부 불명확.",
-        "reuse": "",
-        "next_step": ""
-      },
-      {
-        "title": "Cellular architecture and neighborhood-informed virtual spatial tumor profiling from histopathology.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42302781/",
-        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42302781/",
-        "doi": "https://doi.org/10.1016/j.cell.2026.05.031",
-        "journal": "Cell",
-        "year": "2026",
-        "author": "Li Y",
-        "rating": 3,
-        "emoji": "🎗️",
-        "domain": "암",
-        "what_they_did": [
-          "457명 비소세포폐암 환자에서 41-plex 공간 단백질체(약 1,800만 세포)로 10개의 재현 가능한 세포 이웃(CN) 아틀라스 구축",
-          "멀티모달 정렬 및 foundation model 기반 형태 인코딩으로 H&E 슬라이드에서 CN 기반 habitat 구조를 예측하는 CANVAS 플랫폼 개발",
-          "9개 암종, 5,000명 이상 환자 코호트에서 예후 모델링·공간 ecotype 층화·면역치료 반응 예측 검증"
-        ],
-        "concepts": [
-          "spatial-transcriptomics",
-          "cell-type-deconvolution"
-        ],
-        "tldr": "H&E 병리 이미지만으로 종양 미세환경(TME)의 공간적 생태 구조를 AI로 예측하는 플랫폼 CANVAS를 개발, 5,000명 이상 환자에서 예후·면역치료 반응 예측에 활용",
-        "question": "H&E 슬라이드만으로 고비용 공간 단백질체 데이터 없이 TME의 세포 이웃 구조와 임상 결과를 예측할 수 있는가?",
-        "key_result": "CANVAS는 H&E 이미지만으로 TME 공간 구조를 재현하고, 9개 암종 5,000명+ 환자에서 예후 및 면역치료 결과 예측력을 보임",
-        "why_for_us": "TME 공간 구조와 면역치료 반응 예측은 암 면역학(T cell exhaustion·TME) 관심 분야와 직결되며, 단일세포-공간전사체 연계 및 멀티오믹스 통합 방법론 측면에서 참고 가치 있음",
-        "limitations": "H&E 예측이 실제 단백질체 수준 정보를 완전히 대체할 수 있는지 검증 깊이가 초록에서 불명확; 폐암 중심 아틀라스를 타 암종에 적용 시 일반화 한계 가능성",
-        "reuse": "",
-        "next_step": ""
-      },
-      {
-        "title": "Developmentally dynamic, non-convergent transcriptomic profiles in CNV models for schizophrenia risk.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42315919/",
-        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42315919/",
-        "doi": "https://doi.org/10.1038/s41380-026-03679-0",
-        "journal": "Molecular psychiatry",
-        "year": "2026",
-        "author": "French H",
-        "rating": 4,
-        "emoji": "🧠",
-        "domain": "신경",
-        "what_they_did": [
-          "15q13.3del, 3q29del, 1q21.1del, 22q11.2del, 16p11.2dup 5종 CNV 마우스 모델을 청소년기·성인기 두 시점에 걸쳐 전전두엽 단일세포 RNA-seq 수행",
-          "총 292,943개 고품질 단일세포 전사체를 분석하여 세포 유형별·연령별 차등발현 유전자 및 경로 교란 패턴 규명",
-          "GWAS SNP 유래 조현병 heritability 농축 분석을 세포 유형별로 수행"
-        ],
-        "concepts": [
-          "de-novo-variants",
-          "neurodevelopmental-trajectory",
-          "brain-eqtl-grn",
-          "sex-differences-psychiatric"
-        ],
-        "tldr": "조현병 관련 5가지 CNV 마우스 모델의 전전두엽을 단일세포 RNA-seq으로 분석한 결과, CNV들이 공통 분자 경로로 수렴하지 않고 발달 단계·세포 유형별로 고유한 경로를 교란한다는 것을 보여줌.",
-        "question": "조현병 위험 CNV들이 공통 분자 메커니즘으로 수렴하는가, 아니면 각각 독립적 경로를 교란하는가?",
-        "key_result": "5가지 CNV는 수렴 경로 없이 발달 동적·고유 경로를 교란함. 15q13.3del·16p11.2dup의 deep-layer 피질시상 투사 뉴런과 성인 22q11.2del의 intratelencephalic 뉴런에서 조현병 SNP heritability 농축이 관찰됨.",
-        "why_for_us": "단일세포 RNA-seq, SNP heritability 농축 분석(GWAS/QTL 기반), CNV와 표현형 연결이 모두 랩의 핵심 관심 영역(계산유전체학·통계유전학·single-cell)에 해당함.",
-        "limitations": "마우스 모델이므로 인간 뇌 발달과의 직접 대응에 한계; 전전두엽만 분석하여 다른 뇌 영역 교란 미포함.",
-        "reuse": "",
-        "next_step": ""
-      },
-      {
-        "title": "Early oligodendrocyte dysfunction signature in Alzheimer's disease: Insights from DNA methylomics and transcriptomics.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42315917/",
-        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42315917/",
-        "doi": "https://doi.org/10.1038/s41380-026-03686-1",
-        "journal": "Molecular psychiatry",
-        "year": "2026",
-        "author": "Fodder K",
-        "rating": 4,
-        "emoji": "🧠",
-        "domain": "신경",
-        "what_they_did": [
-          "4개 뇌 영역의 인간 DNA 메틸화 데이터, 인간 단일핵 RNA-seq 데이터, 마우스 뇌 RNA-seq 데이터를 대상으로 WGCNA 수행",
-          "AD 관련 네트워크 모듈 중 희돌기교세포 유전자 농축 모듈을 다른 신경퇴행성 질환 메틸화 데이터와 비교",
-          "트랜스제닉 마우스(초기 Aβ 병리)에서 동일 서명의 보존 여부 검증"
-        ],
-        "concepts": [
-          "cell-type-deconvolution",
-          "brain-eqtl-grn",
-          "microglia-neuroimmune"
-        ],
-        "tldr": "알츠하이머병(AD) 뇌의 DNA 메틸화 및 전사체 멀티오믹스 분석을 통해 희돌기교세포(oligodendrocyte) 특이적 후성유전학 서명이 AD 초기부터 존재하며 질환 진행 전반에 걸쳐 보존됨을 발견.",
-        "question": "AD 뇌에서 DNA 메틸화 변화가 희돌기교세포 기능 이상과 어떻게 연결되며, 이것이 질환 초기부터 존재하는가?",
-        "key_result": "OLG 특이적 DNA 메틸화 서명이 초기·후기 AD 병리 뇌 영역 모두에서 보존되며, 해당 유전자들의 발현이 AD OLG에서 실제로 변화함. Aβ 병리가 없는 다른 신경퇴행성 질환에서도 보존됨.",
-        "why_for_us": "DNA 메틸화(mQTL)·단일세포·멀티오믹스 통합이 랩의 핵심 관심사이며, 세포 유형 특이적 후성유전학 분석 방법론이 신장·자가면역 연구에도 직접 적용 가능.",
-        "limitations": "인과 관계 규명보다 관찰적 연관성에 의존; 세포 유형 분해가 계산적으로 수행되어 실험적 검증 제한적.",
-        "reuse": "",
-        "next_step": ""
-      },
-      {
-        "title": "Lamprey 3D single-cell transcriptomics reveals ancestral and specialized features of the vertebrate brain.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42313957/",
-        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42313957/",
-        "doi": "https://doi.org/10.1126/science.aea2535",
-        "journal": "Science (New York, N.Y.)",
-        "year": "2026",
-        "author": "Wu H",
-        "rating": 3,
-        "emoji": "🧠",
-        "domain": "신경",
-        "what_they_did": [
-          "칠성장어 뇌에 공간 전사체학 및 단일핵 RNA-seq 적용, 14개 영역에서 209개 세포 클러스터 동정",
-          "교차 종 비교를 통해 지역적 공간 구조의 보존성과 계통 특이적 분화 패턴 분석",
-          "소뇌 유사 구조가 턱있는 척추동물 소뇌 이전에 존재했음을 제안"
-        ],
-        "concepts": [
-          "spatial-transcriptomics",
-          "cross-species-cell-type-evolution",
-          "brain-cell-atlas"
-        ],
-        "tldr": "칠성장어 뇌에 공간 전사체학과 단일핵 RNA-seq을 적용하여 209개 세포 클러스터를 포함하는 3D 분자 지도를 작성하고, 척추동물 뇌 진화의 조상적 청사진과 계통 특이적 분화를 규명.",
-        "question": "척추동물 뇌의 진화적 보존 구조와 계통 특이적 신경 다양화는 어떻게 구분되는가?",
-        "key_result": "지역 공간 구조는 광범위하게 보존되나, 뉴런 특이화는 계통마다 크게 분기됨. 소뇌 유사 구조가 악구류 이전부터 존재했을 가능성 제시.",
-        "why_for_us": "공간 전사체학 및 단일세포 전사체학 방법론이 랩의 single-cell·spatial 관심사와 연결되며, 교차 종 세포 유형 비교 방법론이 참고할 만함.",
-        "limitations": "단일 종(칠성장어)에 한정되어 다른 무악류와의 비교 없음; 기능적 검증 부재.",
-        "reuse": "",
-        "next_step": ""
-      },
-      {
-        "title": "CXCL16-mediated recruitment of γδ T cells to the brain reduces sociability in mice.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42319913/",
-        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42319913/",
-        "doi": "https://doi.org/10.1126/sciimmunol.adz8466",
-        "journal": "Science immunology",
-        "year": "2026",
-        "author": "Takayama N",
-        "rating": 3,
-        "emoji": "⚔️",
-        "domain": "면역",
-        "what_they_did": [
-          "15q11-13 중복 ASD 마우스 뇌에서 γδ T세포 증가를 확인",
-          "CXCL16 케모카인이 γδ T세포의 뇌 모집을 매개함을 규명",
-          "γδ T세포 제거 시 사회성 결핍이 회복되는지 실험"
-        ],
-        "concepts": [
-          "maternal-immune-activation",
-          "microglia-neuroimmune",
-          "de-novo-variants"
-        ],
-        "tldr": "15q11-13 중복 ASD 마우스 모델에서 CXCL16에 의해 γδ T세포가 뇌로 모집되어 사회성을 저하시킨다는 것을 규명한 연구.",
-        "question": "유전적 ASD(15q11-13 dup) 모델에서 면역계, 특히 γδ T세포가 사회성 결핍에 어떻게 기여하는가?",
-        "key_result": "CXCL16-γδ T세포 축이 ASD 마우스의 뇌로 면역세포를 유입시켜 사회성 저하를 유발함; γδ T세포 차단 시 표현형 개선.",
-        "why_for_us": "maternal immune activation 및 신경면역(microglia-neuroimmune) 연구와 접점이 있으며, 유전적 CNV와 면역 상호작용을 다루는 점이 랩의 유전체-면역 통합 관심사와 연결됨.",
-        "limitations": "초록이 잘려 있어 세부 메커니즘 및 인간 데이터 유무 불명확.",
-        "reuse": "",
-        "next_step": ""
       }
     ]
   }
