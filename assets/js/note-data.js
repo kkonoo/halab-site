@@ -68,9 +68,9 @@ window.STUDIES = [
   },
   { 
     tag: "pre-HaLab",
-    title: "Linux / R / Python",
-    desc: "연구 환경 익히기",
-    url: "https://kkonoo.github.io/edu_KNUmed/"
+    title: "HaLab Quest",
+    desc: "분야 탐색 & 연구 감각 익히기",
+    url: "https://kkonoo.github.io/halab-quest/"
   },
   {
     tag: "HaLab 1",
@@ -92,9 +92,9 @@ window.STUDIES = [
   },
   {
     tag: "HaLab 2",
-    title: "Writing My First Paper (from KASRA)",
+    title: "Writing My First Paper",
     desc: "첫 논문 쓰기",
-    url: "https://chaek.org/books/how-to-write-paper/README"
+    url: "https://kkonoo.github.io/halab-quest/#/ch/ch4"
   },
   {
     tag: "HaLab 2",
