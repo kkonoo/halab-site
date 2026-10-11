@@ -61,16 +61,16 @@ window.RESOURCES = [
 /* ── 아래쪽 섹션: 공부 자료 / Study ── */
 window.STUDIES = [
   {
-    tag: "LLM-Wiki",
-    title: "HaLab Wiki",
-    desc: "온보딩 학생들을 위한 연구실 위키입니다",
-    url: "https://halab-wiki.knu.ac.kr/"
-  },
-  { 
     tag: "pre-HaLab",
     title: "HaLab Quest",
     desc: "분야 탐색 & 연구 감각 익히기",
     url: "https://kkonoo.github.io/halab-quest/"
+  },
+  {
+    tag: "LLM-Wiki",
+    title: "HaLab Wiki",
+    desc: "온보딩 학생들을 위한 연구실 위키입니다",
+    url: "https://halab-wiki.knu.ac.kr/"
   },
   {
     tag: "HaLab 1",
