@@ -69,7 +69,7 @@ window.STUDIES = [
   {
     tag: "LLM-Wiki",
     title: "HaLab Wiki",
-    desc: "온보딩 학생들을 위한 연구실 위키입니다",
+    desc: "온보딩 학생들을 위한 연구실 위키",
     url: "https://halab-wiki.knu.ac.kr/"
   },
   {
