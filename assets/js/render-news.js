@@ -9,7 +9,7 @@
   var home = document.getElementById('home-news');
   if (home) {
     home.innerHTML = DATA.slice(0, 4).map(function (n) {
-      return '<li><span class="date">' + n.date + '</span><span class="txt">' + title(n) + '</span></li>';
+      return '<li><a href="news.html"><span class="txt">' + title(n) + '</span><span class="date">' + n.date + '</span></a></li>';
     }).join('');
     return;
   }

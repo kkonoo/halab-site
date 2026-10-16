@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Members · KNU Genomic Medicine Lab</title>
 <meta name="description" content="People of the KNU Genomic Medicine Lab — PI, graduate students, interns and alumni.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="icon" href="assets/img/favicon.ico" sizes="any">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('halab-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.lang=localStorage.getItem('halab-language')==='ko'?'ko':'en'}catch(e){}</script>
 <link rel="stylesheet" href="assets/css/styles.css">
@@ -33,21 +31,20 @@
   </div>
 </header>
 
-<section class="hero" style="padding-bottom:0">
-  <div class="wrap" style="padding-bottom:64px">
+<section class="page-head with-tabs">
+  <div class="wrap">
     <span class="eyebrow"><span data-member-label="label-0"></span></span>
-    <h1 style="font-size:clamp(30px,4.6vw,52px)"><span data-member-label="label-1"></span> <br><span data-member-label="label-2"></span></h1>
+    <h1><span data-member-label="label-1"></span> <br><span data-member-label="label-2"></span></h1>
+    <div class="tab-bar" role="tablist" aria-label="Members">
+      <button class="tab-btn" id="tab-pi" role="tab" aria-controls="panel-pi" aria-selected="true" data-tab="pi"><span data-member-label="label-3"></span></button>
+      <button class="tab-btn" id="tab-current" role="tab" aria-controls="panel-current" aria-selected="false" data-tab="current"><span data-member-label="label-4"></span></button>
+      <button class="tab-btn" id="tab-alumni" role="tab" aria-controls="panel-alumni" aria-selected="false" data-tab="alumni"><span data-member-label="label-5"></span></button>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-
-    <div class="tab-bar reveal" role="tablist" aria-label="Members">
-      <button class="tab-btn" id="tab-pi" role="tab" aria-controls="panel-pi" aria-selected="true" data-tab="pi"><span data-member-label="label-3"></span></button>
-      <button class="tab-btn" id="tab-current" role="tab" aria-controls="panel-current" aria-selected="false" data-tab="current"><span data-member-label="label-4"></span></button>
-      <button class="tab-btn" id="tab-alumni" role="tab" aria-controls="panel-alumni" aria-selected="false" data-tab="alumni"><span data-member-label="label-5"></span></button>
-    </div>
 
     <div class="tab-panel" id="panel-pi" role="tabpanel" aria-labelledby="tab-pi" data-panel="pi">
       <div class="member-grid">
@@ -57,7 +54,7 @@
     </div>
 
     <div class="tab-panel" id="panel-current" role="tabpanel" aria-labelledby="tab-current" data-panel="current" hidden>
-      <h2 class="member-section-title reveal">👩‍🎓 <span data-member-label="label-6"></span></h2>
+      <h2 class="member-section-title reveal"><span data-member-label="label-6"></span></h2>
       <div class="member-grid">
         <div class="member reveal" data-member="eunkyung-kim">
         </div>
@@ -66,7 +63,7 @@
         </div>
       </div>
 
-      <h2 class="member-section-title reveal">🐣 <span data-member-label="label-7"></span></h2>
+      <h2 class="member-section-title reveal"><span data-member-label="label-7"></span></h2>
       <div class="member-grid">
 
         <div class="member reveal" data-member="yichul-won">

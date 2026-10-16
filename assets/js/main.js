@@ -131,14 +131,12 @@
   }
   window.translatePage = translateTree;
 
+  // One button that shows the other language (EN page → "KO").
   function updateLanguageButtons() {
-    document.querySelectorAll('[data-set-language]').forEach(function (button) {
-      var active = button.getAttribute('data-set-language') === language();
-      button.classList.toggle('active', active);
-      button.setAttribute('aria-pressed', String(active));
-    });
-    var group = document.querySelector('.language-switch');
-    if (group) group.setAttribute('aria-label', t('language'));
+    var button = document.querySelector('.lang-toggle');
+    if (!button) return;
+    button.textContent = language() === 'ko' ? 'EN' : 'KO';
+    button.setAttribute('aria-label', t('language') + ': English / 한국어');
   }
 
   function setLanguage(lang, save) {
@@ -155,7 +153,6 @@
     var button = document.querySelector('.theme-toggle');
     if (!button) return;
     var dark = theme() === 'dark';
-    button.textContent = dark ? '\u2600\ufe0f' : '\ud83c\udf19';
     button.setAttribute('aria-label', dark ? t('theme.light') : t('theme.dark'));
     button.setAttribute('title', dark ? t('theme.light') : t('theme.dark'));
   }
@@ -170,15 +167,15 @@
     if (!nav || nav.querySelector('.nav-actions')) return;
     var actions = document.createElement('div');
     actions.className = 'nav-actions';
-    actions.innerHTML = '<div class="language-switch" role="group">' +
-      '<button type="button" data-set-language="en">EN</button>' +
-      '<button type="button" data-set-language="ko">KO</button></div>' +
-      '<button class="theme-toggle" type="button"></button>';
+    actions.innerHTML = '<button class="tool-btn lang-toggle" type="button"></button>' +
+      '<button class="tool-btn theme-toggle" type="button">' +
+      '<svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>' +
+      '<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>' +
+      '</button>';
     var menu = nav.querySelector('.nav-toggle');
     nav.insertBefore(actions, menu || null);
     actions.addEventListener('click', function (event) {
-      var langButton = event.target.closest('[data-set-language]');
-      if (langButton) setLanguage(langButton.getAttribute('data-set-language'), true);
+      if (event.target.closest('.lang-toggle')) setLanguage(language() === 'ko' ? 'en' : 'ko', true);
       if (event.target.closest('.theme-toggle')) setTheme(theme() === 'dark' ? 'light' : 'dark', true);
     });
   }
@@ -246,11 +243,39 @@ document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
   if (toggle && links) {
-    toggle.addEventListener('click', function () { links.classList.toggle('open'); });
+    var setMenu = function (open) {
+      links.classList.toggle('open', open);
+      document.body.classList.toggle('menu-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    };
+    setMenu(false);
+    toggle.addEventListener('click', function () { setMenu(!links.classList.contains('open')); });
     links.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { links.classList.remove('open'); });
+      a.addEventListener('click', function () { setMenu(false); });
     });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
   }
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
   observeReveal();
+
+  // In-page menu (.subnav): mark the part being read
+  var subnav = document.querySelector('.subnav');
+  if (subnav && 'IntersectionObserver' in window) {
+    var subLinks = Array.prototype.slice.call(subnav.querySelectorAll('a[href^="#"]'));
+    var scroller = subnav.querySelector('.wrap');
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        subLinks.forEach(function (a) {
+          var on = a.getAttribute('href') === '#' + entry.target.id;
+          a.classList.toggle('on', on);
+          if (on) scroller.scrollTo({ left: a.offsetLeft - 16, behavior: 'smooth' });
+        });
+      });
+    }, { rootMargin: '-140px 0px -55% 0px' });
+    subLinks.forEach(function (a) {
+      var section = document.getElementById(a.getAttribute('href').slice(1));
+      if (section) spy.observe(section);
+    });
+  }
 });

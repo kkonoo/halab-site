@@ -80,11 +80,11 @@ Home·About·Contact·Members의 영어/한글 문구는 아래 데이터 파일
 
 - 멤버 추가: `members.html` 의 `member-grid` 에 `.member` 블록을 복사해 수정
 - 뉴스/논문 추가: `assets/js/*data.js` 수정
-- 색상/폰트: `assets/css/styles.css` 상단 `:root` 변수에서 조정
+- 색상/폰트: `assets/css/styles.css` 상단 `:root` 변수에서 조정 (주조색 `--accent` 초록, 어두운 바탕 위 강조색 `--lime`, 첫 화면·푸터 바탕 `--deep`, 다크 모드는 `html[data-theme="dark"]`). 글꼴은 Pretendard 하나만 쓰고 굵기로 위계를 나눕니다.
 
 ## 다크 모드 · EN/KO 전환
 
-- 모든 페이지 헤더에 `EN / KO` 언어 선택과 달/해 테마 버튼이 자동으로 표시됩니다.
+- 모든 페이지 헤더에 언어 버튼(다른 언어를 표시: 영어 화면에서는 `KO`)과 달/해 테마 버튼이 자동으로 표시됩니다.
 - 처음 방문하면 운영체제의 라이트/다크 설정을 따르고, 사용자가 고른 값은 브라우저에 저장됩니다.
 - 공통 번역과 페이지 문구는 `assets/js/main.js`의 `TRANSLATIONS`에서 수정합니다.
 - 뉴스는 `assets/js/news-data.js`의 `titleKo`, `bodyKo`가 한국어 버전입니다. 새 뉴스에 이 필드를 생략하면 두 언어 모두 `title`, `body` 원문을 표시합니다.
