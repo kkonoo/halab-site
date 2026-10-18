@@ -80,9 +80,9 @@ window.STUDIES = [
   },
   {
     tag: "HaLab 1",
-    title: "Basic statistics (from KASRA)",
+    title: "Basic statistics",
     desc: "기초통계",
-    url: "https://chaek.org/books/basic-stats-omics-labs/README"
+    url: "https://kkonoo.github.io/1_Basic_Statistics/"
   },
   {
     tag: "HaLab 1",
