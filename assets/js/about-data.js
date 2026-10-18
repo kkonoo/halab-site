@@ -6,17 +6,27 @@ window.PAGE_CONTENT = {
     "en": "About us",
     "ko": "연구실 소개"
   },
-  "bridging": {
-    "en": "Bridging",
-    "ko": "유전체학과"
+  /* 대제목 다섯 토막: title-1(흰색) + title-accent-1(강조) + title-2(흰색) + title-accent-2(강조) + title-3(흰색).
+   * 띄어쓰기는 토막 안에 직접 넣어요 (예: "Bridging ", " and "). 필요 없는 토막은 "" */
+  "title-1": {
+    "en": "Bridging ",
+    "ko": ""
   },
-  "genomics": {
+  "title-accent-1": {
     "en": "genomics",
-    "ko": "의학을"
+    "ko": "유전체학"
   },
-  "and-medicine": {
-    "en": "and medicine",
-    "ko": "연결합니다"
+  "title-2": {
+    "en": " and ",
+    "ko": "과 "
+  },
+  "title-accent-2": {
+    "en": "medicine",
+    "ko": "의학"
+  },
+  "title-3": {
+    "en": "",
+    "ko": "을 연결합니다"
   },
   "we-aim-to-uncover-the-genetic-and-epigenetic-mechanisms": {
     "en": "We aim to uncover the genetic and epigenetic mechanisms underlying complex human diseases, and to translate those discoveries into novel biomarkers and therapeutic targets for precision healthcare.",
