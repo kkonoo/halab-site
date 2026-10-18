@@ -6,12 +6,12 @@ window.PAGE_CONTENT = {
     "en": "Multi-omics & Systems Biology",
     "ko": "멀티오믹스 & 시스템생물학"
   },
-  "exploring-the-genetic-architecture-of": {
-    "en": "Exploring the genetic architecture of",
+  "exploring": {
+    "en": "Exploring",
     "ko": "우리는"
   },
-  "human-diseases": {
-    "en": "human diseases",
+  "the-genetic-architecture-of-human-diseases": {
+    "en": "the genetic architecture of human diseases",
     "ko": "인간 질환의 유전적 구조를 탐구합니다"
   },
   "we-decode-the-genetic-and-epigenetic-mechanisms-underly": {
