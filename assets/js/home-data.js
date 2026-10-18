@@ -7,18 +7,18 @@ window.PAGE_CONTENT = {
     "ko": "멀티오믹스 & 시스템생물학"
   },
   /* 대제목 세 토막: hero-lead(흰색) + hero-accent(강조색) + hero-tail(흰색). 마침표는 HTML에 있어요.
-   * 한글처럼 강조 뒤에 말이 더 오면 hero-tail에 앞 공백을 붙여 넣고, 없으면 ""로 둡니다. */
+   * 한글처럼 강조 뒤에 말이 더 오면 hero-tail에 넣고(조사는 붙여서, 띄울 땐 앞에 공백), 없으면 ""로 둡니다. */
   "hero-lead": {
     "en": "Exploring",
     "ko": "우리는"
   },
   "hero-accent": {
     "en": "the genetic architecture of human diseases",
-    "ko": "인간 질환의 유전적 구조를"
+    "ko": "인간 질환의 유전적 구조"
   },
   "hero-tail": {
     "en": "",
-    "ko": " 탐구합니다"
+    "ko": "를 탐구합니다"
   },
   "we-decode-the-genetic-and-epigenetic-mechanisms-underly": {
     "en": "We decode the genetic and epigenetic mechanisms underlying complex diseases — with a special focus on immune-related or chronic conditions — by integrating large-scale multi-omics data with advanced computational methods.",
