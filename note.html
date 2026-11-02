@@ -31,15 +31,20 @@
   </div>
 </header>
 
-<section class="page-head">
+<section class="page-head with-tabs">
   <div class="wrap">
     <span class="eyebrow">Notes &amp; Resources</span>
     <h1>Field updates, ideas, &amp; <span>teaching</span></h1>
     <p class="lead">Latest research updates, teaching and course resources, plus study materials.</p>
+    <div class="tab-bar" role="tablist" aria-label="Notes">
+      <button class="tab-btn" id="tab-updates" role="tab" aria-controls="panel-updates" aria-selected="true" data-tab="updates">Field Updates</button>
+      <button class="tab-btn" id="tab-teaching" role="tab" aria-controls="panel-teaching" aria-selected="false" data-tab="teaching">Teaching</button>
+      <button class="tab-btn" id="tab-study" role="tab" aria-controls="panel-study" aria-selected="false" data-tab="study">Study Materials</button>
+    </div>
   </div>
 </section>
 
-<section>
+<section class="tab-panel" id="panel-updates" role="tabpanel" aria-labelledby="tab-updates" data-panel="updates">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="kicker">Weekly · 카드뉴스</span>
@@ -84,7 +89,7 @@
 </section> 
 -->
   
-<section class="alt-bg">
+<section class="tab-panel" id="panel-teaching" role="tabpanel" aria-labelledby="tab-teaching" data-panel="teaching" hidden>
   <div class="wrap">
     <div class="section-head reveal">
       <span class="kicker">Resources</span>
@@ -96,7 +101,7 @@
   </div>
 </section>
 
-<section>
+<section class="tab-panel" id="panel-study" role="tabpanel" aria-labelledby="tab-study" data-panel="study" hidden>
   <div class="wrap">
     <div class="section-head reveal">
       <span class="kicker">Resources</span>
@@ -147,5 +152,34 @@
 <script src="assets/js/render-cards.js?v=20261018b"></script>
 <script src="assets/js/note-data.js?v=20261018b"></script>
 <script src="assets/js/render-note.js?v=20261018b"></script>
+
+<script>
+(function () {
+  var bar = document.querySelector('.tab-bar');
+  if (!bar) return;
+  var btns = Array.prototype.slice.call(bar.querySelectorAll('.tab-btn'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.tab-panel'));
+
+  function show(name, push) {
+    btns.forEach(function (b) { b.setAttribute('aria-selected', String(b.dataset.tab === name)); });
+    panels.forEach(function (p) { p.hidden = (p.dataset.panel !== name); });
+    if (window.observeReveal) window.observeReveal();
+    if (push) history.replaceState(null, '', '#' + name);
+  }
+
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () { show(b.dataset.tab, true); });
+    b.addEventListener('keydown', function (e) {
+      var i = btns.indexOf(b), n = null;
+      if (e.key === 'ArrowRight') n = btns[(i + 1) % btns.length];
+      if (e.key === 'ArrowLeft') n = btns[(i - 1 + btns.length) % btns.length];
+      if (n) { e.preventDefault(); n.focus(); show(n.dataset.tab, true); }
+    });
+  });
+
+  var hash = (location.hash || '').replace('#', '');
+  show(btns.some(function (b) { return b.dataset.tab === hash; }) ? hash : 'updates', false);
+})();
+</script>
 </body>
 </html>

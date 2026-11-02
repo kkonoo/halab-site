@@ -172,6 +172,8 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 .page-head .lead { font-size: 17px; max-width: 42em; }
 .page-head.with-tabs { padding-bottom: 0; }
 .page-head.with-tabs h1 { margin-bottom: 28px; }
+.page-head.with-tabs h1:has(+ .lead) { margin-bottom: 12px; }
+.page-head.with-tabs .lead { margin-bottom: 28px; }
 
 /* Tabs sitting on the bottom edge of the page head (members) */
 .tab-bar { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
