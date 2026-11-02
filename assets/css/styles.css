@@ -191,7 +191,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 .subnav .wrap { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
 .subnav .wrap::-webkit-scrollbar { display: none; }
 .subnav a {
-  flex: none; padding: 15px 14px 13px; margin-bottom: -1px;
+  flex: 1 1 0; white-space: nowrap; text-align: center; padding: 15px 14px 13px; margin-bottom: -1px;
   border-bottom: 2px solid transparent;
   font-size: 15px; font-weight: 600; color: var(--muted);
 }
