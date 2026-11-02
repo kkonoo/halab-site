@@ -1,6 +1,7 @@
 /* ============================================================
    CARD NEWS 렌더러 — note.html 의 카드뉴스 섹션을 그립니다.
    데이터: assets/js/cards-data.js 의 window.CARDNEWS (최신 주차가 맨 앞)
+         + assets/js/cards-archive.js 의 window.CARDNEWS_ARCHIVE (밀려난 이전 주차)
    - 주차 선택(select) + 분야 필터(chip) + 키워드 검색
    - 기본은 관련도 높은 상위 INITIAL_LIMIT 편만, '더 보기'로 전체 표시
    - 카드는 기본 접힘, 클릭하면 펼쳐짐
@@ -9,7 +10,11 @@
   /* 처음에 보여줄 논문 수 — 여기 숫자만 바꾸면 됩니다 */
   var INITIAL_LIMIT = 10;
 
-  var DATA = window.CARDNEWS || [];
+  // 같은 주차가 양쪽에 있으면 cards-data.js 쪽을 씁니다.
+  var DATA = (window.CARDNEWS || []).slice();
+  (window.CARDNEWS_ARCHIVE || []).forEach(function (w) {
+    if (!DATA.some(function (d) { return d.date === w.date; })) DATA.push(w);
+  });
   var weekSel = document.getElementById('cardnews-week');
   var grid = document.getElementById('cardnews-grid');
   if (!grid || !weekSel) return;
