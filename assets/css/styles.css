@@ -460,6 +460,7 @@ section { padding: 88px 0; }
 .news-card .body:hover::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--body) 42%, transparent); background-clip: padding-box; }
 .news-card .body p { margin-bottom: 8px; font-size: 15px; line-height: 1.7; color: var(--body); }
 .news-card .body p:last-child { margin-bottom: 0; }
+.news-card .body p a { color: var(--accent); font-weight: 600; word-break: break-all; }
 
 /* ---------- Pagination ---------- */
 .pager { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px; margin-top: 40px; }

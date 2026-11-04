@@ -17,11 +17,13 @@ window.NEWS = [
     logo: "assets/img/news/NRF.svg",
     body: [
       "Our consortium has been selected for the <b>Glocal Lab program</b>, funded for <b>9 years with a total budget of KRW 13.5 billion</b>.",
-      "Our lab will take charge of the <b>AI-driven discovery of PDNV cancer immunotherapy targets</b>. 🧬"
+      "Our lab will take charge of the <b>AI-driven discovery of PDNV cancer immunotherapy targets</b>. 🧬",
+      "More information: <a href=\"https://n2c.knu.ac.kr\" target=\"_blank\" rel=\"noopener\">n2c.knu.ac.kr</a>"
     ],
     bodyKo: [
       "우리가 참여한 컨소시엄이 <b>글로컬랩</b> 과제에 선정되었습니다. <b>9년간 총 135억 원</b> 규모로 지원됩니다.",
-      "우리 연구실은 <b>AI 기반 PDNV 항암면역 타겟 발굴</b>을 맡게 됩니다. 🧬"
+      "우리 연구실은 <b>AI 기반 PDNV 항암면역 타겟 발굴</b>을 맡게 됩니다. 🧬",
+      "사업단 홈페이지: <a href=\"https://n2c.knu.ac.kr\" target=\"_blank\" rel=\"noopener\">n2c.knu.ac.kr</a>"
     ]
   },
   {
