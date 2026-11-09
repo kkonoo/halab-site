@@ -1,7 +1,7 @@
 /* ===========================================================
    KNU Genomic Medicine Lab — shared styles
    Layout follows the CMRI site; color is green.
-   Font: Pretendard only, hierarchy by weight (800 / 700 / 600 / 400).
+   Font: Pretendard only, hierarchy by size, then weight (700 / 600 / 400).
    =========================================================== */
 
 /* ---------- Color & size tokens (light) ---------- */
@@ -22,7 +22,6 @@
   --lime: #B9E07A;            /* second accent on dark green (both themes) */
   --deep: #0B2117;            /* hero, page heads, footer (both themes) */
   --deep-2: #0F2D1F;
-  --deep-glow: #1C5A37;
   --header-bg: #FFFFFF;
   --logo-tile: transparent;
   --popup-shadow: 0 12px 32px rgba(11, 33, 23, .12);
@@ -141,7 +140,6 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   position: relative; overflow: hidden; color: #fff;
   padding: 96px 0 104px;
   background:
-    radial-gradient(1100px 600px at 85% 15%, var(--deep-glow) 0%, transparent 60%),
     linear-gradient(160deg, var(--deep) 0%, var(--deep-2) 55%, var(--deep) 100%);
 }
 .hero-art {
@@ -152,7 +150,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 .eyebrow { display: block; margin: 0 0 14px; font-size: 14px; font-weight: 700; letter-spacing: .02em; color: var(--lime); }
 .hero h1 {
   max-width: 15em; margin-bottom: 20px;
-  font-size: clamp(32px, 4.6vw, 54px); font-weight: 800; line-height: 1.2; letter-spacing: -.03em;
+  font-size: clamp(32px, 4.6vw, 54px); font-weight: 700; line-height: 1.2; letter-spacing: -.03em;
 }
 .hero h1 em, .page-head h1 em { font-style: normal; color: var(--lime); }
 .lead { max-width: 36em; font-size: clamp(16px, 1.6vw, 18.5px); line-height: 1.7; color: rgba(255, 255, 255, .78); }
@@ -162,11 +160,10 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 .page-head {
   padding: 64px 0 56px; color: #fff;
   background:
-    radial-gradient(900px 420px at 90% 0%, color-mix(in srgb, var(--deep-glow) 70%, transparent) 0%, transparent 60%),
     linear-gradient(160deg, var(--deep) 0%, var(--deep-2) 100%);
 }
 .page-head h1 {
-  margin: 0 0 12px; font-size: clamp(28px, 4vw, 42px); font-weight: 800;
+  margin: 0 0 12px; font-size: clamp(28px, 4vw, 42px); font-weight: 700;
   line-height: 1.25; letter-spacing: -.025em;
 }
 .page-head .lead { font-size: 17px; max-width: 42em; }
@@ -207,7 +204,7 @@ section { padding: 88px 0; }
 .section-head { margin-bottom: 32px; max-width: 46em; }
 .kicker { display: block; margin-bottom: 10px; font-size: 14px; font-weight: 700; letter-spacing: .02em; color: var(--accent); }
 .section-head h2, .panel-head h2 {
-  font-size: clamp(24px, 2.8vw, 32px); font-weight: 800; line-height: 1.3; letter-spacing: -.02em;
+  font-size: clamp(24px, 2.8vw, 32px); font-weight: 700; line-height: 1.3; letter-spacing: -.02em;
 }
 .section-head p { margin-top: 12px; font-size: 16.5px; color: var(--muted); }
 
@@ -228,7 +225,7 @@ section { padding: 88px 0; }
   display: flex; flex-direction: column; padding: 28px 26px;
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
 }
-.card .num { font-size: 13px; font-weight: 800; letter-spacing: .06em; color: var(--olive); }
+.card .num { font-size: 13px; font-weight: 700; letter-spacing: .06em; color: var(--olive); }
 .card h3 { margin: 8px 0 10px; font-size: 20px; font-weight: 700; letter-spacing: -.015em; }
 .card p { font-size: 15px; color: var(--muted); }
 
@@ -247,9 +244,9 @@ section { padding: 88px 0; }
 .rd:last-child { padding-bottom: 8px; }
 .rd-num {
   display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 12px;
-  background: var(--accent); color: var(--on-accent); font-size: 18px; font-weight: 800;
+  background: var(--accent); color: var(--on-accent); font-size: 18px; font-weight: 700;
 }
-.rd-head h3 { margin-top: 16px; font-size: clamp(22px, 2.6vw, 28px); font-weight: 800; line-height: 1.3; letter-spacing: -.02em; }
+.rd-head h3 { margin-top: 16px; font-size: clamp(22px, 2.6vw, 28px); font-weight: 700; line-height: 1.3; letter-spacing: -.02em; }
 .rd-q { margin-top: 10px; font-size: 16.5px; font-weight: 600; color: var(--accent); }
 .rd-desc { font-size: 16.5px; line-height: 1.8; color: var(--body); }
 .rd-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
@@ -274,14 +271,14 @@ section { padding: 88px 0; }
   display: flex; align-items: center; justify-content: space-between; gap: 40px;
   padding: 36px 40px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
 }
-.join-inner h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 800; line-height: 1.3; letter-spacing: -.02em; }
+.join-inner h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 700; line-height: 1.3; letter-spacing: -.02em; }
 .join-inner p { margin-top: 12px; max-width: 46em; font-size: 16px; color: var(--body); }
 .join-inner .btn { flex: none; }
 
 /* ---------- Members ---------- */
 .member-section-title {
   display: flex; align-items: center; gap: 10px;
-  margin: 48px 0 18px; font-size: 20px; font-weight: 800; letter-spacing: -.015em;
+  margin: 48px 0 18px; font-size: 20px; font-weight: 700; letter-spacing: -.015em;
 }
 .tab-panel > .member-section-title:first-child { margin-top: 0; }
 .member-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -322,7 +319,7 @@ section { padding: 88px 0; }
   display: grid; grid-template-columns: 52px 1fr; gap: 16px;
   padding: 22px 2px; border-bottom: 1px solid var(--line);
 }
-.pub .idx { padding-top: 2px; font-size: 15px; font-weight: 800; color: var(--olive); font-variant-numeric: tabular-nums; }
+.pub .idx { padding-top: 2px; font-size: 15px; font-weight: 700; color: var(--olive); font-variant-numeric: tabular-nums; }
 .pub h3 { margin-bottom: 6px; font-size: 17.5px; font-weight: 700; line-height: 1.45; letter-spacing: -.01em; }
 .pub h3 a:hover { color: var(--accent); }
 .pub .authors { font-size: 14.5px; color: var(--muted); }
@@ -346,7 +343,7 @@ section { padding: 88px 0; }
 }
 .invite-card h3 {
   display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
-  font-size: 19px; font-weight: 800; letter-spacing: -.015em;
+  font-size: 19px; font-weight: 700; letter-spacing: -.015em;
 }
 .invite-card h3::before { content: ""; flex: none; width: 4px; height: 18px; border-radius: 2px; background: var(--accent); }
 .invite-card p { font-size: 15.5px; line-height: 1.75; color: var(--body); }
@@ -423,7 +420,6 @@ section { padding: 88px 0; }
 /* image-less cards: the dark green of the page heads */
 .news-card .thumb.no-img {
   background:
-    radial-gradient(420px 260px at 85% 10%, var(--deep-glow) 0%, transparent 65%),
     linear-gradient(160deg, var(--deep) 0%, var(--deep-2) 100%);
 }
 .news-card .thumb.no-img::after { background: linear-gradient(180deg, rgba(11, 33, 23, 0) 50%, rgba(11, 33, 23, .45) 100%); }

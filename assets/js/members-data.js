@@ -54,7 +54,7 @@ window.MEMBERS = [
   {
     "id": "graduate-opening",
     "photoText": "+",
-    "photoStyle": "background:linear-gradient(160deg,var(--deep),var(--deep-glow));color:var(--lime)",
+    "photoStyle": "background:var(--deep-2);color:var(--lime)",
     "name": "We are hiring!",
     "nameKo": "새 구성원을 모집합니다!",
     "role": "Graduate Student",
