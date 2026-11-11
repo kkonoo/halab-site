@@ -94,7 +94,7 @@ window.STUDIES = [
     tag: "HaLab 2",
     title: "Writing My First Paper",
     desc: "첫 논문 쓰기",
-    url: "https://kkonoo.github.io/halab-quest/#/ch/ch4"
+    url: "https://kkonoo.github.io/AI_Sci_Writing_KNUmed/"
   },
   {
     tag: "HaLab 2",
