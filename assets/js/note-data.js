@@ -92,8 +92,8 @@ window.STUDIES = [
   },
   {
     tag: "HaLab 2",
-    title: "Writing My First Paper",
-    desc: "첫 논문 쓰기",
+    title: "Writing My First Paper with AI",
+    desc: "첫 논문 쓰기 with AI",
     url: "https://kkonoo.github.io/AI_Sci_Writing_KNUmed/"
   },
   {
