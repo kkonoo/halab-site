@@ -5,6 +5,507 @@
    ============================================================ */
 window.CARDNEWS_ARCHIVE = [
   {
+    "date": "2026-08-23",
+    "count": 16,
+    "papers": [
+      {
+        "title": "Distinguishing different psychiatric disorders using DDx-PRS.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42625058/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42625058/",
+        "doi": "https://doi.org/10.1038/s41588-026-02684-x",
+        "journal": "Nature genetics",
+        "year": "2026",
+        "author": "Peyrot WJ",
+        "rating": 5,
+        "emoji": "🧬",
+        "domain": "유전학·GWAS",
+        "what_they_did": [
+          "SCZ·BIP·MDD 및 대조군의 분산-공분산 구조를 모델링하여 각 진단 범주의 사후확률을 동시 추정하는 DDx-PRS 개발",
+          "PGC GWAS 요약통계(훈련: n=41,917~173,140 cases; 전체 n=1,048,683)와 독립 테스트 코호트(n=11,460) 적용",
+          "보정(캘리브레이션), 통계적 검정력, 타 방법과 비교 검증"
+        ],
+        "concepts": [
+          "polygenic-risk-score",
+          "summary-statistics-methods",
+          "genetic-correlation",
+          "gwas-association-testing",
+          "liability-threshold-model",
+          "statistical-power-gwas",
+          "cross-ancestry-transferability"
+        ],
+        "tldr": "SCZ·BIP·MDD·대조군을 동시에 유전적으로 감별하는 DDx-PRS 방법을 개발. 다범주 사후확률을 추정하여 기존 이분법적 PRS의 한계를 극복.",
+        "question": "임상적으로 유사한 여러 정신과 진단을 유전 정보로 동시에 감별하는 PRS 방법을 만들 수 있는가?",
+        "key_result": "DDx-PRS는 잘 보정되고 검정력이 높으며, 별도 튜닝 데이터 없이도 유사 방법들과 동등한 성능 달성. 예측 확률 상위 10분위에서 실제 진단 비율이 사전 확률 대비 현저히 높아 임상 활용 가능성 시사.",
+        "why_for_us": "랩의 핵심 관심사인 PRS 방법론 발전, 정신질환(SCZ/BIP/MDD) 유전체 연구와 직결. 다범주 PRS 설계 및 요약통계 기반 방법 개발에 직접 참고 가능.",
+        "limitations": "현재 4개 범주(SCZ/BIP/MDD/대조)에 국한; 임상 환경에서의 실제 유용성은 추가 검증 필요; 훈련-테스트 코호트 간 인구집단 차이 잠재적 문제",
+        "reuse": "PGC GWAS 요약통계 사용; DDx-PRS 소프트웨어 공개 여부는 초록에 명시 없음",
+        "next_step": ""
+      },
+      {
+        "title": "Rare variant effect estimation and polygenic risk prediction.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42608548/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42608548/",
+        "doi": "https://doi.org/10.1038/s41588-026-02705-9",
+        "journal": "Nature genetics",
+        "year": "2026",
+        "author": "Nam K",
+        "rating": 5,
+        "emoji": "🧬",
+        "domain": "유전학·GWAS",
+        "what_they_did": [
+          "분산 성분 모델 기반 유전자/지역 단위 헤리터빌리티 추정 후 변이별 효과 크기를 경험적 베이즈로 추정하는 RareEffect 개발",
+          "케이스-컨트롤 불균형 보정을 위한 Firth 편향 보정 고속 구현 적용",
+          "UK Biobank WES 데이터 100개 형질로 시뮬레이션 및 실제 분석 수행",
+          "추정된 효과 크기를 기존 희귀변이 PRS 방법들과 성능 비교"
+        ],
+        "concepts": [
+          "rare-variant-collapsing",
+          "polygenic-risk-score",
+          "snp-heritability-grm",
+          "missing-heritability",
+          "statistical-power-gwas",
+          "summary-statistics-methods"
+        ],
+        "tldr": "희귀변이 효과 크기를 유전자/지역 단위 경험적 베이즈 방식으로 추정하는 RareEffect를 개발하고, UK Biobank WES 100개 형질에 적용해 희귀변이 PRS 성능을 개선.",
+        "question": "낮은 빈도 탓에 효과 추정이 어려운 희귀변이를 더 정확하게 효과 크기를 추정하고 다유전자 점수에 활용할 수 있는가?",
+        "key_result": "RareEffect는 유전자 수준 및 변이 수준 2단계 효과 크기를 제공; 시뮬레이션 및 실데이터에서 기존 최신 희귀변이 PRS 방법 대비 폴리제닉 점수 예측 성능 향상; 100개 UK Biobank 형질에서 계산 효율성과 정확성 입증.",
+        "why_for_us": "희귀변이 QTL·heritability·PRS는 랩 핵심 연구 주제. rare-variant-collapsing, polygenic-risk-score, snp-heritability-grm, missing-heritability와 직결. UK Biobank WES 분석 방법론으로 즉시 활용 가능.",
+        "limitations": "WES 기반으로 WGS 대비 희귀변이 커버리지 제한; 유전자/지역 단위 헤리터빌리티 모델 가정에 의존; 케이스 수가 극히 적은 희귀 질환에서 성능 미검증.",
+        "reuse": "RareEffect 소프트웨어(공개 시) UK Biobank WES 100개 형질 효과 크기 추정값 재활용 가능.",
+        "next_step": ""
+      },
+      {
+        "title": "Toward the clinical application of long-read sequencing in repeat-expansion disorders.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42625059/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42625059/",
+        "doi": "https://doi.org/10.1038/s41588-026-02694-9",
+        "journal": "Nature genetics",
+        "year": "2026",
+        "author": "Benarroch L",
+        "rating": 4,
+        "emoji": "🧬",
+        "domain": "유전학·GWAS",
+        "what_they_did": [
+          "REDs에서 LRS의 최근 발견, 방법론적·생물정보학적 발전, 신흥 진단 응용 사례를 체계적으로 검토(Perspective)",
+          "STR 복잡성(비정규 이차구조, 소마틱 불안정성, 반복 중단, 대립유전자 특이 메틸화)에 대한 LRS의 해상도 우위 논의",
+          "새로운 병원성 반복 확장 발견 사례와 환자 계층화 가능성 제시"
+        ],
+        "concepts": [
+          "tandem-repeats",
+          "structural-variants-gwas",
+          "allele-specific-expression",
+          "variant-calling",
+          "sequencing-strategies"
+        ],
+        "tldr": "단단반복 확장 질환(REDs)에서 롱리드 시퀀싱(LRS)이 STR의 복잡한 특성(소마틱 불안정성, 반복 중단, 대립유전자별 메틸화)을 단일 분석으로 해결하고 진단·임상 연구에 혁신을 가져올 가능성을 논의한 Perspective.",
+        "question": "롱리드 시퀀싱이 단반복 확장 질환의 진단 및 임상 연구에 어떻게 기여할 수 있는가?",
+        "key_result": "LRS는 수 킬로베이스를 초과하는 STR 확장을 단일 분석으로 정확히 파악하며, 대립유전자별 메틸화 등 기존 기술로 해결 불가능했던 특성을 규명 가능; 임상 진단과 임상시험 환자 계층화에 활용 잠재력 높음.",
+        "why_for_us": "랩의 관심 영역인 tandem repeats, structural variants, allele-specific 분석, 그리고 신경질환(REDs 다수가 신경계)과 직결. 롱리드 기반 STR·SV·메틸화 통합 분석 전략 수립에 참고.",
+        "limitations": "현재 LRS 비용과 처리량 한계; 바이오인포매틱스 표준화 미흡; 임상 검증 사례 아직 제한적",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Family genetic designs in MoBa provide insights into health and functioning.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42618792/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42618792/",
+        "doi": "https://doi.org/10.1038/s41586-026-10926-5",
+        "journal": "Nature",
+        "year": "2026",
+        "author": "Corfield EC",
+        "rating": 4,
+        "emoji": "🧬",
+        "domain": "유전학·GWAS",
+        "what_they_did": [
+          "MoBa 코호트(모-부-자 트리오 포함 ~23만 명)의 유전형 데이터를 가족 구조에 맞춘 QC 파이프라인으로 처리",
+          "트리오 설계를 이용해 직접 유전 효과(within-family)와 간접 유전 효과(부모 넌트랜스미티드 allele)를 분리 추정",
+          "신장, 교육 성취, 우울 증상, 수면 시간 4가지 표현형에 대한 가족 기반 분석 예시 제시"
+        ],
+        "concepts": [
+          "gwas-association-testing",
+          "family-history-gwas",
+          "polygenic-risk-score",
+          "mendelian-randomization",
+          "pca-population-stratification",
+          "missing-heritability",
+          "statistical-power-gwas"
+        ],
+        "tldr": "노르웨이 MoBa 코호트(~23만 명)의 트리오 유전체 데이터를 활용해 직접·간접 유전 효과 및 구조적 교란을 분리하는 가족 기반 유전체 설계의 장점을 실증함.",
+        "question": "대규모 인구 기반 GWAS 추정치에 내재된 집단 층화·간접 유전 효과(뉘르처링 등) 교란을 가족 트리오 설계로 어떻게 분리·보정할 수 있는가?",
+        "key_result": "가족 트리오 데이터로 직접/간접 유전 효과와 구조적 교란을 분리할 수 있음을 실증; 표준 GWAS 추정치가 간접 효과(예: 부모의 교육적 넌트랜스미티드 allele)에 의해 편향될 수 있음을 확인.",
+        "why_for_us": "랩의 GWAS/QTL·MR·PRS 연구에서 indirect genetic effect와 population stratification 교란 문제는 핵심 이슈이며, 가족 기반 설계(within-family GWAS, transmitted/non-transmitted allele 분석)는 fine-mapping 및 인과 추론 파이프라인 보완에 직접 적용 가능.",
+        "limitations": "트리오 샘플은 인구 기반 샘플에 비해 표본 수가 적어 희귀 변이 분석 통계력 제한; 노르웨이 단일 코호트로 일반화 제약.",
+        "reuse": "MoBa 트리오 유전형 데이터 및 QC 파이프라인 방법론은 공개 예정으로 언급되나, 구체적인 데이터 접근 방식은 초록에 명시 없음.",
+        "next_step": "초록에 명시 없음."
+      },
+      {
+        "title": "An Icelandic pangenome reference.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42618781/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42618781/",
+        "doi": "https://doi.org/10.1038/s41586-026-10924-7",
+        "journal": "Nature",
+        "year": "2026",
+        "author": "Holley G",
+        "rating": 4,
+        "emoji": "🧬",
+        "domain": "유전학·GWAS",
+        "what_they_did": [
+          "Emblask(하이브리드 장·단독 리드 하플로타입 해상도 이중 조립 파이프라인)로 698개 아이슬란드 하플로타입을 조립",
+          "HPRC 판게놈에 아이슬란드 하플로타입을 추가해 HPRC-ICE 구축(5,141만 소변이 포함)",
+          "57,630명 아이슬란드인의 단독 리드를 HPRC-ICE에 Weaver로 매핑하여 9,896만 변이 호출",
+          "UK Biobank 429,193명 재매핑으로 GBA1 연관(조기발병 파킨슨병)과 CBS 미스센스 변이(호모시스틴뇨증) 복제"
+        ],
+        "concepts": [
+          "reference-genome",
+          "genotype-imputation",
+          "haplotype-phasing",
+          "structural-variants-gwas",
+          "variant-calling",
+          "gwas-association-testing"
+        ],
+        "tldr": "아이슬란드 698개 하플로타입을 기반으로 구축한 판게놈 참조(HPRC-ICE)와 대규모 단독 매핑 도구(Weaver)를 이용해 참조 편향을 줄이고 새 변이를 발굴함.",
+        "question": "선형 참조 게놈의 참조 편향(reference bias) 문제를 판게놈으로 해결할 수 있는가, 그리고 이를 수만 명 규모 코호트에 실용적으로 적용할 수 있는가?",
+        "key_result": "선형 참조 대비 변이 발굴 6.17% 증가; 저매핑성 영역에서 GBA1 병원성 SNP 및 CBS 미스센스 SNP 신규 발굴·복제.",
+        "why_for_us": "GWAS·QTL·fine-mapping 분석의 기반인 변이 호출 정확도와 참조 패널 품질에 직접 관련. 특히 복잡 반복 구간(GBA1 등) 변이 발굴은 신경질환(PD), NCF1 등 랩 관심 영역과 맞닿아 있음.",
+        "limitations": "아이슬란드 단일 집단 기반이라 다른 집단으로의 전이성 제한; 장독 어셈블리 비용 및 trio 데이터 필요.",
+        "reuse": "HPRC-ICE 판게놈과 Emblask/Weaver 도구가 공개되어 다른 코호트 재매핑에 활용 가능.",
+        "next_step": ""
+      },
+      {
+        "title": "Bonsai reconstructs tree representations for distortion-free visualization and exploration of high-dimensional data.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42629500/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42629500/",
+        "doi": "https://doi.org/10.1038/s41587-026-03220-2",
+        "journal": "Nature biotechnology",
+        "year": "2026",
+        "author": "de Groot DH",
+        "rating": 3,
+        "emoji": "🔬",
+        "domain": "단일세포",
+        "what_they_did": [
+          "임의의 이종 측정 노이즈를 가진 고차원 객체를 연결하는 최대우도 트리를 재구성하는 Bonsai 알고리즘 개발",
+          "혈액세포 데이터에 적용하여 알려진 계통 관계 복원 및 새로운 NK 세포 아형 발견",
+          "Bonsai-scout를 통한 하위 탐색 분석 통합, 조정 파라미터 없음"
+        ],
+        "concepts": [
+          "neurodevelopmental-trajectory"
+        ],
+        "tldr": "고차원 단일세포 데이터를 트리로 표현하는 새로운 시각화·탐색 방법 Bonsai를 제안. 이종적 측정 노이즈를 자동으로 정규화하고 분화 궤적을 왜곡 없이 복원.",
+        "question": "단일세포 오믹스 데이터의 고차원 구조를 왜곡 없이 시각화·탐색할 수 있는 방법은 무엇인가?",
+        "key_result": "Bonsai는 기존 방법 대비 고차원 거리를 보존하고 최근접 이웃 식별 정확도를 높이며, 혈액 데이터에서 골수 계통 유래 NK 세포 아형을 새롭게 발견.",
+        "why_for_us": "단일세포 RNA/ATAC 데이터의 궤적 분석 및 세포 계통 복원 시 활용 가능한 노이즈-강건 시각화 도구로서 랩의 sc 분석 파이프라인에 참고 가치 있음.",
+        "limitations": "트리 구조 가정이 실제 복잡한 세포 운명(네트워크, 수렴 분화 등)을 표현하기 어려울 수 있음; 혈액 데이터 위주 검증",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Proteogenomics in human populations.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42625025/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42625025/",
+        "doi": "https://doi.org/10.1038/s41576-026-00998-4",
+        "journal": "Nature reviews. Genetics",
+        "year": "2026",
+        "author": "Zhai R",
+        "rating": 5,
+        "emoji": "🧪",
+        "domain": "단백체",
+        "what_they_did": [
+          "대규모 바이오뱅크 + 고처리량 프로테오믹스(Olink/SomaScan 등) 플랫폼을 이용한 pQTL 연구 급성장 동향 정리",
+          "pQTL을 eQTL·mQTL 등 다른 분자 QTL과 통합하여 질환 유전자 우선순위화 방법론 소개",
+          "MR·colocalization을 이용한 단백질→질환 인과 추론 및 약물 타겟 검증 사례 리뷰",
+          "크로스-코호트 메타분석과 교차 조상 이전 가능성 문제 논의"
+        ],
+        "concepts": [
+          "pqtl-proteomics",
+          "molecular-qtl",
+          "mendelian-randomization",
+          "colocalization",
+          "drug-target-genetics",
+          "affinity-proteomics",
+          "cross-ancestry-transferability",
+          "fine-mapping",
+          "summary-statistics-methods"
+        ],
+        "tldr": "인간 집단에서 프로테오제노믹스(pQTL 중심)의 최신 진전과 질환 해석·개인화 치료로의 응용을 종합 리뷰한 논문.",
+        "question": "pQTL 매핑과 멀티오믹스 통합이 인간 질환의 분자 기전 규명과 신약 개발에 어떻게 기여하는가?",
+        "key_result": "pQTL 규모가 수천 명에서 수십만 명 코호트로 확대되며 발견 수가 급증; cis-pQTL과 trans-pQTL의 생물학적 의미 차이 강조; 약물 타겟 검증에 MR 활용이 성과를 내고 있음.",
+        "why_for_us": "랩의 핵심 관심사(pQTL, MR, colocalization, 멀티오믹스 통합)를 정면으로 다루는 리뷰. pQTL 파이프라인 구축과 질환 도메인 적용 시 필수 참고문헌.",
+        "limitations": "리뷰 논문; 플랫폼 간 단백질 측정 편차, 항체 특이성 문제, 교차 조상 이전 가능성 한계 언급.",
+        "reuse": "",
+        "next_step": "개인 맞춤 치료 및 건강 결과 개선을 위한 프로테오제노믹스 활용 방향 제안."
+      },
+      {
+        "title": "The private truncating Toll-like receptor 7 p.Glu834* variant associates with juvenile-onset systemic lupus erythematosus and pathological cytokine expression in vitro.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42632785/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42632785/",
+        "doi": "https://doi.org/10.1016/j.ard.2026.07.024",
+        "journal": "Annals of the rheumatic diseases",
+        "year": "2026",
+        "author": "Renaudineau Y",
+        "rating": 3,
+        "emoji": "🛡️",
+        "domain": "자가면역",
+        "what_they_did": [
+          "319명의 소아 발병 SLE 환자에서 TLR7 coding 변이를 차세대 시퀀싱으로 탐색",
+          "신규 private 변이 p.Glu834*(이형접합)의 분자적 기능 연구: UNC93B1 샤페론 결합, 엔도리소좀 통합, TLR8과의 이종이량체 형성 확인",
+          "분자 모델링으로 TLR8:TLR7 p.Glu834* 이종이량체의 구조적 가능성 분석",
+          "환자 말초혈액에서 IFN 시그니처 측정"
+        ],
+        "concepts": [
+          "rare-variant-collapsing",
+          "noncoding-regulatory-variants",
+          "protective-alleles"
+        ],
+        "tldr": "소아 발병 SLE 환자에서 새로운 TLR7 절단 변이(p.Glu834*)를 발견하고, 이 변이가 TLR8과 비정규 이종이량체를 형성해 염증성 사이토카인 및 IFN 신호를 증폭시킴을 규명.",
+        "question": "희귀 TLR7 coding 변이가 소아 SLE의 발병 기전에 어떻게 기여하는가?",
+        "key_result": "TLR7 p.Glu834* 변이는 UNC93B1에 지속적으로 결합하고 TLR8과 비정규 이종이량체를 형성하여 TLR7/8 자극 시 친염증성 사이토카인 발현을 증폭시키며, 환자 말초혈액에서도 IFN 시그니처가 상승함.",
+        "why_for_us": "SLE 관련 희귀 변이의 기능적 해석 사례이며, 유전적 위험 계층화 및 autoimmune 도메인(SLE) 연구와 직결됨. TLR7 ultra-rare 변이의 표현형-유전형 연결 방식은 rare-variant 분석 프레임워크에 참고 가능.",
+        "limitations": "단일 환자 사례 기반 기능 연구로 재현성 검증이 제한적; 319명 코호트에서 이 변이는 1명에서만 발견(private variant)",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Synthetic transcription factors designed by domain recombination enhance CAR T cell antitumor function.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42617595/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42617595/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.07.054",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Takacsi-Nagy O",
+        "rating": 3,
+        "emoji": "🎗️",
+        "domain": "암",
+        "what_they_did": [
+          "단백질 패밀리 내 도메인을 재조합하는 DESynR(domain engineered via synthesis and recombination) 방법론 개발",
+          "DESynR AP-1 전사인자를 1차 인간 T 세포에 도입하여 in vitro/in vivo 항종양 어세이 수행",
+          "전사체·후성유전체 리프로그래밍 분석으로 T 세포 상태(exhaustion, effector, cytotoxic, persistence) 특성화",
+          "ETS·FOX 패밀리로 DESynR 방법 일반화 가능성 검증"
+        ],
+        "concepts": [
+          "noncoding-regulatory-variants"
+        ],
+        "tldr": "단백질 도메인 재조합으로 설계한 합성 전사인자(DESynR AP-1)가 CAR T 세포의 항종양 기능을 크게 향상시킨다.",
+        "question": "단백질 도메인 재조합으로 진화적으로 존재하지 않는 새로운 전사인자를 설계하면, T 세포 소진을 극복하고 항종양 효능을 높일 수 있는가?",
+        "key_result": "DESynR AP-1 TF는 자연 AP-1 TF 대비 in vitro·in vivo 항종양 기능 모두 유의하게 우월하며, 소진·효과기·세포독성·지속성 특성을 동시에 최적화하는 비자연적 T 세포 상태를 유도한다. 리프로그래밍은 주로 기존 AP-1 결합 조절 요소의 차등 조절에 의해 구동됨.",
+        "why_for_us": "T 세포 소진·TME·암 면역치료 관심 분야에서 전사인자 기반 T 세포 상태 조작의 후성유전체·전사체 메커니즘을 이해하는 데 참고할 수 있다.",
+        "limitations": "인간 임상 데이터 부재; 합성 TF의 면역원성·안전성 미검토; 초록에서 구체적인 in vivo 모델 조건 명시 없음.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "WNT-driven immune evasion promotes malignant transformation of BRAF-mutant colorectal cancer.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42612882/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42612882/",
+        "doi": "https://doi.org/10.1053/j.gastro.2026.07.035",
+        "journal": "Gastroenterology",
+        "year": "2026",
+        "author": "Mastel M",
+        "rating": 3,
+        "emoji": "🎗️",
+        "domain": "암",
+        "what_they_did": [
+          "BRAF-돌연변이 MSS CRC의 다수 유전자조작 마우스 모델(GEMM) 및 오가노이드 이식 모델 구축",
+          "APC, CTNNB1, RNF43 돌연변이 등 WNT 구성요소 기능적 분석",
+          "Bulk RNA-seq, scRNA-seq, CITE-seq로 종양 발생 및 면역 미세환경 변화 분석",
+          "WNT 활성화에 의한 CCL20 억제 및 면역억제성 골수 세포 집단 증가 메커니즘 규명"
+        ],
+        "concepts": [
+          "single-cell-eqtl",
+          "spatial-transcriptomics"
+        ],
+        "tldr": "BRAF-돌연변이 MSS 대장암에서 WNT 경로 활성화가 면역 회피를 통해 악성 전환을 주도한다는 것을 다중 마우스 모델과 단세포 오믹스로 규명.",
+        "question": "BRAF-돌연변이 MSS 대장암의 악성 전환에서 WNT 신호 활성화는 면역 미세환경을 어떻게 재편하여 면역 회피를 유발하는가?",
+        "key_result": "APC 또는 CTNNB1 돌연변이에 의한 WNT 활성화(RNF43 소실은 불충분)가 종양 개시에 필수적이며, WNT는 CCL20을 억제하고 면역억제성 골수 집단 증가·T 세포 상태 변화를 유도해 면역 회피를 촉진한다.",
+        "why_for_us": "T 세포 소진·TME 면역치료 관심과 맞닿아 있으며, scRNA-seq/CITE-seq 기반 TME 분석 방법론 및 암 면역 회피 유전학 연구에 활용 가능.",
+        "limitations": "인간 임상 코호트 검증 부재; MSS 외 다른 CRC 아형 적용 가능성 미언급; 초록에서 CITE-seq 세포 수·해상도 등 세부 정보 없음.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Maternal sleep deprivation reshapes offspring hippocampal development through a Trem2-centered microglial program revealed by single-nucleus and spatial transcriptomics.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42629379/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42629379/",
+        "doi": "https://doi.org/10.1038/s41380-026-03831-w",
+        "journal": "Molecular psychiatry",
+        "year": "2026",
+        "author": "Wu X",
+        "rating": 4,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "쥐 모델에서 임신 후기 모체 수면 박탈(LSD) 시행, 자손을 P1/P7/P14/P56에서 단핵 RNA-seq + 공간전사체로 분석하여 해마 세포 아틀라스 구축",
+          "LSD 유발 전사체 변화를 올리고덴드로사이트, 별아교세포, 흥분/억제 신경세포, 미세아교세포에서 계통 추적",
+          "AAV 매개 Trem2 복원 실험으로 신경염증, LTP, 행동 표현형 구제 검증",
+          "Morris water maze, open field, elevated plus maze로 행동 평가; LTP 전기생리학적 측정"
+        ],
+        "concepts": [
+          "spatial-transcriptomics",
+          "microglia-neuroimmune",
+          "brain-cell-atlas",
+          "maternal-immune-activation",
+          "neurodevelopmental-trajectory"
+        ],
+        "tldr": "임신 후기 모체 수면 박탈(LSD)이 자손의 해마 발달에서 Trem2 중심의 미세아교세포 프로그램을 재편하여 장기적 인지·행동 결손을 유발함을 단핵 RNA-seq과 공간전사체로 규명.",
+        "question": "임신 중 수면 박탈이 자손의 해마 미세아교세포 상태와 신경회로 발달에 미치는 영향은 무엇인가?",
+        "key_result": "LSD는 Trem2 하향조절 및 인간 신경정신·신경퇴행 위험 유전자 모듈 농축을 특징으로 하는 미세아교세포 상태 변화를 유도; 자손은 공간 기억, 불안, 탐색 행동 결손 및 LTP 손상을 보임. Trem2 AAV 복원 시 일부 표현형 개선.",
+        "why_for_us": "단핵 RNA-seq + 공간전사체를 조합한 신경 발달 아틀라스 구축 방법론과 미세아교세포 상태 분석이 랩의 뇌 단일세포 분석 및 신경정신 질환 연구와 직접 관련. Trem2 유전 위험 loci와 전사체 변화의 연결도 참고 가능.",
+        "limitations": "설치류 모델 기반으로 인간 임상 적용에 한계; AAV 구제가 부분적 효과만 보임; 수면 박탈의 정확한 분자적 상류 기전 미규명",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Multimodal brain cell atlas across the adult macaque lifespan.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42612631/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42612631/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.07.045",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Zhang X",
+        "rating": 4,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "23마리 암컷 시노몰구스 마카크(성체 전 생애)에서 8개 뇌 영역, 2,955,873핵을 snRNA-seq 및 snATAC-seq으로 프로파일링",
+          "세포 아형·지역별 노화 관련 전사 변화 및 크로마틴 리모델링 프로그램 동정",
+          "폰스·연수에서 멀티셀룰러 네트워크를 노화 핫스팟으로 규명",
+          "인간 뇌 노화·신경퇴행 데이터셋과 교차 비교하여 공유·차이 메커니즘 분석"
+        ],
+        "concepts": [
+          "brain-cell-atlas",
+          "aging-genetics",
+          "single-cell-eqtl",
+          "brain-eqtl-grn",
+          "spatial-transcriptomics",
+          "cross-species-cell-type-evolution"
+        ],
+        "tldr": "성체 마카크 원숭이 8개 뇌 영역에서 약 300만 핵의 전사체+크로마틴 접근성 멀티오믹스 아틀라스를 구축하여 영장류 뇌 노화의 세포형·지역 특이적 분자 메커니즘을 규명함.",
+        "question": "영장류 뇌 노화는 세포 유형별·뇌 영역별로 어떻게 다른 분자 변화를 보이며, 이것이 인간 신경퇴행과 어떻게 연결되는가?",
+        "key_result": "시냅스 신호전달, 축삭 수초화 관련 세포 아형 특이적 노화 변화 확인; 폰스·연수의 백질 취약성이 영장류 뇌 노화의 핵심 특징으로 제안됨; 장수 및 신경퇴행과 연관된 전사인자 및 노화 크로마틴 리모델링 프로그램 동정.",
+        "why_for_us": "snRNA+snATAC 멀티오믹스 통합, 뇌 세포 아틀라스 구축, 노화 유전체학, 신경퇴행 질환 도메인 모두 랩의 핵심 관심사와 직결됨. 특히 brain-cell-atlas, aging-genetics, 크로마틴 접근성 QTL 연구 등과 연계 가능.",
+        "limitations": "암컷 마카크만 포함(성별 편향 가능); 단일 종(마카크)으로 인간 뇌 노화 추론에 한계; 인과관계보다 상관관계 기반.",
+        "reuse": "아틀라스 데이터(전사체+크로마틴) 공개 시 뇌 노화·신경퇴행 연구의 레퍼런스 데이터셋으로 활용 가능; TF 및 크로마틴 리모델링 프로그램 목록 재사용 가능.",
+        "next_step": ""
+      },
+      {
+        "title": "Early life experiences, the neural epigenome and affective disorder risk.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42625033/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42625033/",
+        "doi": "https://doi.org/10.1038/s41583-026-01074-w",
+        "journal": "Nature reviews. Neuroscience",
+        "year": "2026",
+        "author": "Cunningham AM",
+        "rating": 3,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "동물 모델과 인간 연구를 망라해 초기 스트레스→에피게놈 변화→신경회로 성숙→정신질환 취약성의 경로를 리뷰",
+          "DNA 메틸화, 히스톤 PTM, 3D 크로마틴 구조, non-coding RNA의 역할을 세포 유형·뇌 영역·발달 단계별로 정리",
+          "말초 에피게놈 바이오마커의 접근 가능성과 치료 응용 가능성 논의"
+        ],
+        "concepts": [
+          "molecular-qtl",
+          "noncoding-regulatory-variants",
+          "brain-eqtl-grn",
+          "neurodevelopmental-trajectory",
+          "sex-differences-psychiatric"
+        ],
+        "tldr": "초기 생애 스트레스가 DNA 메틸화·히스톤 변형·크로마틴 구조 재편을 통해 뇌 발달과 정신질환 취약성을 어떻게 프로그래밍하는지를 종합 리뷰한 논문.",
+        "question": "초기 생애 역경이 뇌 에피게놈을 어떻게 재형성하며, 이것이 정동장애(우울·불안 등) 위험을 어떻게 높이는가?",
+        "key_result": "초기 역경에 의한 에피게놈 변화는 세포 유형(뉴런 vs 글리아)·뇌 영역·발달 시기에 따라 고도로 특이적이며, 비코딩 RNA도 스트레스 유도 유전자 발현 조절에 기여함이 부각됨.",
+        "why_for_us": "랩의 메틸화·단일세포 에피게노믹스·MDD/ASD 관심 영역과 직결. 세포 유형 특이적 메틸레이션 변화와 뇌 eQTL/GRN 연구의 배경 지식으로 활용 가능.",
+        "limitations": "리뷰 논문이므로 새로운 데이터 없음; non-coding RNA의 장기적 역할은 아직 불명확하다고 저자 스스로 인정.",
+        "reuse": "",
+        "next_step": "에피게노믹스·전사체·회로·행동 수준의 통합 접근이 필요하다고 제안."
+      },
+      {
+        "title": "Neurodegeneration as a dysregulation of neuroimmune crosstalk.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42624075/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42624075/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.07.015",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Bennett FC",
+        "rating": 3,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "신경-면역 크로스토크와 신경퇴행 연결에 관한 기존 연구를 종합 정리",
+          "면역세포(미세아교세포 포함)가 뇌 기능과 신경 취약성에 미치는 역할 리뷰",
+          "후성유전학적 면역 상태 조절을 치료 표적으로 제안"
+        ],
+        "concepts": [
+          "microglia-neuroimmune",
+          "brain-body-immune-circuits"
+        ],
+        "tldr": "신경퇴행성 질환을 신경-면역 크로스토크의 붕괴로 재해석하는 리뷰. 면역세포가 신경 회복력과 취약성을 능동적으로 조절하며, 면역 항상성 회복이 치료 전략이 될 수 있음을 제안.",
+        "question": "신경퇴행성 질환은 단순 뉴런 손상이 아니라 신경-면역 시스템 간 소통 실패인가?",
+        "key_result": "신경퇴행성 질환이 보호적 신경-면역 신호의 소실과 부적응적 염증 반응의 활성화에서 비롯된다는 통합 모델을 제시. 면역 항상성 복원, 염증 조절, 후성유전체 표적 치료가 퇴행 지연 및 회복 촉진 가능성을 가짐.",
+        "why_for_us": "랩의 neuro(AD·PD·MDD) 및 autoimmune, microglia-neuroimmune 관심과 맞닿으며, 면역-후성유전학 규제를 통한 치료 접근은 멀티오믹스 연구와 연결 가능.",
+        "limitations": "리뷰 논문으로 실험적 검증 없음. 구체적 메커니즘보다 광범위한 패러다임 제시에 집중.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Macrophage-mediated refinement of the dural lymphatic regulates social behavior.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42034056/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42034056/",
+        "doi": "https://doi.org/10.1016/j.neuron.2026.03.019",
+        "journal": "Neuron",
+        "year": "2026",
+        "author": "Tavares GA",
+        "rating": 3,
+        "emoji": "🧠",
+        "domain": "신경",
+        "what_they_did": [
+          "마우스 출생 후 배측 경막 림프관의 발달 과정을 시계열로 추적하여, 주변부 림프관과 달리 postnatal critical window 동안 세포사와 대식세포 탐식을 통한 'refinement' 과정이 일어남을 확인",
+          "ASD 마우스 모델(BTBR)에서 경막 림프관 refinement 패턴을 야생형과 비교",
+          "경막 림프관 refinement 변화와 BTBR 마우스의 ASD 유사 사회성 행동 결함의 연관성을 분석"
+        ],
+        "concepts": [
+          "maternal-immune-activation",
+          "microglia-neuroimmune",
+          "brain-body-immune-circuits",
+          "neurodevelopmental-trajectory"
+        ],
+        "tldr": "출생 후 경막 림프관은 뇌막 대식세포가 매개하는 정교한 세포사·탐식 과정으로 조각(refinement)되며, 이 과정의 이상이 자폐 스펙트럼 장애(ASD) 마우스 모델에서 사회성 행동 결함과 연관됨을 보임.",
+        "question": "경막 림프관은 어떻게 발달 초기에 적절한 구조로 형성되며, 이 과정의 이상이 ASD 표현형과 관련이 있는가?",
+        "key_result": "배측 경막 림프관은 출생 후 특정 시기에 뇌막 대식세포에 의한 세포사·탐식으로 정교하게 조각됨; BTBR ASD 모델 마우스에서 이 refinement가 비정상적이며, 이것이 ASD 유사 사회성 행동을 조절하는 새로운 경로임을 시사.",
+        "why_for_us": "ASD 병인 연구 중 뇌-면역 접점(뇌막 면역세포-림프계)을 다루는 논문으로, 랩의 ASD·신경발달·microglia/뇌 면역 관심과 연결됨. 멀티오믹스 기반 ASD 병인 연구의 세포생물학적 맥락 제공.",
+        "limitations": "인간 데이터 없이 마우스 모델에 국한; BTBR은 ASD의 단일 유전적 모델로 일반화에 한계; 인과관계(refinement 이상 → 행동 결함)의 직접 조작 실험 상세 기술이 초록에 제한적.",
+        "reuse": "",
+        "next_step": ""
+      },
+      {
+        "title": "Multimodal evidence for bone lymphatics in skeletal health and repair.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42624078/",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42624078/",
+        "doi": "https://doi.org/10.1016/j.cell.2026.06.026",
+        "journal": "Cell",
+        "year": "2026",
+        "author": "Yang Y",
+        "rating": 3,
+        "emoji": "📄",
+        "domain": "기타",
+        "what_they_did": [
+          "마우스 및 인간 뼈 조직에서 공간 전사체학과 단일세포 RNA 시퀀싱을 통합 적용",
+          "이미징 기법으로 뼈 림프관의 공간적 분포와 세포 구성 분석",
+          "뼈 림프관을 골 손실 관련 인자가 아닌 골량·재생의 긍정적 조절자로 재규명"
+        ],
+        "concepts": [
+          "spatial-transcriptomics",
+          "cell-type-deconvolution"
+        ],
+        "tldr": "공간 전사체학·단일세포 RNA 시퀀싱·이미징을 통합해 뼈 내 림프관이 골량 유지와 뼈 재생의 긍정적 조절자임을 마우스·인간에서 종합적으로 규명.",
+        "question": "뼈의 림프관은 골격 미세환경에서 어떤 역할을 하며, 골량 및 뼈 재생에 어떻게 기여하는가?",
+        "key_result": "공간 전사체학으로 Prox1+ 림프관 내피세포가 골격 미세환경 내에 존재함을 확인; 뼈 림프관이 골 재생 과정에서 긍정적 역할을 함을 다중 증거로 제시.",
+        "why_for_us": "공간 전사체학 + 단일세포 RNA-seq 통합 분석 방법론 측면에서 파이프라인 참고 가능. 질환 도메인으로는 뼈 관련이라 간접적이나, 멀티모달 오믹스 통합 접근 사례로 유용.",
+        "limitations": "초록이 잘려 있어 전체 결과 및 한계 파악 불가.",
+        "reuse": "",
+        "next_step": ""
+      }
+    ]
+  },
+  {
     "date": "2026-08-17",
     "count": 23,
     "papers": [
