@@ -74,9 +74,9 @@ window.STUDIES = [
   },
   {
     tag: "HaLab 1",
-    title: "Human Genetics (from KASRA)",
+    title: "Human Genetics",
     desc: "유전학",
-    url: "https://chaek.org/books/human-genetics"
+    url: "https://halab-wiki.knu.ac.kr/disease/genetics/"
   },
   {
     tag: "HaLab 1",
